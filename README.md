@@ -3,6 +3,8 @@
 Structured engineering product data for AI agents through three read-only MCP
 tools: `discover_catalog`, `search_products`, and `get_products`.
 
+[Release 002 verification and deployed image](docs/RELEASE_002.md).
+
 The reviewed dataset spans all 22 Alsharqa catalogs: 37 models, 76 tables and
 3,707 engineering rows. It is a data service, not a suitability or supplier-rating
 engine. Units, conditions, bounds
@@ -34,3 +36,8 @@ Remote HTTP requires a token and cursor key of at least 32 characters in
 `SUPPLIER_ATLAS_TOKEN` and `SUPPLIER_ATLAS_CURSOR_KEY`, plus the explicit hostname
 allowlist `SUPPLIER_ATLAS_ALLOWED_HOSTS`. `/mcp` provides the MCP endpoint;
 `/health` reports service and catalog versions. Never bake secrets into an image.
+
+The operator can deploy an immutable public GHCR digest using
+`deploy/deploy.ps1 -Image ghcr.io/mroshdy91/supplieratlas-demo@sha256:...`.
+It uses the existing local Google CLI authorization and private runtime environment
+file, and keeps service/revision instance maxima at one. No manual file upload is required.
