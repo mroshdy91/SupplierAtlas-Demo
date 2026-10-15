@@ -5,6 +5,8 @@ umask 077
 smoke_env=$(mktemp)
 container=""
 cleanup() {
+  result=$?
+  if [ "$result" -ne 0 ] && [ -n "$container" ]; then docker logs --tail=40 "$container" >&2; fi
   if [ -n "$container" ]; then docker rm -f "$container" >/dev/null; fi
   rm -f "$smoke_env"
 }
