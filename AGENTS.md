@@ -99,13 +99,15 @@ is ambiguous, record it as an open question rather than inventing a rule.
 
 ## Current project state
 
-- R21: five fresh-context Sol reviews completed. All22 fresh official PDF hashes
-  match. Visual ledgers cover 1,798 row/column comparisons across494 rows and all76
+- R21: five fresh-context Sol reviews completed. All 22 fresh official PDF hashes
+  match. Visual ledgers cover 1,798 row/column comparisons across 494 rows and all 76
   tables; this is sampling, not exhaustive transcription verification. API probes
-  cover all3,707 paginated rows,1,560 compound predicates and4,752 unit conversions.
-  One import error (SCD p18 side flow2452 vs2800), its false source-defect note,
+  cover all 3,707 paginated rows, 1,560 compound predicates and 4,752 unit conversions.
+  One import error (SCD p18 side flow 2452 vs 2800), its false source-defect note,
   two context omissions and stale skill coverage were independently reproduced.
-  Local release004 fixes these;43 tests/lint pass. Deployment/publication pending.
+  Release 004 fixes these; 43 tests/lint, CI container checks, hosted SDK and seven
+  post-deployment native calls pass. Plugin alpha.2 is published and marketplace
+  pinned; installed alpha.1 remains wire-compatible, but has old skill text until updated.
   See docs/DATA_QUALITY_AUDIT.md and the five ledgers. No claim of zero remaining errors.
 - Engineering-selection evaluation (R20): 32 guided native calls across seven
   scenarios exposed a projection gap (Class II temperature) and an empty-result
@@ -122,14 +124,16 @@ is ambiguous, record it as an open question rather than inventing a rule.
   Table-page audit: 66 imported, 3 duplicate tables imported once, 1 unlabeled VCD
   matrix withheld. Obscured ACVD cells and unusable source cells remain unknown or
   explicitly excluded; no graph digitization or silent source repair.
-- Expanded validation: 40 tests, lint, all 22 PDF hashes, cross-family reference
+- Expanded validation: 43 tests, lint, all 22 PDF hashes, cross-family reference
   cells, complete pagination, response budgets, local HTTP and CI container checks
   passed. Hosted SDK checks and the installed plugin's three native tools passed.
-- Live catalog `alsharqa-engineering-003+b7a55ea019a3`, revision
-  `supplieratlas-demo-00004-dfd`, 100% traffic. Runtime commit
-  `fc65173d210529af3eda1f698e1198f0b7d2d4cd`, CI run `38747553950`.
-  Image digest `sha256:c36889fdfbf9f41439afba4c27afbe5689f22f780a6ae4b983b40baf716e5289`.
-  Existing plugin v0.1.0-alpha.1 remains compatible; no reinstall/marketplace change needed.
+- Live catalog `alsharqa-engineering-004+d28b77646175`, revision
+  `supplieratlas-demo-00005-hn8`, 100% traffic. Runtime commit
+  `571db65c306c80f02fcaf0aad889286427b7202a`, CI run `38753342609`.
+  Image digest `sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6`.
+  Plugin v0.1.0-alpha.2 tag/commit `4459c6e20a1c8aeef1cc5424b42919041e818a9a`;
+  marketplace commit `611a11709a54427b4b6389565df917d67e8f6e37`. The data fixes
+  work with existing alpha.1; alpha.2 updates client guidance only.
 - Cost controls retained: scale-to-zero, service max 1, 0.5 CPU / 256 MiB,
   concurrency 1, timeout 30, throttling on and startup boost off. Deployment script
   now explicitly sets revision max 1 as well as service max 1. Existing spend cap

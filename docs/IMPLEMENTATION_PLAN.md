@@ -6,9 +6,11 @@ Updated: 2026-10-15. Status: hosted demo live; published marketplace plugin inst
 
 - Five user-requested Sol audits completed against original PDFs and installed
   plugin. Corrected one source transcription and two engineering-context omissions.
-  Added independently read1,798-field regression fixture;43 local tests/lint pass.
+  Added independently read 1,798-field regression fixture; 43 tests/lint pass.
   See DATA_QUALITY_AUDIT.md for scoped evidence and remaining untested cells.
-  Release004 and plugin guidance alpha.2 are prepared; hosted verification pending.
+  Release 004 is live and verified through hosted SDK and seven native calls.
+  Plugin guidance alpha.2 is published and marketplace pinned; existing alpha.1
+  works with the new backend, with old skill text until the client updates.
 - Guided installed-plugin selection trial completed: seven scoped engineering
   scenarios and 32 native calls. Projection context and empty-result diagnostics
   improved; local replay, regression and token results in SELECTION_EVALUATION.md.
@@ -23,10 +25,10 @@ Updated: 2026-10-15. Status: hosted demo live; published marketplace plugin inst
   See ALSHARQA_COVERAGE.md for imports, duplicate pages and explicit exclusions.
 - Generic importer, read-only SQLite snapshot, bounded query layer and all three
   MCP tools implemented with official Python SDK 2.3. Locked dependencies in uv.lock.
-- 40 tests pass, including cross-family source regressions, 763-row pagination,
+- 43 tests pass, including cross-family source regressions, 763-row pagination,
   units, source qualification, bounded output, sparse/5,000-row data, stdio and HTTP.
   CI container checks, hosted HTTP and installed native plugin calls also passed.
-  Live release: `alsharqa-engineering-003+b7a55ea019a3`; see DEPLOYMENT.md.
+  Live release: `alsharqa-engineering-004+d28b77646175`; see DEPLOYMENT.md.
 - Compact-response measurement and plugin skill validation completed. Codex
   0.162.0-alpha.17.2 on Windows installed the marketplace release and verified
   bearer authentication and exactly three tools. Independent LLM task evaluation

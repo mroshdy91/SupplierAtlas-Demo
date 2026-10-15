@@ -15,15 +15,19 @@ Date: 2026-10-15.
   21x24, one-way, 700 fpm cell is 2452, not the stored 2800. Its old source-defect
   note is incorrect. This is an import/transcription defect; OCR causation is not
   established. Corrected literal input and removed false note; stable row ID retained.
-- Completed five reviews: 1,798 visual field comparisons, all76 tables represented,
+- Completed five reviews: 1,798 visual field comparisons, all 76 tables represented,
   plus exhaustive pagination and independent predicate/unit probes. Two published
   context omissions added (damper temperatures and splitter formulas); a round
   diffuser source arithmetic concern is disclosed without changing its number.
 - Regression expectations come from audit ledgers, not generated catalog values.
-  The new source test failed against release003 and passes corrected004. Local43
+  The new source test failed against release 003 and passes corrected 004. All 43
   tests/lint pass; report distinguishes sampling from universal accuracy.
 - Skill alpha.2 removes stale SCD-only coverage and explains batch table scope and
   exact-unit boundaries. Same three tools, request schemas and numeric semantics.
+- Verified delivery: runtime commit 571db65c306c80f02fcaf0aad889286427b7202a,
+  Cloud Run 00005-hn8, CI 38753342609, seven native checks and hosted SDK smoke.
+  Plugin alpha.2 immutable tag published by validated GitHub Actions release flow;
+  marketplace pin updated with 19 checks. Existing client remains compatible.
 
 ## Engineering-selection evaluation
 

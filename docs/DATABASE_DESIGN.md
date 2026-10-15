@@ -9,7 +9,7 @@ source inconsistencies from import defects, and inspected from untested coverage
 never from generated catalog values. It validates value/table/source identities.
 Context regressions cover published operating limits and literal geometry rules.
 No new database column or public tool is needed: temperature ranges and unevaluated
-formulas are typed table context. A source correction changes the catalog release
+formulas are typed table context. A transcription correction changes the catalog release
 hash, preserves stable row IDs, and records the before/after evidence in audit docs.
 
 ## Selection-driven projection requirements (2026-10-15)

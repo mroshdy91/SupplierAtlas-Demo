@@ -1,0 +1,830 @@
+{
+  "catalog_version": "alsharqa-engineering-004+d28b77646175",
+  "method": "Parent post-deployment native checks of independently reproduced corrections; seven calls across all three tools.",
+  "calls": [
+    {
+      "tool": "discover_catalog",
+      "request": {
+        "schema_id": "alsharqa.scd.supply_patterns.v1"
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "numeric_filters": "Exact numeric cells only; qualified bounds excluded. Units default to schema units.",
+        "schema": {
+          "id": "alsharqa.scd.supply_patterns.v1",
+          "category_id": "air_outlets.ceiling_diffusers",
+          "version": 1,
+          "label": "Additional published supply sizes and patterns",
+          "columns": [
+            {
+              "code": "size_label",
+              "label": "Size label",
+              "type": "string",
+              "unit": null
+            },
+            {
+              "code": "neck_width",
+              "label": "Neck width",
+              "type": "number",
+              "unit": "in"
+            },
+            {
+              "code": "neck_height",
+              "label": "Neck height",
+              "type": "number",
+              "unit": "in"
+            },
+            {
+              "code": "neck_area",
+              "label": "Neck area",
+              "type": "number",
+              "unit": "ft2"
+            },
+            {
+              "code": "ways",
+              "label": "Ways",
+              "type": "number",
+              "unit": null
+            },
+            {
+              "code": "neck_velocity",
+              "label": "Neck velocity",
+              "type": "number",
+              "unit": "fpm"
+            },
+            {
+              "code": "airflow",
+              "label": "Airflow",
+              "type": "number",
+              "unit": "cfm"
+            },
+            {
+              "code": "pressure_drop",
+              "label": "Pressure drop",
+              "type": "number",
+              "unit": "inH2O"
+            },
+            {
+              "code": "nc",
+              "label": "Nc",
+              "type": "number",
+              "unit": "NC"
+            },
+            {
+              "code": "side_airflow_a",
+              "label": "Side airflow a",
+              "type": "number",
+              "unit": "cfm"
+            },
+            {
+              "code": "side_airflow_b",
+              "label": "Side airflow b",
+              "type": "number",
+              "unit": "cfm"
+            },
+            {
+              "code": "throw_a_100fpm",
+              "label": "Throw a 100fpm",
+              "type": "number",
+              "unit": "ft"
+            },
+            {
+              "code": "throw_a_50fpm",
+              "label": "Throw a 50fpm",
+              "type": "number",
+              "unit": "ft"
+            },
+            {
+              "code": "throw_b_100fpm",
+              "label": "Throw b 100fpm",
+              "type": "number",
+              "unit": "ft"
+            },
+            {
+              "code": "throw_b_50fpm",
+              "label": "Throw b 50fpm",
+              "type": "number",
+              "unit": "ft"
+            }
+          ],
+          "row_key": [
+            "size_label",
+            "ways",
+            "neck_velocity"
+          ],
+          "context_schema": {
+            "type": "object"
+          },
+          "context_columns": [
+            "neck_width",
+            "neck_height",
+            "airflow"
+          ]
+        },
+        "operators": [
+          "eq",
+          "lt",
+          "lte",
+          "gt",
+          "gte"
+        ]
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "table": {
+          "schema_id": "alsharqa.scd.supply_patterns.v1",
+          "filters": [
+            {
+              "field": "size_label",
+              "value": "21x24"
+            },
+            {
+              "field": "ways",
+              "value": 1
+            },
+            {
+              "field": "neck_velocity",
+              "value": 700
+            },
+            {
+              "field": "side_airflow_b",
+              "value": 2452
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd",
+            "label": "Alsharqa SCD ceiling diffuser",
+            "matching_variant": "alsharqa.scd.21x24",
+            "evidence": {
+              "id": "alsharqa.scd.supply_patterns",
+              "schema_id": "alsharqa.scd.supply_patterns.v1",
+              "columns": [
+                {
+                  "code": "size_label",
+                  "label": "Size label",
+                  "type": "string",
+                  "unit": null
+                },
+                {
+                  "code": "ways",
+                  "label": "Ways",
+                  "type": "number",
+                  "unit": null
+                },
+                {
+                  "code": "neck_velocity",
+                  "label": "Neck velocity",
+                  "type": "number",
+                  "unit": "fpm"
+                },
+                {
+                  "code": "neck_width",
+                  "label": "Neck width",
+                  "type": "number",
+                  "unit": "in"
+                },
+                {
+                  "code": "neck_height",
+                  "label": "Neck height",
+                  "type": "number",
+                  "unit": "in"
+                },
+                {
+                  "code": "airflow",
+                  "label": "Airflow",
+                  "type": "number",
+                  "unit": "cfm"
+                },
+                {
+                  "code": "side_airflow_b",
+                  "label": "Side airflow b",
+                  "type": "number",
+                  "unit": "cfm"
+                }
+              ],
+              "context": {
+                "mode": "supply",
+                "room_effect_db": 8,
+                "throw_terminal_velocities_fpm": [
+                  100,
+                  50
+                ],
+                "pattern_labels": "SCD is printed for both square and rectangular performance tables"
+              },
+              "notes": [
+                "Original four-way 6x6, 9x9 and 12x12 records remain in alsharqa.scd.supply; this table contains the other patterns/sizes.",
+                "A/B are the directions in the published pattern diagram; a leading dash in a 1/2-way SCFM cell marks absent A, not negative airflow. A is not applicable there.",
+                "Published area, total/side airflow and throw pairs contain inconsistencies, including reversed throw pairs and non-monotonic series. Values are literal, not recalculated or corrected; do not infer physical consistency.",
+                "Examples: p.12 6x15 area 0.25 ft2; p.13 9x15 and p.14 9x18 area 0.25; p.16 12x24 area 0.25. These conflict with nominal dimensions and some return-table areas.",
+                "P.12 6x18 at 250 fpm: 3-way throw prints -94 and 2-way side airflow prints 13-18; these misplaced cells are unknown, not usable throws/airflow.",
+                "P.14 middle block labels 6x21 on the left and 9x21 on the right; width is unknown and that block has a separate ambiguous variant. Its first total flow prints 63 cfm."
+              ],
+              "source": {
+                "id": "alsharqa-ceiling-pdf9",
+                "label": "Alsharqa ceiling-diffusers, PDF p.9",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+              },
+              "rows": [
+                {
+                  "id": "alsharqa.scd.supply_patterns.r762",
+                  "variant_id": "alsharqa.scd.21x24",
+                  "values": [
+                    "21x24",
+                    1,
+                    700,
+                    21,
+                    24,
+                    2452,
+                    2452
+                  ],
+                  "source_ref": "alsharqa-ceiling-pdf18"
+                }
+              ],
+              "scope": "One matching published operating point; other matches may exist."
+            }
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply_patterns",
+            "columns": [
+              "side_airflow_b"
+            ],
+            "filters": [
+              {
+                "field": "size_label",
+                "value": "21x24"
+              },
+              {
+                "field": "ways",
+                "value": 1
+              },
+              {
+                "field": "neck_velocity",
+                "value": 700
+              }
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD ceiling diffuser",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply_patterns",
+                "schema_id": "alsharqa.scd.supply_patterns.v1",
+                "row_count": 763
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply_patterns",
+                "schema_id": "alsharqa.scd.supply_patterns.v1",
+                "columns": [
+                  {
+                    "code": "size_label",
+                    "label": "Size label",
+                    "type": "string",
+                    "unit": null
+                  },
+                  {
+                    "code": "ways",
+                    "label": "Ways",
+                    "type": "number",
+                    "unit": null
+                  },
+                  {
+                    "code": "neck_velocity",
+                    "label": "Neck velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "neck_width",
+                    "label": "Neck width",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "neck_height",
+                    "label": "Neck height",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "airflow",
+                    "label": "Airflow",
+                    "type": "number",
+                    "unit": "cfm"
+                  },
+                  {
+                    "code": "side_airflow_b",
+                    "label": "Side airflow b",
+                    "type": "number",
+                    "unit": "cfm"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ],
+                  "pattern_labels": "SCD is printed for both square and rectangular performance tables"
+                },
+                "notes": [
+                  "Original four-way 6x6, 9x9 and 12x12 records remain in alsharqa.scd.supply; this table contains the other patterns/sizes.",
+                  "A/B are the directions in the published pattern diagram; a leading dash in a 1/2-way SCFM cell marks absent A, not negative airflow. A is not applicable there.",
+                  "Published area, total/side airflow and throw pairs contain inconsistencies, including reversed throw pairs and non-monotonic series. Values are literal, not recalculated or corrected; do not infer physical consistency.",
+                  "Examples: p.12 6x15 area 0.25 ft2; p.13 9x15 and p.14 9x18 area 0.25; p.16 12x24 area 0.25. These conflict with nominal dimensions and some return-table areas.",
+                  "P.12 6x18 at 250 fpm: 3-way throw prints -94 and 2-way side airflow prints 13-18; these misplaced cells are unknown, not usable throws/airflow.",
+                  "P.14 middle block labels 6x21 on the left and 9x21 on the right; width is unknown and that block has a separate ambiguous variant. Its first total flow prints 63 cfm."
+                ],
+                "source": {
+                  "id": "alsharqa-ceiling-pdf9",
+                  "label": "Alsharqa ceiling-diffusers, PDF p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply_patterns.r762",
+                    "variant_id": "alsharqa.scd.21x24",
+                    "values": [
+                      "21x24",
+                      1,
+                      700,
+                      21,
+                      24,
+                      2452,
+                      2452
+                    ],
+                    "source_ref": "alsharqa-ceiling-pdf18"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.afvd"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.afvd.dimensions",
+            "columns": [
+              "blade_count"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.afvd",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "dampers.volume_control",
+            "brand_key": "alsharqa",
+            "model_code": "AFVD",
+            "label": "Alsharqa flanged volume control damper",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.afvd.dimensions",
+                "schema_id": "alsharqa.afvd.dimensions.v1",
+                "row_count": 22
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.afvd.dimensions",
+                "schema_id": "alsharqa.afvd.dimensions.v1",
+                "columns": [
+                  {
+                    "code": "width",
+                    "label": "Width",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "height",
+                    "label": "Height",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "blade_count",
+                    "label": "Blade count",
+                    "type": "number",
+                    "unit": null
+                  }
+                ],
+                "context": {
+                  "blade_action_standard": "parallel",
+                  "blade_action_option": "opposed",
+                  "operating_temperature_c": {
+                    "min": -40,
+                    "max": 100
+                  },
+                  "temperature_scope": "standard construction",
+                  "technical_context_pdf_page": 3
+                },
+                "notes": [
+                  "Rows preserve the published width/height/blade schedule; they do not assert an exhaustive set of orderable width-height combinations.",
+                  "The p.3 narrative says single blade up to 300 mm height, while the p.4 table lists two blades at 300 mm; the table is retained with this conflict disclosed."
+                ],
+                "source": {
+                  "id": "alsharqa-g-s-v-d-cat-pdf4",
+                  "label": "Alsharqa G.S.V.D-Cat, PDF p.4",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/G.S.V.D-Cat.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.afvd.dimensions.r1",
+                    "variant_id": "alsharqa.afvd.100x100",
+                    "values": [
+                      100,
+                      100,
+                      1
+                    ],
+                    "source_ref": "alsharqa-g-s-v-d-cat-pdf4"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": "pEZO62hAqvKwiDrRmfHX_Ngr3ZXNDD3aZzcBkQnzVFJ7Im9mZnNldCI6MSwicXVlcnkiOiIyNzZiYWNkMDg1YWNlYWI1OWNjMjYzZjU4YWYyZTUzMDRjZmMzOWMzNjc4ODFiYjc4YjUzODQ0OWExNWM1NzBhIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwNCtkMjhiNzc2NDYxNzUifQ=="
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.acvd-multiblade"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.acvd-multiblade.dimensions",
+            "columns": [
+              "blade_count"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.acvd-multiblade",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "dampers.volume_control",
+            "brand_key": "alsharqa",
+            "model_code": "ACVD",
+            "label": "Alsharqa circular-spigot multiblade volume control damper",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.acvd-multiblade.dimensions",
+                "schema_id": "alsharqa.acvd-multiblade.dimensions.v1",
+                "row_count": 16
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.acvd-multiblade.dimensions",
+                "schema_id": "alsharqa.acvd-multiblade.dimensions.v1",
+                "columns": [
+                  {
+                    "code": "width",
+                    "label": "Width",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "height",
+                    "label": "Height",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "blade_count",
+                    "label": "Blade count",
+                    "type": "number",
+                    "unit": null
+                  }
+                ],
+                "context": {
+                  "case_length_mm": 380,
+                  "operating_temperature_c": {
+                    "min": -40,
+                    "max": 100
+                  },
+                  "temperature_scope": "standard construction",
+                  "technical_context_pdf_page": 6
+                },
+                "notes": [
+                  "Rows preserve the published width/height/blade schedule; they do not assert an exhaustive set of orderable width-height combinations.",
+                  "A blue block obscures the lower part of the published schedule. Hidden cells are not inferred."
+                ],
+                "source": {
+                  "id": "alsharqa-g-s-v-d-cat-pdf7",
+                  "label": "Alsharqa G.S.V.D-Cat, PDF p.7",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/G.S.V.D-Cat.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.acvd-multiblade.dimensions.r1",
+                    "variant_id": "alsharqa.acvd-multiblade.100x100",
+                    "values": [
+                      100,
+                      100,
+                      1
+                    ],
+                    "source_ref": "alsharqa-g-s-v-d-cat-pdf7"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": "kBvgiqTRm4aCyXkUHgiyEfvpIQim3jsHo0BMyAdbLjB7Im9mZnNldCI6MSwicXVlcnkiOiIwZDg2Yzc3YzRkMzhlMDk5NjM5YmI5NjlkYmNkNDJlYjI5MTkyZTE5NGQ4MWE3ZTRiMGVhZTM5Nzg0OTNlMzBmIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwNCtkMjhiNzc2NDYxNzUifQ=="
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.splitter-damper"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.splitter-damper.dimension-rules",
+            "columns": [
+              "a_min"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.splitter-damper",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "dampers.splitter",
+            "brand_key": "alsharqa",
+            "model_code": "Splitter damper",
+            "label": "Alsharqa duct splitter damper",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.splitter-damper.dimension-rules",
+                "schema_id": "alsharqa.splitter-damper.dimension-rules.v1",
+                "row_count": 1
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.splitter-damper.dimension-rules",
+                "schema_id": "alsharqa.splitter-damper.dimension-rules.v1",
+                "columns": [
+                  {
+                    "code": "configuration",
+                    "label": "Configuration",
+                    "type": "string",
+                    "unit": null
+                  },
+                  {
+                    "code": "a_min",
+                    "label": "A min",
+                    "type": "number",
+                    "unit": "mm"
+                  }
+                ],
+                "context": {
+                  "trunk_division_rules": {
+                    "A": "((W3 * D3) / ((W2 * D2) + (W3 * D3))) * W1",
+                    "B": "((W2 * D2) / ((W2 * D2) + (W3 * D3))) * W1"
+                  },
+                  "symbol_reference": "W1 x D1, W2 x D2, W3 x D3 and A/B refer to the source branch sketch, PDF p.14.",
+                  "calculation_status": "published relationships only; not evaluated"
+                },
+                "notes": [
+                  "Symbols refer to the source branch sketch. No calculated dimensions, flow split or pressure-loss coefficients are supplied by this table."
+                ],
+                "source": {
+                  "id": "alsharqa-duct-work-pdf14",
+                  "label": "Alsharqa DUCT-WORK, PDF p.14",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/DUCT-WORK.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.splitter-damper.dimension-rules.r1",
+                    "variant_id": "alsharqa.splitter-damper.single-blade-standard-aerofoil-option",
+                    "values": [
+                      "single blade standard / aerofoil option",
+                      100
+                    ],
+                    "source_ref": "alsharqa-duct-work-pdf14"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.round-diffuser"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.round-diffuser.supply",
+            "columns": [
+              "airflow"
+            ],
+            "filters": [
+              {
+                "field": "nominal_in",
+                "value": 12
+              },
+              {
+                "field": "neck_velocity",
+                "value": 300
+              }
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-004+d28b77646175",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.round-diffuser",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.round_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SRD / RRD",
+            "label": "Alsharqa round diffuser",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.round-diffuser.supply",
+                "schema_id": "alsharqa.round-diffuser.supply.v1",
+                "row_count": 60
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.round-diffuser.supply",
+                "schema_id": "alsharqa.round-diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "nominal_in",
+                    "label": "Nominal in",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "neck_velocity",
+                    "label": "Neck velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "airflow",
+                    "label": "Airflow",
+                    "type": "number",
+                    "unit": "cfm"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_attenuation_status": "not supplied",
+                  "throw_terminal_velocities_status": "not supplied"
+                },
+                "notes": [
+                  "The table explicitly gives velocity pressure in inch W.G.; it does not repeat a unit for total pressure drop. Total-pressure cells remain unit-unspecified rather than silently assuming one.",
+                  "Throw pairs remain in printed order; terminal velocities and room attenuation are not defined in this catalog.",
+                  "The 12-inch / 300-fpm point prints 225 cfm, which does not equal its published neck area times velocity. The published flow is retained; no corrected operating point is inferred."
+                ],
+                "source": {
+                  "id": "alsharqa-round-diffusers-pdf5",
+                  "label": "Alsharqa Round-diffusers, PDF p.5",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Round-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.round-diffuser.supply.r31",
+                    "variant_id": "alsharqa.round-diffuser.12",
+                    "values": [
+                      12,
+                      300,
+                      225
+                    ],
+                    "source_ref": "alsharqa-round-diffusers-pdf5"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

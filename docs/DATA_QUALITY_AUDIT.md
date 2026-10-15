@@ -47,7 +47,7 @@ inspected but not saved. All five reports disclose their individual limitations.
 | P1 import error plus false source-defect note | Ceiling PDF p.18, 21x24 in, one-way, 700 fpm: published side B flow 2452 cfm; stored 2800. Stable row `alsharqa.scd.supply_patterns.r762`. Adjacent 800-fpm cell is 2800. | Corrected to 2452; removed the false note. All seven side-flow values checked. No inferred manufacturer repair. |
 | P2 missing operating limits | G.S.V.D-Cat pp.3/6: AFVD and multiblade ACVD standard construction temperature limits -40 to +100 C absent. | Added typed min/max temperature context, applicability and PDF-page locators. |
 | P2 incomplete splitter reference | DUCT-WORK p.14: published A/B trunk-division formulas missing from the geometry reference. | Added both literal formulas and drawing-symbol reference as context. No calculation or selection tool added. |
-| P2 stale installed skill | Installed alpha.1 skill described only the old partial SCD demo. | Skill source now directs agents to live discovery; clarifies batch table ownership and rounded exact-unit comparisons. Plugin alpha.2 prepared. |
+| P2 stale installed skill | Installed alpha.1 skill described only the old partial SCD demo. | Skill now directs agents to live discovery; clarifies batch table ownership and rounded exact-unit comparisons. Plugin alpha.2 published; existing clients need the updated package to load its revised skill. |
 | Source consistency concern, not import error | Round diffuser pp.5/6: 12-inch, 300 fpm prints 225 cfm despite neck area 0.785 ft2. | Preserved 225; added a note about the disagreement with area times velocity. No fabricated corrected row. |
 
 Only **one stored cell** changes between releases 003 and 004. All model, variant,
@@ -92,8 +92,17 @@ Local validation: **43 tests and lint passed**, all 22 source fingerprints verif
 Build outputs remain deterministic from reviewed literal input; OCR is not a
 runtime/build dependency. Original PDFs, rendered images and temporary OCR stay
 private. Test fixtures and compact audit reports contain engineering facts only.
-Hosted release verification and plugin publication are pending; see DEPLOYMENT.md
-for the last verified running release until those steps complete.
+Hosted release 004 is verified at revision `supplieratlas-demo-00005-hn8`, 100%
+traffic. Runtime commit `571db65c306c80f02fcaf0aad889286427b7202a`, CI run
+38753342609 passed tests and constrained-container checks. Seven native calls
+([post-deployment evidence](audits/postdeploy.json)) match validated local responses,
+comparing cursor presence rather than private signatures. Hosted SDK checks,
+health and unauthenticated 401 passed. Existing cost controls were read back unchanged.
+Plugin alpha.2 release commit `4459c6e20a1c8aeef1cc5424b42919041e818a9a` is pinned
+in marketplace commit `611a11709a54427b4b6389565df917d67e8f6e37`; 19 marketplace
+checks pass. Alpha.1 native tools were used for post-deployment checks and remain
+compatible. Fresh alpha.2 installation in this active client is not claimed.
+See DEPLOYMENT.md for the immutable image digest and release provenance.
 
 ## Evidence and remaining uncertainty
 

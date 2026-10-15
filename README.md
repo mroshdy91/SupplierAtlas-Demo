@@ -3,7 +3,8 @@
 Structured engineering product data for AI agents through three read-only MCP
 tools: `discover_catalog`, `search_products`, and `get_products`.
 
-[Release 002 verification and deployed image](docs/RELEASE_002.md).
+[Current deployment provenance](docs/DEPLOYMENT.md) and
+[five-reviewer data-quality audit](docs/DATA_QUALITY_AUDIT.md).
 
 The reviewed dataset spans all 22 Alsharqa catalogs: 37 models, 76 tables and
 3,707 engineering rows. It is a data service, not a suitability or supplier-rating
@@ -17,6 +18,12 @@ The unlabeled VCD matrix and obscured cells remain withheld; graphs are not digi
 Printed document dates are unknown. Original PDFs are not distributed here.
 Manufacturer data remains attributed to
 its source; no independent performance certification is claimed.
+
+Five fresh-context Sol reviews compared 1,798 sampled row/column values against
+rendered PDFs across all 76 tables and stressed retrieval semantics. One import
+error and two context omissions were corrected. All 43 tests pass, including the
+new source-sample fixture. Untested cells may still contain errors; see the audit
+for exact coverage, supplier inconsistencies and remaining limits.
 
 The public container includes backend code and this reviewed dataset. It does
 not contain deployment credentials. CI validates the structured package and runs

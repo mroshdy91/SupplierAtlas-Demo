@@ -7,19 +7,22 @@ region `us-central1`, service `supplieratlas-demo`.
 
 - MCP: https://supplieratlas-demo-524685338738.us-central1.run.app/mcp
 - Health: https://supplieratlas-demo-524685338738.us-central1.run.app/health
-- Ready revision: `supplieratlas-demo-00004-dfd` (100% traffic).
-- Catalog: `alsharqa-engineering-003+b7a55ea019a3` (37 models, 76 tables, 3,707 rows across 22 catalogs).
+- Ready revision: `supplieratlas-demo-00005-hn8` (100% traffic).
+- Catalog: `alsharqa-engineering-004+d28b77646175` (37 models, 76 tables, 3,707 rows across 22 catalogs).
 - Runtime source: https://github.com/mroshdy91/SupplierAtlas-Demo
-- Source revision: `fc65173d210529af3eda1f698e1198f0b7d2d4cd`.
-- Container: `ghcr.io/mroshdy91/supplieratlas-demo@sha256:c36889fdfbf9f41439afba4c27afbe5689f22f780a6ae4b983b40baf716e5289`.
-- CI run `38747553950`: 40 tests and constrained container checks passed.
-- Selection verification: 11 native installed-plugin calls exactly matched local
-  validated responses; hosted SDK checks, health and unauthenticated 401 passed.
+- Source revision: `571db65c306c80f02fcaf0aad889286427b7202a`.
+- Container: `ghcr.io/mroshdy91/supplieratlas-demo@sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6`.
+- CI run `38753342609`: 43 tests and constrained container checks passed.
+- Quality-audit verification: seven native installed-plugin calls matched local
+  validated responses (cursor presence compared separately); hosted SDK checks,
+  health and unauthenticated 401 passed. See DATA_QUALITY_AUDIT.md.
   Service/revision max 1, default min 0, CPU/memory/concurrency/timeout/throttling
   and startup-boost controls read back unchanged. Existing spend cap was not raised.
-- Plugin: https://github.com/mroshdy91/SupplierAtlas-Plugin/releases/tag/v0.1.0-alpha.1
-  commit `7227beee72a9103acf595bd8f27df60a8506723b`.
-- Atlas Marketplace main: `1425615c5ca82963dfe26f40fce193438987bbb4`.
+- Plugin: https://github.com/mroshdy91/SupplierAtlas-Plugin/releases/tag/v0.1.0-alpha.2
+  commit `4459c6e20a1c8aeef1cc5424b42919041e818a9a`; plugin release CI `38753155972` passed.
+- Atlas Marketplace main: `611a11709a54427b4b6389565df917d67e8f6e37`; 19 generation checks passed.
+- Existing alpha.1 connections receive the live data fixes. Updating the plugin
+  loads revised guidance; fresh alpha.2 installation in this active client is not claimed.
 
 Cloud Run allows public invocation; the application requires a bearer token for
 MCP. Health is public. Exactly three tools are exposed. This is a single-token
