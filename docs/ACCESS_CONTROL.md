@@ -112,6 +112,13 @@ necessary. No billing cap or paid plan was increased.
   an isolated random collection and cleans only its own documents. Concurrency,
   persistence and revocation passed; this caught a read-time Aborted retry gap.
 - Browser registration displays the one-time token and usage; no email sent.
+- Runtime 0.2.0a1 / supplieratlas-demo-00006-glh serves 100% traffic. CI 38767226888
+  passed 62 tests and constrained container HTTP checks. Hosted fresh personal
+  signup and six engineering calls passed, with exact counters, duplicate
+  protection and revocation verified. Owner SDK and three native plugin calls pass.
+- Existing gross Cloud Run cap read back CONFIGURED at $0.10 with credits excluded;
+  no cap increase. Plugin alpha.3 release CI 38767368856 passed. Existing clients
+  remain wire-compatible; a fresh alpha.3 installation has not been claimed.
 - Deployment uses deploy/deploy.ps1 with an immutable public GHCR digest, preserving
   private secrets and adding Firestore configuration. Never publish access.sqlite,
   account exports, runtime.env.yaml, credentials or original supplier PDFs.

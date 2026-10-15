@@ -266,7 +266,7 @@ must not require a plugin update when the public contract remains compatible.
 
 These sources inform the design. They do not prescribe our exact three-tool
 contract, and this plan makes no ETIM or ASHRAE compliance claim.
-## Access-control follow-up (2026-10-15; implemented locally, deployment pending)
+## Access-control follow-up (2026-10-15; deployed and verified)
 
 - Confirmed R22/R23: add request limits and email-based account registration with
   a personal token displayed on the page. The token authorizes access. Do not
@@ -277,6 +277,8 @@ contract, and this plan makes no ETIM or ASHRAE compliance claim.
   Firestore transactions; local development uses SQLite transactions. Defaults,
   accounting, schema and limitations are in ACCESS_CONTROL.md. 62 local tests
   and bounded real Firestore concurrency/persistence/revocation checks passed.
-- Finish container publication, hosted verification, plugin guidance release and
-  marketplace update before claiming delivery.
+- Runtime 0.2.0a1 deployed as supplieratlas-demo-00006-glh after CI 38767226888
+  passed tests/container checks. Hosted fresh signup, six engineering calls,
+  exact usage accounting, duplicate protection and revocation passed. Existing
+  owner SDK and three native plugin calls passed. Alpha.3 guidance released.
 

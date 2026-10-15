@@ -21,7 +21,7 @@ its source; no independent performance certification is claimed.
 
 Five fresh-context Sol reviews compared 1,798 sampled row/column values against
 rendered PDFs across all 76 tables and stressed retrieval semantics. One import
-error and two context omissions were corrected. All 43 tests pass, including the
+error and two context omissions were corrected. All 62 tests pass, including the
 new source-sample fixture. Untested cells may still contain errors; see the audit
 for exact coverage, supplier inconsistencies and remaining limits.
 

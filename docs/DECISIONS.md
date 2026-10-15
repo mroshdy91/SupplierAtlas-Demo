@@ -206,7 +206,10 @@ independent agent evaluation and other-client qualification remain outstanding.
   whole-transaction retry fixed it, then concurrency/persistence/revocation passed.
 - Last-day logs showed 558 requests (436 HTTP 200, 117 HTTP 202, five HTTP 401).
   This does not prove abuse, free-tier exhaustion or net charges. No spend-cap
-  increase is authorized or made. Publication/hosted verification follows tests.
+  increase is authorized or made. Runtime 0.2.0a1 is deployed and verified at
+  supplieratlas-demo-00006-glh. Hosted registration, six engineering calls with
+  exact usage counters, duplicate protection and revocation passed. Owner SDK
+  and all three native tools passed. Existing gross cap read back CONFIGURED.
 
 ## Superseded proposals
 

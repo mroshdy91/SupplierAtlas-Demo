@@ -116,7 +116,14 @@ is ambiguous, record it as an open question rather than inventing a rule.
   reports freeTier=true; dedicated runtime identity has roles/datastore.user.
   Local suite has 62 passing tests. Real Firestore concurrency/persistence/revocation
   checks pass after correcting retry handling for read-time transaction contention.
-  Runtime/publication and hosted verification are pending for this change.
+  Runtime 0.2.0a1 is live at revision supplieratlas-demo-00006-glh, 100% traffic.
+  Source 07ab0413dfff6dcbd8856285a62af1454e2990c5 / CI 38767226888 passed tests
+  and the constrained container check. Personal-token registration, all three MCP
+  tools (six calls), exact usage accounting, duplicate protection and revocation
+  passed on the hosted service. Owner SDK and three native plugin calls passed.
+  Existing $0.10 gross spend cap read back CONFIGURED; not raised. Plugin alpha.3
+  published at 344fbbbb3e27efe53c0a63f7c2a3484232cdfa90 (CI 38767368856).
+  See docs/ACCESS_CONTROL.md for limits, privacy and remaining cost boundaries.
 - R21: five fresh-context Sol reviews completed. All 22 fresh official PDF hashes
   match. Visual ledgers cover 1,798 row/column comparisons across 494 rows and all 76
   tables; this is sampling, not exhaustive transcription verification. API probes
@@ -146,12 +153,12 @@ is ambiguous, record it as an open question rather than inventing a rule.
   cells, complete pagination, response budgets, local HTTP and CI container checks
   passed. Hosted SDK checks and the installed plugin's three native tools passed.
 - Live catalog `alsharqa-engineering-004+d28b77646175`, revision
-  `supplieratlas-demo-00005-hn8`, 100% traffic. Runtime commit
-  `571db65c306c80f02fcaf0aad889286427b7202a`, CI run `38753342609`.
-  Image digest `sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6`.
-  Plugin v0.1.0-alpha.2 tag/commit `4459c6e20a1c8aeef1cc5424b42919041e818a9a`;
-  marketplace commit `611a11709a54427b4b6389565df917d67e8f6e37`. The data fixes
-  work with existing alpha.1; alpha.2 updates client guidance only.
+  `supplieratlas-demo-00006-glh`, 100% traffic. Runtime commit
+  `07ab0413dfff6dcbd8856285a62af1454e2990c5`, CI run `38767226888`.
+  Image digest `sha256:42b6480a6426529a9987d570faee2a054b969a920a40849510908cd49cd5a2c4`.
+  Plugin v0.1.0-alpha.3 tag/commit `344fbbbb3e27efe53c0a63f7c2a3484232cdfa90`;
+  marketplace commit `cdfd27e2c2380ec9384f96cb806239ff9fb5db2d`, 19 checks passed.
+  Existing clients remain wire-compatible; alpha.3 adds onboarding/quota guidance.
 - Cost controls retained: scale-to-zero, service max 1, 0.5 CPU / 256 MiB,
   concurrency 1, timeout 30, throttling on and startup boost off. Deployment script
   now explicitly sets revision max 1 as well as service max 1. Existing spend cap

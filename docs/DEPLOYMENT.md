@@ -7,26 +7,33 @@ region `us-central1`, service `supplieratlas-demo`.
 
 - MCP: https://supplieratlas-demo-524685338738.us-central1.run.app/mcp
 - Health: https://supplieratlas-demo-524685338738.us-central1.run.app/health
-- Ready revision: `supplieratlas-demo-00005-hn8` (100% traffic).
+- Ready revision: `supplieratlas-demo-00006-glh` (100% traffic), runtime `0.2.0a1`.
 - Catalog: `alsharqa-engineering-004+d28b77646175` (37 models, 76 tables, 3,707 rows across 22 catalogs).
 - Runtime source: https://github.com/mroshdy91/SupplierAtlas-Demo
-- Source revision: `571db65c306c80f02fcaf0aad889286427b7202a`.
-- Container: `ghcr.io/mroshdy91/supplieratlas-demo@sha256:8054376b80b631fedbe4996f4cb812802061ded025f19c68dc09c005e27074d6`.
-- CI run `38753342609`: 43 tests and constrained container checks passed.
+- Source revision: `07ab0413dfff6dcbd8856285a62af1454e2990c5`.
+- Container: `ghcr.io/mroshdy91/supplieratlas-demo@sha256:42b6480a6426529a9987d570faee2a054b969a920a40849510908cd49cd5a2c4`.
+- CI run `38767226888`: 62 tests and constrained container checks passed.
+- Personal access: hosted registration, all three tools (six calls), exact usage
+  counters, duplicate protection and revocation passed. Owner SDK and three native
+  installed-plugin calls passed. Portal at the service root. No emails sent.
 - Quality-audit verification: seven native installed-plugin calls matched local
   validated responses (cursor presence compared separately); hosted SDK checks,
   health and unauthenticated 401 passed. See DATA_QUALITY_AUDIT.md.
   Service/revision max 1, default min 0, CPU/memory/concurrency/timeout/throttling
   and startup-boost controls read back unchanged. Existing spend cap was not raised.
-- Plugin: https://github.com/mroshdy91/SupplierAtlas-Plugin/releases/tag/v0.1.0-alpha.2
-  commit `4459c6e20a1c8aeef1cc5424b42919041e818a9a`; plugin release CI `38753155972` passed.
-- Atlas Marketplace main: `611a11709a54427b4b6389565df917d67e8f6e37`; 19 generation checks passed.
+- Plugin: https://github.com/mroshdy91/SupplierAtlas-Plugin/releases/tag/v0.1.0-alpha.3
+  commit `344fbbbb3e27efe53c0a63f7c2a3484232cdfa90`; plugin release CI `38767368856` passed.
+- Atlas Marketplace main: `cdfd27e2c2380ec9384f96cb806239ff9fb5db2d`; 19 generation checks passed.
 - Existing alpha.1 connections receive the live data fixes. Updating the plugin
-  loads revised guidance; fresh alpha.2 installation in this active client is not claimed.
+  loads revised guidance; fresh alpha.3 installation in this active client is not claimed.
 
-Cloud Run allows public invocation; the application requires a bearer token for
-MCP. Health is public. Exactly three tools are exposed. This is a single-token
-demo, not a multi-user account system. The generated Cloud Run alternative URL
+Cloud Run allows public invocation; the application requires a personal bearer
+token for MCP/account access. The landing page, registration and health are public.
+Exactly three MCP tools are exposed. Persistent account/global limits use the
+private default Firestore database (freeTier=true); runtime identity is
+supplieratlas-runtime with roles/datastore.user. Existing owner token remains
+valid but metered. See ACCESS_CONTROL.md for defaults and cost boundaries.
+The generated Cloud Run alternative URL
 is not in the app host allowlist; clients must use the documented endpoint.
 
 ## Verified cost controls
