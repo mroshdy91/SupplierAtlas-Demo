@@ -283,3 +283,19 @@ This design intentionally avoids a hard-coded `air_outlets` table and an
 unvalidated collection of arbitrary property names. The same three tools remain
 the public interface. Database-engine migration is possible later, but not free:
 JSON queries, indexes and query semantics would need migration tests.
+## Private account metadata (2026-10-15; implemented)
+
+R23 requires email registration without sending or verifying emails. Store the
+entered email as unverified account metadata. Use an immutable account ID for
+token ownership and quota accounting, with token digests rather than plaintext
+tokens. An email address alone cannot authorize existing-account access or token
+replacement. Private Firestore documents in supplieratlas_access hold global
+fixed-window counters, email HMAC indexes and token-digest keyed account records.
+Each account has a stable random account_id, normalized email, email_verified=false,
+active flag, creation timestamp and current minute/day counters. The owner is a
+reserved account. Global state contains day/month HTTP, tool and signup counters
+plus total account count. Transactions atomically reserve usage before dispatch.
+Expired counters are overwritten in place: no unbounded per-request history.
+The engineering catalog stays a separate read-only SQLite snapshot. Access state
+is never shipped in the image or public repository. See ACCESS_CONTROL.md.
+

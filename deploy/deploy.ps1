@@ -21,7 +21,21 @@ if (-not (Test-Path -LiteralPath $runtimeFile)) {
     [System.IO.File]::WriteAllText($runtimeFile, $content)
     Remove-Variable token,cursorKey,content
 }
+$runtimeContent = [System.IO.File]::ReadAllText($runtimeFile)
+foreach ($setting in @{
+    SUPPLIER_ATLAS_ACCESS_BACKEND = 'firestore'
+    SUPPLIER_ATLAS_ACCESS_PROJECT = $projectId
+}.GetEnumerator()) {
+    $pattern = '(?m)^' + [regex]::Escape($setting.Key) + ':.*$'
+    $line = $setting.Key + ": '" + $setting.Value + "'"
+    if ([regex]::IsMatch($runtimeContent, $pattern)) {
+        $runtimeContent = [regex]::Replace($runtimeContent, $pattern, $line)
+    } else { $runtimeContent += "`n$line`n" }
+}
+[System.IO.File]::WriteAllText($runtimeFile, $runtimeContent)
+Remove-Variable runtimeContent
 & $Gcloud run deploy $serviceName --project=$projectId --region=$region --image=$Image `
+    --service-account="supplieratlas-runtime@$projectId.iam.gserviceaccount.com" `
     --allow-unauthenticated --min=0 --max=1 --min-instances=0 --max-instances=1 --cpu=0.5 --memory=256Mi `
     --concurrency=1 --timeout=30 --execution-environment=gen1 --no-cpu-boost `
     --cpu-throttling --env-vars-file=$runtimeFile --quiet

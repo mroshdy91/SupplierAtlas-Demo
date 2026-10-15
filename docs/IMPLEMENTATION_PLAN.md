@@ -266,3 +266,17 @@ must not require a plugin update when the public contract remains compatible.
 
 These sources inform the design. They do not prescribe our exact three-tool
 contract, and this plan makes no ETIM or ASHRAE compliance claim.
+## Access-control follow-up (2026-10-15; implemented locally, deployment pending)
+
+- Confirmed R22/R23: add request limits and email-based account registration with
+  a personal token displayed on the page. The token authorizes access. Do not
+  send verification emails or require proof of mailbox ownership.
+- Keep the three engineering MCP tools unchanged. Onboarding belongs to the web
+  interface. Email alone must not authorize access or token recovery/replacement.
+- Implemented persistent per-account/global quotas and signup throttling with
+  Firestore transactions; local development uses SQLite transactions. Defaults,
+  accounting, schema and limitations are in ACCESS_CONTROL.md. 62 local tests
+  and bounded real Firestore concurrency/persistence/revocation checks passed.
+- Finish container publication, hosted verification, plugin guidance release and
+  marketplace update before claiming delivery.
+

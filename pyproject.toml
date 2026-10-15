@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "supplier-atlas"
-version = "0.1.0a1"
+version = "0.2.0a1"
 description = "Read-only engineering product data over MCP"
 requires-python = ">=3.11"
-dependencies = ["mcp>=2.3,<3", "pydantic>=2.11,<3", "jsonschema>=4.23,<5"]
+dependencies = ["mcp>=2.3,<3", "pydantic>=2.11,<3", "jsonschema>=4.23,<5", "google-cloud-firestore>=2.21,<3"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "httpx>=0.28,<1", "ruff>=0.11", "tiktoken>=0.9"]

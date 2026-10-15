@@ -164,6 +164,50 @@ independent agent evaluation and other-client qualification remain outstanding.
 | Python, SQLite snapshots, Cloud Run, public demo backend/public plugin | Implemented and hosted; public container explicitly approved by user | Public GHCR avoids exhausted Google registry storage allowance; credentials/PDFs stay private |
 | Three-tool response defaults and generic typed-row schema | Assistant proposal based on research | Validate with the first datasheet and agent task tests |
 
+## Request limits and personal access (2026-10-15; requirements and proposals)
+
+- User requested stronger request limits and proposed CodeAtlas-style landing-page
+  onboarding by email to obtain a personal token. Recorded as R22. No abuse or
+  free-tier overage has been established by billing or request-log evidence.
+- Source inspection confirms one shared bearer token and a process-local limit
+  of 120 authenticated HTTP requests/minute. The counter resets with the process;
+  it is neither a per-user allowance nor a persistent daily/monthly quota.
+- User correction (R23): register with an email address, display a personal token
+  on the page, and authorize access using that token. No outbound email or mailbox
+  verification. This supersedes the assistant's verified-email proposal. Treat the
+  email as unverified metadata, never as proof of identity or authority to recover,
+  reveal, or replace an existing token. These are requirements, not deployed behavior.
+- Proposed: individually revocable tokens stored as hashes,
+  persistent atomic per-user and global quotas, burst limits, bounded signup and
+  token-authentication attempts, and minimal usage telemetry. Keep the three MCP tools;
+  onboarding and administrative controls belong outside the engineering tools.
+- Quota accounting should distinguish MCP tool calls from protocol traffic while
+  applying a separate HTTP abuse limit. Owner/test traffic must remain subject to
+  the global resource budget. Choose numeric allowances from measured usage.
+- Investigate rejection before the Cloud Run application and prevent origin
+  bypass if adding a gateway. Application-level 401/429 responses still involve
+  processing; personal tokens alone cannot guarantee zero infrastructure cost.
+- Preserve the existing gross-usage spend cap. Reaching this cap is not proof
+  that credits/free-tier allowances were exhausted. Check billing and traffic
+  evidence before attributing a stop or charge to abuse.
+- CodeAtlas's live onboarding could not be verified in this session: its web URL
+  was inaccessible through the web tool and its connector required reauthentication.
+  Its advertised connector metadata is not evidence of email verification.
+- User subsequently authorized implementation with "Ok proceed". Implemented
+  personal registration, token-only account authorization/revocation, atomic
+  account/global counters and compact 429 reset guidance. No email delivery.
+- Chosen implementation: the project's first/default Firestore Standard database
+  in us-central1 (provider returned freeTier=true), dedicated datastore.user runtime
+  identity, SQLite for local tests only. No additional paid gateway. R22/R23 do not
+  fix quota numbers; initial conservative configurable defaults are documented in
+  ACCESS_CONTROL.md. The existing owner token is retained but metered normally.
+- Full local suite: 62 tests and lint passed. Real Firestore concurrency testing
+  found read-time transaction Aborted was outside SDK commit retry handling; bounded
+  whole-transaction retry fixed it, then concurrency/persistence/revocation passed.
+- Last-day logs showed 558 requests (436 HTTP 200, 117 HTTP 202, five HTTP 401).
+  This does not prove abuse, free-tier exhaustion or net charges. No spend-cap
+  increase is authorized or made. Publication/hosted verification follows tests.
+
 ## Superseded proposals
 
 - Initial `get_performance`, `select_air_outlets`, and `get_source` tool set was

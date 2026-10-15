@@ -17,6 +17,7 @@ import sys
 from pathlib import Path
 Path(sys.argv[1]).write_text(
     'PORT=8080\nSUPPLIER_ATLAS_ALLOWED_HOSTS=127.0.0.1:*\n'
+    'SUPPLIER_ATLAS_ACCESS_BACKEND=sqlite\nSUPPLIER_ATLAS_ACCESS_DB=/tmp/access.sqlite\n'
     'SUPPLIER_ATLAS_TOKEN=' + secrets.token_urlsafe(48) + '\n'
     'SUPPLIER_ATLAS_CURSOR_KEY=' + secrets.token_urlsafe(48) + '\n')
 PY

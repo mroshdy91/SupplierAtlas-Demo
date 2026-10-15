@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SupplierAtlas — Engineering data for your agents</title><link rel="stylesheet" href="/portal.css">
+<script src="/portal.js" defer></script></head><body>
+<header><a class="brand" href="/">Supplier<span>Atlas</span></a><span class="badge">Engineering data · Public demo</span></header>
+<main><section class="intro"><p class="eyebrow">PUBLISHED DATA. CONNECTED AGENTS.</p>
+<h1>The product data<br>behind your next selection.</h1>
+<p class="lead">Give your AI agents access to structured supplier specifications and engineering tables, with the units and conditions that make them useful.</p>
+<div class="facts"><div><strong>37</strong><span>Alsharqa models</span></div><div><strong>76</strong><span>Engineering tables</span></div><div><strong>3</strong><span>Focused MCP tools</span></div></div>
+<p class="note">SupplierAtlas retrieves published data. Your engineer or agent evaluates suitability.</p>
+</section>
+<section class="access" aria-label="Account access"><div id="entry">
+<h2>Connect to SupplierAtlas</h2><p>Create an account with your email to get a personal access token. No verification email is sent.</p>
+<form id="register"><label for="email">Email address</label><input id="email" type="email" maxlength="254" required autocomplete="email" placeholder="you@example.com">
+<button type="submit">Create account & get token <span aria-hidden="true">→</span></button></form>
+<p class="privacy">We store your email as account metadata. We don’t verify mailbox ownership or send emails. Keep your token safe: email alone cannot recover it.</p>
+<div class="divider">Already have a token?</div>
+<form id="authorize"><label for="token">Access token</label><input id="token" type="password" required autocomplete="off" spellcheck="false" placeholder="Paste your token">
+<button class="secondary" type="submit">Authorize access</button></form></div>
+<div id="account" hidden><p class="eyebrow">AUTHORIZED</p><h2>Your connection is ready</h2>
+<div id="issued" hidden><label for="new-token">Save your token — shown only now</label><textarea id="new-token" rows="4" readonly spellcheck="false"></textarea><button id="copy" class="secondary">Copy token</button><p class="privacy">Save it in a password manager. It won’t be emailed or stored in this browser.</p></div>
+<div class="usage"><strong id="remaining">—</strong><span>tool calls remaining today</span><p id="reset"></p><p id="shared"></p></div>
+<h3>Connect your agent</h3><ol><li>Install <a href="https://github.com/mroshdy91/Atlas-Marketplace" rel="noreferrer" target="_blank">SupplierAtlas from Atlas Marketplace</a>.</li><li>Use your token as the Bearer credential for the MCP endpoint below. For the Codex plugin, set <code>SUPPLIER_ATLAS_TOKEN</code> in its environment and restart the client.</li></ol>
+<label for="endpoint">MCP endpoint</label><input id="endpoint" readonly>
+<p class="privacy">Authorizing this page shows your account. Configure the token in your agent separately. All accounts share the demo’s overall allowance.</p>
+<div class="actions"><button id="refresh" class="secondary">Refresh usage</button><button id="logout" class="secondary">Sign out</button></div>
+<details><summary>Revoke this token</summary><p>This permanently stops this token from working. Email alone cannot restore access.</p><label class="check"><input id="confirm-revoke" type="checkbox">I understand this ends my access.</label><button id="revoke" class="danger">Revoke token</button></details></div>
+<p id="message" role="status" aria-live="polite"></p></section></main>
+<footer><span>Engineering essentials. No advertising tables.</span><span>Discovery → Search → Retrieval</span></footer></body></html>

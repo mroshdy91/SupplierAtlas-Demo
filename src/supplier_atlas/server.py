@@ -75,7 +75,7 @@ class AccessGate:
         await self.app(scope, receive, send)
 
 
-def create_app(catalog, token=None, allowed_hosts=None):
+def create_app(catalog, token=None, allowed_hosts=None, access=None):
     server = create_server(catalog)
     app = server.streamable_http_app(stateless_http=True, json_response=True, max_request_body_size=65536,
         transport_security=TransportSecuritySettings(allowed_hosts=allowed_hosts or ["127.0.0.1:*", "localhost:*", "testserver"],
@@ -87,6 +87,9 @@ def create_app(catalog, token=None, allowed_hosts=None):
         return JSONResponse({"status": "ok", "service_version": __version__, "catalog_version": version})
 
     app.routes.append(Route("/health", health))
+    if access:
+        from .portal import PortalGate
+        return PortalGate(app, access, allowed_hosts or ["127.0.0.1:*", "localhost:*", "testserver"])
     return AccessGate(app, token)
 
 
@@ -106,7 +109,20 @@ def main():
     if args.transport == "stdio":
         create_server(catalog).run()
     else:
-        uvicorn.run(create_app(catalog, token, hosts.split(",") if hosts else None), host=args.host, port=args.port,
+        access = None
+        backend = os.environ.get("SUPPLIER_ATLAS_ACCESS_BACKEND")
+        if backend:
+            from .access import AccessService, FirestoreAccessStore, Limits, SQLiteAccessStore
+            if backend == "firestore":
+                store = FirestoreAccessStore(os.environ["SUPPLIER_ATLAS_ACCESS_PROJECT"])
+            elif backend == "sqlite" and not os.environ.get("K_SERVICE"):
+                store = SQLiteAccessStore(os.environ.get("SUPPLIER_ATLAS_ACCESS_DB", "data/access.sqlite"))
+            else:
+                parser.error("Access backend must be firestore (hosted) or sqlite (local development only)")
+            access = AccessService(store, key, token, Limits.from_env())
+        if os.environ.get("K_SERVICE") and not access:
+            parser.error("Hosted service requires durable access storage")
+        uvicorn.run(create_app(catalog, token, hosts.split(",") if hosts else None, access), host=args.host, port=args.port,
                     access_log=False)
 
 

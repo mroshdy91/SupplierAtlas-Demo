@@ -48,3 +48,10 @@ The operator can deploy an immutable public GHCR digest using
 `deploy/deploy.ps1 -Image ghcr.io/mroshdy91/supplieratlas-demo@sha256:...`.
 It uses the existing local Google CLI authorization and private runtime environment
 file, and keeps service/revision instance maxima at one. No manual file upload is required.
+# Personal access
+
+Open https://supplieratlas-demo-524685338738.us-central1.run.app/ to register using
+an email address and receive a personal token on the page. No email is sent.
+Use the token on the account page and separately in your MCP client's Bearer
+configuration. See docs/ACCESS_CONTROL.md for quotas, persistence and cost limits.
+

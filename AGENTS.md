@@ -32,6 +32,17 @@ Recorded from the project conversation on 2026-10-15:
 | R19 | Expand Alsharqa coverage to all published product families, retaining engineering tables and necessary technical context only. | "add the rest of Alsharqa engineering tables"; scope clarification: "All published product families" |
 | R20 | Test the installed plugin using realistic engineering selection tasks, measuring token efficiency while checking that essential engineering context is retained. | "test the plugin like an engineer doing a real selection"; "minimum tokens and no missing engineering context" |
 | R21 | Use five Sol subagents for intensive plugin edge-case tests and independent comparisons with the actual supplier PDFs, focusing on data quality and possible OCR errors. | "rais 5 sol subagents"; "checking the information realibility aganist the actual pdf"; "really care about the data quality" |
+| R22 | Strengthen request limits to protect the free-tier hosting target. Consider a CodeAtlas-style landing page and email-based personal-token issuance. | "we need to limit the requests"; "landing page and email so the user get token"; user requested discussion of this direction. |
+| R23 | Register accounts using an email address and issue a personal token on the page. Use the token to authorize access; do not send emails or require mailbox verification. | "no need to make email verification"; "we will not send anything to emails"; "make account using an email to get the token"; "put that token in the page so he get authorized" |
+
+Access-control discussion: abuse and free-tier exhaustion are suspected, not
+verified. Email registration without verification and token-based access are
+confirmed by R23 and authorized for implementation by "Ok proceed". Current
+quota values and Firestore storage are assistant-selected implementation defaults,
+not fixed user requirements; see docs/ACCESS_CONTROL.md. No edge gateway is deployed.
+An entered email is unverified metadata, not proof of mailbox ownership or an
+authorization/recovery credential. The existing
+USD 0.10 gross-usage spend cap is distinct from net billed charges after credits.
 
 ## Tool boundaries
 
@@ -99,6 +110,13 @@ is ambiguous, record it as an open question rather than inventing a rule.
 
 ## Current project state
 
+- R22/R23 access implementation: registration without email delivery, personal
+  signed bearer tokens stored only as digests, account page and revocation,
+  transactional account/global quotas. Firestore default database in us-central1
+  reports freeTier=true; dedicated runtime identity has roles/datastore.user.
+  Local suite has 62 passing tests. Real Firestore concurrency/persistence/revocation
+  checks pass after correcting retry handling for read-time transaction contention.
+  Runtime/publication and hosted verification are pending for this change.
 - R21: five fresh-context Sol reviews completed. All 22 fresh official PDF hashes
   match. Visual ledgers cover 1,798 row/column comparisons across 494 rows and all 76
   tables; this is sampling, not exhaustive transcription verification. API probes
