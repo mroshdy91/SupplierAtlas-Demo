@@ -1,5 +1,17 @@
 # SupplierAtlas database design
 
+## Source-quality validation (2026-10-15)
+
+Fresh-context reviewers compare rendered originals with explicit row/column
+expectations. Audit ledgers distinguish visual samples from automatic extraction,
+source inconsistencies from import defects, and inspected from untested coverage.
+`tests/fixtures/alsharqa_visual_samples.json` is derived from those expectations,
+never from generated catalog values. It validates value/table/source identities.
+Context regressions cover published operating limits and literal geometry rules.
+No new database column or public tool is needed: temperature ranges and unevaluated
+formulas are typed table context. A source correction changes the catalog release
+hash, preserves stable row IDs, and records the before/after evidence in audit docs.
+
 ## Selection-driven projection requirements (2026-10-15)
 
 Optional schema `context_columns` lists existing columns whose values are necessary

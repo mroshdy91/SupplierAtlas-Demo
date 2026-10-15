@@ -1,0 +1,203 @@
+{
+  "date": "2026-10-15",
+  "checks": [
+    {
+      "file": "Access-door.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Access-door.pdf",
+      "recorded_sha256": "00e22d6a6ba34e18425e500ec9dae6f94024ea91596959e33f1e416a191b4cf9",
+      "local_sha256": "00e22d6a6ba34e18425e500ec9dae6f94024ea91596959e33f1e416a191b4cf9",
+      "remote_sha256": "00e22d6a6ba34e18425e500ec9dae6f94024ea91596959e33f1e416a191b4cf9",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Air-louvers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Air-louvers.pdf",
+      "recorded_sha256": "826033658ec6f56812b43c73f2cbb4357e50ee2b1f5ae5ea99155a93f5881bf1",
+      "local_sha256": "826033658ec6f56812b43c73f2cbb4357e50ee2b1f5ae5ea99155a93f5881bf1",
+      "remote_sha256": "826033658ec6f56812b43c73f2cbb4357e50ee2b1f5ae5ea99155a93f5881bf1",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "DUCT-WORK.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/DUCT-WORK.pdf",
+      "recorded_sha256": "e32a92e60cc39f7c02c47113d355cc5ec0dbdbe8c680db39f80e835cde029e74",
+      "local_sha256": "e32a92e60cc39f7c02c47113d355cc5ec0dbdbe8c680db39f80e835cde029e74",
+      "remote_sha256": "e32a92e60cc39f7c02c47113d355cc5ec0dbdbe8c680db39f80e835cde029e74",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Fire-Damper-.-.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Fire-Damper-.-.pdf",
+      "recorded_sha256": "541c117b41fc9d7085513774f4c8b2b239f8c8eff3dac2d0425d7436293d227d",
+      "local_sha256": "541c117b41fc9d7085513774f4c8b2b239f8c8eff3dac2d0425d7436293d227d",
+      "remote_sha256": "541c117b41fc9d7085513774f4c8b2b239f8c8eff3dac2d0425d7436293d227d",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "G.S.V.D-Cat.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/G.S.V.D-Cat.pdf",
+      "recorded_sha256": "cfc03d4355bbca5f82eaa7b6b7970e0e83ebced58e7fa8ad337dbe4fc642fa41",
+      "local_sha256": "cfc03d4355bbca5f82eaa7b6b7970e0e83ebced58e7fa8ad337dbe4fc642fa41",
+      "remote_sha256": "cfc03d4355bbca5f82eaa7b6b7970e0e83ebced58e7fa8ad337dbe4fc642fa41",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Grilles-_-registers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf",
+      "recorded_sha256": "b3ddfdda1ef2fbda1bbeb42b4d3040fe228ee1da8f7f127e7a088a16544cc7ef",
+      "local_sha256": "b3ddfdda1ef2fbda1bbeb42b4d3040fe228ee1da8f7f127e7a088a16544cc7ef",
+      "remote_sha256": "b3ddfdda1ef2fbda1bbeb42b4d3040fe228ee1da8f7f127e7a088a16544cc7ef",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Jet-diffusers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Jet-diffusers.pdf",
+      "recorded_sha256": "01a5112106accf67880baa821a4cd8f798b46b412ec20b83ef6bf0da38733fc5",
+      "local_sha256": "01a5112106accf67880baa821a4cd8f798b46b412ec20b83ef6bf0da38733fc5",
+      "remote_sha256": "01a5112106accf67880baa821a4cd8f798b46b412ec20b83ef6bf0da38733fc5",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Light-troffer-diffusers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf",
+      "recorded_sha256": "51d20fa6a4af9cfc477061c89d602e86bb6ffaa496c5818e45ce482a19dc0751",
+      "local_sha256": "51d20fa6a4af9cfc477061c89d602e86bb6ffaa496c5818e45ce482a19dc0751",
+      "remote_sha256": "51d20fa6a4af9cfc477061c89d602e86bb6ffaa496c5818e45ce482a19dc0751",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Linear-bar-grilles-_-registers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf",
+      "recorded_sha256": "69613a365ff434e738ab29b294da8d2f3b0e6ddc27a5c6218ff21a7c00367fc0",
+      "local_sha256": "69613a365ff434e738ab29b294da8d2f3b0e6ddc27a5c6218ff21a7c00367fc0",
+      "remote_sha256": "69613a365ff434e738ab29b294da8d2f3b0e6ddc27a5c6218ff21a7c00367fc0",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Linear-slot-diffuser.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-slot-diffuser.pdf",
+      "recorded_sha256": "09e9f9191c1eb45dc34158d6e1c49e97d2e6428e99497dfb734f883424ff4f18",
+      "local_sha256": "09e9f9191c1eb45dc34158d6e1c49e97d2e6428e99497dfb734f883424ff4f18",
+      "remote_sha256": "09e9f9191c1eb45dc34158d6e1c49e97d2e6428e99497dfb734f883424ff4f18",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Motorized-Fire-Smoke-Damper.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Motorized-Fire-Smoke-Damper.pdf",
+      "recorded_sha256": "f84b69392591773946e7f6ed1286e3a0b028371b92389a736d20643619fc7e89",
+      "local_sha256": "f84b69392591773946e7f6ed1286e3a0b028371b92389a736d20643619fc7e89",
+      "remote_sha256": "f84b69392591773946e7f6ed1286e3a0b028371b92389a736d20643619fc7e89",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "ROUND-SWIRL-DIFFUSER.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/ROUND-SWIRL-DIFFUSER.pdf",
+      "recorded_sha256": "9eb64dd30ce7d65c17163d3c0ac55a962d045afe416e064ca1573ed158088f32",
+      "local_sha256": "9eb64dd30ce7d65c17163d3c0ac55a962d045afe416e064ca1573ed158088f32",
+      "remote_sha256": "9eb64dd30ce7d65c17163d3c0ac55a962d045afe416e064ca1573ed158088f32",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Round-Volume-Damper.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Round-Volume-Damper.pdf",
+      "recorded_sha256": "a117b872cd9ce804f14fbe52ad7c2615e1765735e9d7410925ec87b86ef870e7",
+      "local_sha256": "a117b872cd9ce804f14fbe52ad7c2615e1765735e9d7410925ec87b86ef870e7",
+      "remote_sha256": "a117b872cd9ce804f14fbe52ad7c2615e1765735e9d7410925ec87b86ef870e7",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Round-diffusers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Round-diffusers.pdf",
+      "recorded_sha256": "8d205a3adb95b3078d838ec83c6e2423f0fcd8b656e0a4b919e563701066f5c6",
+      "local_sha256": "8d205a3adb95b3078d838ec83c6e2423f0fcd8b656e0a4b919e563701066f5c6",
+      "remote_sha256": "8d205a3adb95b3078d838ec83c6e2423f0fcd8b656e0a4b919e563701066f5c6",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Sound-attenuators.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Sound-attenuators.pdf",
+      "recorded_sha256": "884f632d155b383529ab244b849c1e41ce8a25a690b0799464aa1c01f61e8f0e",
+      "local_sha256": "884f632d155b383529ab244b849c1e41ce8a25a690b0799464aa1c01f61e8f0e",
+      "remote_sha256": "884f632d155b383529ab244b849c1e41ce8a25a690b0799464aa1c01f61e8f0e",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "VOLUM-DAMPER-_PRESSURE-DROP.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/VOLUM-DAMPER-_PRESSURE-DROP.pdf",
+      "recorded_sha256": "96b17f13cec68ef0feda55ec20e02ff033377459a2d1590eeae60503ec7f7b64",
+      "local_sha256": "96b17f13cec68ef0feda55ec20e02ff033377459a2d1590eeae60503ec7f7b64",
+      "remote_sha256": "96b17f13cec68ef0feda55ec20e02ff033377459a2d1590eeae60503ec7f7b64",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "ceiling-diffusers.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf",
+      "recorded_sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+      "local_sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+      "remote_sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "disc-valve.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2025/04/disc-valve.pdf",
+      "recorded_sha256": "8aa7cf98b013c444188fc36540a1b5f007b560c484d04a9b95bd50c3d3231ffd",
+      "local_sha256": "8aa7cf98b013c444188fc36540a1b5f007b560c484d04a9b95bd50c3d3231ffd",
+      "remote_sha256": "8aa7cf98b013c444188fc36540a1b5f007b560c484d04a9b95bd50c3d3231ffd",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Ball-jet-Diffuser.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2026/02/Ball-jet-Diffuser.pdf",
+      "recorded_sha256": "a66964312ecfbab4f4ef73671bf9eae7239139387061a1fc49c0bee2456abc01",
+      "local_sha256": "a66964312ecfbab4f4ef73671bf9eae7239139387061a1fc49c0bee2456abc01",
+      "remote_sha256": "a66964312ecfbab4f4ef73671bf9eae7239139387061a1fc49c0bee2456abc01",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Drum-Diffuser.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2026/02/Drum-Diffuser.pdf",
+      "recorded_sha256": "ce63ae3e40d99e6979e1cf0a7b00add27cb1c59ff22c1fb7ae04800bc9f0be6f",
+      "local_sha256": "ce63ae3e40d99e6979e1cf0a7b00add27cb1c59ff22c1fb7ae04800bc9f0be6f",
+      "remote_sha256": "ce63ae3e40d99e6979e1cf0a7b00add27cb1c59ff22c1fb7ae04800bc9f0be6f",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "Flow-Bar-Diffuser.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf",
+      "recorded_sha256": "8dc18d71df7c5af815fbbb55c09177d88d8eada42d1ca0c6f9a8c17705e73f60",
+      "local_sha256": "8dc18d71df7c5af815fbbb55c09177d88d8eada42d1ca0c6f9a8c17705e73f60",
+      "remote_sha256": "8dc18d71df7c5af815fbbb55c09177d88d8eada42d1ca0c6f9a8c17705e73f60",
+      "pdf_signature": true,
+      "matches_recorded": true
+    },
+    {
+      "file": "NON-RETURN-DAMPER.pdf",
+      "url": "https://alsharqa.com/wp-content/uploads/2026/02/NON-RETURN-DAMPER.pdf",
+      "recorded_sha256": "3e2b4a8656edb2afe51481d25bc6b70f8e041ee236204275b96e5780f112817e",
+      "local_sha256": "3e2b4a8656edb2afe51481d25bc6b70f8e041ee236204275b96e5780f112817e",
+      "remote_sha256": "3e2b4a8656edb2afe51481d25bc6b70f8e041ee236204275b96e5780f112817e",
+      "pdf_signature": true,
+      "matches_recorded": true
+    }
+  ]
+}

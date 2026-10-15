@@ -4,6 +4,11 @@ Updated: 2026-10-15. Status: hosted demo live; published marketplace plugin inst
 
 ## Implemented progress
 
+- Five user-requested Sol audits completed against original PDFs and installed
+  plugin. Corrected one source transcription and two engineering-context omissions.
+  Added independently read1,798-field regression fixture;43 local tests/lint pass.
+  See DATA_QUALITY_AUDIT.md for scoped evidence and remaining untested cells.
+  Release004 and plugin guidance alpha.2 are prepared; hosted verification pending.
 - Guided installed-plugin selection trial completed: seven scoped engineering
   scenarios and 32 native calls. Projection context and empty-result diagnostics
   improved; local replay, regression and token results in SELECTION_EVALUATION.md.

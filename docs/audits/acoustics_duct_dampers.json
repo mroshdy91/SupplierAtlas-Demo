@@ -1,0 +1,1554 @@
+{
+  "reviewer": "reviewer4",
+  "baseline": "alsharqa-engineering-003+b7a55ea019a3",
+  "scope": {
+    "pdf_files": 8,
+    "total_pdf_pages": 80,
+    "imported_tables": 26,
+    "imported_rows": 646
+  },
+  "counts": {
+    "visual_fixture_rows": 70,
+    "visual_fixture_cells": 217,
+    "visual_fixture_mismatches": 0,
+    "automated_pdf_text_cells": 360,
+    "automated_pdf_text_mismatches": 0,
+    "native_calls": 15,
+    "native_successful_calls": 14,
+    "native_expected_invalid_schema": 1,
+    "sqlite_json_rows": 646,
+    "sqlite_json_mismatches": 0
+  },
+  "checks": [
+    {
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r1",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "pdf": "VOLUM-DAMPER-_PRESSURE-DROP.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "l": 200,
+        "w": 204,
+        "blade_count": 2,
+        "drive_arm_x": 52
+      },
+      "database": {
+        "l": 200,
+        "w": 204,
+        "blade_count": 2,
+        "drive_arm_x": 52
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r5",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "pdf": "VOLUM-DAMPER-_PRESSURE-DROP.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "l": 600,
+        "w": 604,
+        "drive_arm_x": 252
+      },
+      "database": {
+        "l": 600,
+        "w": 604,
+        "drive_arm_x": 252
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r9",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "pdf": "VOLUM-DAMPER-_PRESSURE-DROP.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "l": 1000,
+        "w": 1004,
+        "drive_arm_x": 452
+      },
+      "database": {
+        "l": 1000,
+        "w": 1004,
+        "drive_arm_x": 452
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.access-door.dimensions",
+      "row_id": "alsharqa.access-door.dimensions.r1",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "pdf": "Access-door.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "nominal_size": 6,
+        "neck_width": 4.875,
+        "cam_locks": 1
+      },
+      "database": {
+        "nominal_size": 6,
+        "neck_width": 4.875,
+        "cam_locks": 1
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.access-door.dimensions",
+      "row_id": "alsharqa.access-door.dimensions.r4",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "pdf": "Access-door.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "b": {
+          "status": "unknown"
+        }
+      },
+      "database": {
+        "b": {
+          "status": "unknown"
+        }
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": "Unknown-status fixtures verify withholding policy, not literal numeric equality"
+    },
+    {
+      "table_id": "alsharqa.access-door.dimensions",
+      "row_id": "alsharqa.access-door.dimensions.r5",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "pdf": "Access-door.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "a": 14,
+        "b": 14,
+        "neck_width": 12.875
+      },
+      "database": {
+        "a": 14,
+        "b": 14,
+        "neck_width": 12.875
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.access-door.dimensions",
+      "row_id": "alsharqa.access-door.dimensions.r9",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "pdf": "Access-door.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "a": 24,
+        "neck_width": 22.875,
+        "cam_locks": 2
+      },
+      "database": {
+        "a": 24,
+        "neck_width": 22.875,
+        "cam_locks": 2
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.afvd.dimensions",
+      "row_id": "alsharqa.afvd.dimensions.r1",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 4,
+      "expected": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      },
+      "database": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.afvd.dimensions",
+      "row_id": "alsharqa.afvd.dimensions.r5",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 4,
+      "expected": {
+        "width": 300,
+        "height": 300,
+        "blade_count": 2
+      },
+      "database": {
+        "width": 300,
+        "height": 300,
+        "blade_count": 2
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.afvd.dimensions",
+      "row_id": "alsharqa.afvd.dimensions.r12",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 4,
+      "expected": {
+        "width": 650,
+        "height": 800,
+        "blade_count": 5
+      },
+      "database": {
+        "width": 650,
+        "height": 800,
+        "blade_count": 5
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.afvd.dimensions",
+      "row_id": "alsharqa.afvd.dimensions.r22",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 4,
+      "expected": {
+        "width": 1200,
+        "height": 1800,
+        "blade_count": 12
+      },
+      "database": {
+        "width": 1200,
+        "height": 1800,
+        "blade_count": 12
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r1",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      },
+      "database": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r9",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "width": 500,
+        "height": 500,
+        "blade_count": 3
+      },
+      "database": {
+        "width": 500,
+        "height": 500,
+        "blade_count": 3
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r16",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "width": 850,
+        "height": 1150,
+        "blade_count": 7
+      },
+      "database": {
+        "width": 850,
+        "height": 1150,
+        "blade_count": 7
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-round.diameters",
+      "row_id": "alsharqa.acvd-round.diameters.r1",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 9,
+      "expected": {
+        "diameter": 80
+      },
+      "database": {
+        "diameter": 80
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-round.diameters",
+      "row_id": "alsharqa.acvd-round.diameters.r11",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 9,
+      "expected": {
+        "diameter": 280
+      },
+      "database": {
+        "diameter": 280
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.acvd-round.diameters",
+      "row_id": "alsharqa.acvd-round.diameters.r20",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_page": 9,
+      "expected": {
+        "diameter": 610
+      },
+      "database": {
+        "diameter": 610
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "row_id": "alsharqa.mrp.flow-dimensions.r1",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "pdf": "Round-Volume-Damper.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "diameter": 80,
+        "allowable_flow_min": 40,
+        "allowable_flow_max": 125,
+        "optimum_min_printed": 50,
+        "optimum_max_printed": 108,
+        "l1": 120,
+        "l2": 40
+      },
+      "database": {
+        "diameter": 80,
+        "allowable_flow_min": 40,
+        "allowable_flow_max": 125,
+        "optimum_min_printed": 50,
+        "optimum_max_printed": 108,
+        "l1": 120,
+        "l2": 40
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "row_id": "alsharqa.mrp.flow-dimensions.r5",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "pdf": "Round-Volume-Damper.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "diameter": 160,
+        "l1": 240,
+        "l2": 40
+      },
+      "database": {
+        "diameter": 160,
+        "l1": 240,
+        "l2": 40
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "row_id": "alsharqa.mrp.flow-dimensions.r9",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "pdf": "Round-Volume-Damper.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "diameter": 400,
+        "allowable_flow_max": 3800,
+        "optimum_max_printed": 2850,
+        "l1": 295,
+        "l2": 60
+      },
+      "database": {
+        "diameter": 400,
+        "allowable_flow_max": 3800,
+        "optimum_max_printed": 2850,
+        "l1": 295,
+        "l2": 60
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.kul.technical-data",
+      "row_id": "alsharqa.kul.technical-data.r1",
+      "source_ref": "alsharqa-non-return-damper-pdf3",
+      "pdf": "NON-RETURN-DAMPER.pdf",
+      "pdf_page": 3,
+      "expected": {
+        "width_min": 200,
+        "height_min": 215,
+        "width_max": 1600,
+        "height_max": 1615,
+        "airflow_min": 110,
+        "airflow_max": 6460,
+        "face_velocity": 2.5,
+        "fresh_air_pressure_drop": 25,
+        "exhaust_air_pressure_drop": {
+          "status": "unknown"
+        }
+      },
+      "database": {
+        "width_min": 200,
+        "height_min": 215,
+        "width_max": 1600,
+        "height_max": 1615,
+        "airflow_min": 110,
+        "airflow_max": 6460,
+        "face_velocity": 2.5,
+        "fresh_air_pressure_drop": 25,
+        "exhaust_air_pressure_drop": {
+          "status": "unknown"
+        }
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": "Unknown-status fixtures verify withholding policy, not literal numeric equality"
+    },
+    {
+      "table_id": "alsharqa.air-louver.pressure",
+      "row_id": "alsharqa.air-louver.pressure.r1",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "face_velocity": 1.25,
+        "exhaust_pressure": 0.248,
+        "intake_pressure": -0.35
+      },
+      "database": {
+        "face_velocity": 1.25,
+        "exhaust_pressure": 0.248,
+        "intake_pressure": -0.35
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.air-louver.pressure",
+      "row_id": "alsharqa.air-louver.pressure.r5",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "face_velocity": 3,
+        "exhaust_pressure": 1.151,
+        "intake_pressure": -1.69
+      },
+      "database": {
+        "face_velocity": 3,
+        "exhaust_pressure": 1.151,
+        "intake_pressure": -1.69
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.air-louver.pressure",
+      "row_id": "alsharqa.air-louver.pressure.r9",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "face_velocity": 4.5,
+        "exhaust_pressure": 3.29,
+        "intake_pressure": -3.85
+      },
+      "database": {
+        "face_velocity": 4.5,
+        "exhaust_pressure": 3.29,
+        "intake_pressure": -3.85
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.air-louver.effective-area",
+      "row_id": "alsharqa.air-louver.effective-area.r1",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "height": 300,
+        "width": 300,
+        "effective_pressure_area": 0.038
+      },
+      "database": {
+        "height": 300,
+        "width": 300,
+        "effective_pressure_area": 0.038
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.air-louver.effective-area",
+      "row_id": "alsharqa.air-louver.effective-area.r99",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "height": 650,
+        "width": 300,
+        "effective_pressure_area": 0.091
+      },
+      "database": {
+        "height": 650,
+        "width": 300,
+        "effective_pressure_area": 0.091
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.air-louver.effective-area",
+      "row_id": "alsharqa.air-louver.effective-area.r196",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "height": 1000,
+        "width": 1000,
+        "effective_pressure_area": 0.464
+      },
+      "database": {
+        "height": 1000,
+        "width": 1000,
+        "effective_pressure_area": 0.464
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "row_id": "alsharqa.sand-trap-louver.pressure.r1",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "face_velocity": 100,
+        "intake_total_pressure_drop": 0.022
+      },
+      "database": {
+        "face_velocity": 100,
+        "intake_total_pressure_drop": 0.022
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "row_id": "alsharqa.sand-trap-louver.pressure.r5",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "face_velocity": 500,
+        "intake_total_pressure_drop": 0.45
+      },
+      "database": {
+        "face_velocity": 500,
+        "intake_total_pressure_drop": 0.45
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "row_id": "alsharqa.sand-trap-louver.pressure.r8",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "face_velocity": 800,
+        "intake_total_pressure_drop": 0.86
+      },
+      "database": {
+        "face_velocity": 800,
+        "intake_total_pressure_drop": 0.86
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r1",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "height": 12,
+        "width": 12,
+        "effective_free_area": 0.33
+      },
+      "database": {
+        "height": 12,
+        "width": 12,
+        "effective_free_area": 0.33
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r56",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "height": 42,
+        "width": 12,
+        "effective_free_area": 1.09
+      },
+      "database": {
+        "height": 42,
+        "width": 12,
+        "effective_free_area": 1.09
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r61",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "height": 42,
+        "width": 42,
+        "effective_free_area": 3.91
+      },
+      "database": {
+        "height": 42,
+        "width": 42,
+        "effective_free_area": 3.91
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r121",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "pdf": "Air-louvers.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "height": 72,
+        "width": 72,
+        "effective_free_area": 11.95
+      },
+      "database": {
+        "height": 72,
+        "width": 72,
+        "effective_free_area": 11.95
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "length": 60,
+        "face_velocity": -1750,
+        "static_pressure_drop": 1.28,
+        "il_63hz": 9,
+        "il_8000hz": 17
+      },
+      "database": {
+        "length": 60,
+        "face_velocity": -1750,
+        "static_pressure_drop": 1.28,
+        "il_63hz": 9.0,
+        "il_8000hz": 17.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r19",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "length": 36,
+        "face_velocity": -1750,
+        "static_pressure_drop": 0.95,
+        "il_1000hz": 31
+      },
+      "database": {
+        "length": 36,
+        "face_velocity": -1750,
+        "static_pressure_drop": 0.95,
+        "il_1000hz": 31.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r36",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "length": 24,
+        "face_velocity": 1750,
+        "static_pressure_drop": 0.85,
+        "il_63hz": 4,
+        "il_8000hz": 13
+      },
+      "database": {
+        "length": 24,
+        "face_velocity": 1750,
+        "static_pressure_drop": 0.85,
+        "il_63hz": 4.0,
+        "il_8000hz": 13.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "face_velocity": -1750,
+        "lw_63hz": 75,
+        "lw_8000hz": 60
+      },
+      "database": {
+        "face_velocity": -1750,
+        "lw_63hz": 75.0,
+        "lw_8000hz": 60.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r5",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "face_velocity": 500,
+        "lw_63hz": 63,
+        "lw_8000hz": 27
+      },
+      "database": {
+        "face_velocity": 500,
+        "lw_63hz": 63.0,
+        "lw_8000hz": 27.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r8",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "face_velocity": 1750,
+        "lw_63hz": 75,
+        "lw_8000hz": 57
+      },
+      "database": {
+        "face_velocity": 1750,
+        "lw_63hz": 75.0,
+        "lw_8000hz": 57.0
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "length": 60,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.065
+      },
+      "database": {
+        "length": 60,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.065
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r15",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "length": 36,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.042
+      },
+      "database": {
+        "length": 36,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.042
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r28",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "length": 24,
+        "face_velocity": 2000,
+        "static_pressure_loss": 0.61
+      },
+      "database": {
+        "length": 24,
+        "face_velocity": 2000,
+        "static_pressure_loss": 0.61
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "row_id": "alsharqa.rectangular-silencer.airflow.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "width": 14,
+        "height": 12,
+        "face_area": 1.17,
+        "face_velocity": 500,
+        "airflow": 583
+      },
+      "database": {
+        "width": 14,
+        "height": 12,
+        "face_area": 1.17,
+        "face_velocity": 500,
+        "airflow": 583
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "row_id": "alsharqa.rectangular-silencer.airflow.r64",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "width": 42,
+        "height": 30,
+        "face_area": 8.75,
+        "face_velocity": 500,
+        "airflow": 4375
+      },
+      "database": {
+        "width": 42,
+        "height": 30,
+        "face_area": 8.75,
+        "face_velocity": 500,
+        "airflow": 4375
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "row_id": "alsharqa.rectangular-silencer.airflow.r126",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "width": 56,
+        "height": 60,
+        "face_area": 23.33,
+        "face_velocity": 2000,
+        "airflow": 46667
+      },
+      "database": {
+        "width": 56,
+        "height": 60,
+        "face_area": 23.33,
+        "face_velocity": 2000,
+        "airflow": 46667
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "lu_ld_over_deq": 3,
+        "pressure_factor": 1
+      },
+      "database": {
+        "lu_ld_over_deq": 3,
+        "pressure_factor": 1
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r4",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "lu_ld_over_deq": 0.5,
+        "pressure_factor": 3
+      },
+      "database": {
+        "lu_ld_over_deq": 0.5,
+        "pressure_factor": 3
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r7",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "lu_ld_over_deq": 1,
+        "pressure_factor": 1.75
+      },
+      "database": {
+        "lu_ld_over_deq": 1,
+        "pressure_factor": 1.75
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-silencer.fan-spacing",
+      "row_id": "alsharqa.rectangular-silencer.fan-spacing.r1",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "pdf": "Sound-attenuators.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "inlet_min_over_deq": 0.75,
+        "outlet_min_over_deq_per_1000fpm": 1,
+        "pressure_factor": 1
+      },
+      "database": {
+        "inlet_min_over_deq": 0.75,
+        "outlet_min_over_deq_per_1000fpm": 1,
+        "pressure_factor": 1
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "row_id": "alsharqa.rectangular-duct.construction.r1",
+      "source_ref": "alsharqa-duct-work-pdf4",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 4,
+      "expected": {
+        "construction": "single wall TDF",
+        "insulation_thickness": {
+          "status": "not_applicable"
+        }
+      },
+      "database": {
+        "construction": "single wall TDF",
+        "insulation_thickness": {
+          "status": "not_applicable"
+        }
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "row_id": "alsharqa.rectangular-duct.construction.r2",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48,
+        "maximum_air_velocity": 5000
+      },
+      "database": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48,
+        "maximum_air_velocity": 5000
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "row_id": "alsharqa.rectangular-duct.construction.r3",
+      "source_ref": "alsharqa-duct-work-pdf6",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 6,
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48
+      },
+      "database": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "row_id": "alsharqa.rectangular-duct.construction.r4",
+      "source_ref": "alsharqa-duct-work-pdf7",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 7,
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": {
+          "status": "not_supplied"
+        }
+      },
+      "database": {
+        "standard_length": 1200,
+        "insulation_thickness": {
+          "status": "not_supplied"
+        }
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.liner-fastening",
+      "row_id": "alsharqa.rectangular-duct.liner-fastening.r1",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "velocity_min": 0,
+        "velocity_max": 2500,
+        "a": 76,
+        "b": 305,
+        "c": 102,
+        "e": 457
+      },
+      "database": {
+        "velocity_min": 0,
+        "velocity_max": 2500,
+        "a": 76,
+        "b": 305,
+        "c": 102,
+        "e": 457
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.rectangular-duct.liner-fastening",
+      "row_id": "alsharqa.rectangular-duct.liner-fastening.r2",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 5,
+      "expected": {
+        "velocity_min": 2501,
+        "velocity_max": 5000,
+        "a": 76,
+        "b": 152,
+        "c": 102,
+        "e": 406
+      },
+      "database": {
+        "velocity_min": 2501,
+        "velocity_max": 5000,
+        "a": 76,
+        "b": 152,
+        "c": 102,
+        "e": 406
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r1",
+      "source_ref": "alsharqa-duct-work-pdf8",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 8,
+      "expected": {
+        "length_rule": "L = W/4, minimum 100 mm"
+      },
+      "database": {
+        "length_rule": "L = W/4, minimum 100 mm"
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r2",
+      "source_ref": "alsharqa-duct-work-pdf9",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 9,
+      "expected": {
+        "length": 100
+      },
+      "database": {
+        "length": 100
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r3",
+      "source_ref": "alsharqa-duct-work-pdf10",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 10,
+      "expected": {
+        "length": 85
+      },
+      "database": {
+        "length": 85
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r4",
+      "source_ref": "alsharqa-duct-work-pdf11",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 11,
+      "expected": {
+        "length": 118
+      },
+      "database": {
+        "length": 118
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r5",
+      "source_ref": "alsharqa-duct-work-pdf12",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 12,
+      "expected": {
+        "length": 85
+      },
+      "database": {
+        "length": 85
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "row_id": "alsharqa.branch-takeoff.dimensions.r6",
+      "source_ref": "alsharqa-duct-work-pdf13",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 13,
+      "expected": {
+        "length": 150,
+        "diameter_min": 80,
+        "diameter_max": 315
+      },
+      "database": {
+        "length": 150,
+        "diameter_min": 80,
+        "diameter_max": 315
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.cleat-section",
+      "row_id": "alsharqa.duct-hardware.cleat-section.r1",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "top_overall": 20,
+        "top_flat": 12,
+        "left_height": 12,
+        "lower_horizontal": 14,
+        "right_height": 12
+      },
+      "database": {
+        "top_overall": 20,
+        "top_flat": 12,
+        "left_height": 12,
+        "lower_horizontal": 14,
+        "right_height": 12
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.clamp",
+      "row_id": "alsharqa.duct-hardware.clamp.r1",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "width": 33,
+        "left_height": 19,
+        "right_height": 30,
+        "thickness": 3,
+        "bolt_diameter": 8,
+        "bolt_length": 25
+      },
+      "database": {
+        "width": 33,
+        "left_height": 19,
+        "right_height": 30,
+        "thickness": 3,
+        "bolt_diameter": 8,
+        "bolt_length": 25
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.gasket-tape",
+      "row_id": "alsharqa.duct-hardware.gasket-tape.r1",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 3,
+      "expected": {
+        "thickness": 5,
+        "width": 20,
+        "roll_length": 10
+      },
+      "database": {
+        "thickness": 5,
+        "width": 20,
+        "roll_length": 10
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.bolts-nuts",
+      "row_id": "alsharqa.duct-hardware.bolts-nuts.r1",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 3,
+      "expected": {
+        "thread": "M10",
+        "length": 30
+      },
+      "database": {
+        "thread": "M10",
+        "length": 30
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.bolts-nuts",
+      "row_id": "alsharqa.duct-hardware.bolts-nuts.r2",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 3,
+      "expected": {
+        "thread": "M10",
+        "length": {
+          "status": "not_applicable"
+        }
+      },
+      "database": {
+        "thread": "M10",
+        "length": {
+          "status": "not_applicable"
+        }
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.corners",
+      "row_id": "alsharqa.duct-hardware.corners.r1",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      },
+      "database": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.duct-hardware.corners",
+      "row_id": "alsharqa.duct-hardware.corners.r2",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 2,
+      "expected": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      },
+      "database": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    },
+    {
+      "table_id": "alsharqa.splitter-damper.dimension-rules",
+      "row_id": "alsharqa.splitter-damper.dimension-rules.r1",
+      "source_ref": "alsharqa-duct-work-pdf14",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 14,
+      "expected": {
+        "a_min": 100,
+        "blade_length_rule": "1.5 * A",
+        "r1_rule": "0.75 * W3",
+        "r2_rule": "A + R1"
+      },
+      "database": {
+        "a_min": 100,
+        "blade_length_rule": "1.5 * A",
+        "r1_rule": "0.75 * W3",
+        "r2_rule": "A + R1"
+      },
+      "match": true,
+      "method": "independent rendered full-page visual sample",
+      "qualification": null
+    }
+  ],
+  "findings": [
+    {
+      "id": "ACOUSTICS-CTX-01",
+      "severity": "P2",
+      "kind": "engineering_context_omission",
+      "pdf": "G.S.V.D-Cat.pdf",
+      "pdf_pages": [
+        3,
+        6
+      ],
+      "table_ids": [
+        "alsharqa.afvd.dimensions",
+        "alsharqa.acvd-multiblade.dimensions"
+      ],
+      "published": {
+        "temperature_min_c": -40,
+        "temperature_max_c": 100
+      },
+      "database": "Absent from product values and table context/notes",
+      "impact": "Published size data alone does not disclose operating temperature limits to an agent",
+      "recommendation": "Retain typed temperature range with source reference; no suitability verdict"
+    },
+    {
+      "id": "ACOUSTICS-CTX-02",
+      "severity": "P2",
+      "kind": "engineering_formula_coverage_omission",
+      "pdf": "DUCT-WORK.pdf",
+      "pdf_page": 14,
+      "table_id": "alsharqa.splitter-damper.dimension-rules",
+      "row_id": "alsharqa.splitter-damper.dimension-rules.r1",
+      "published": {
+        "a_rule": "W1 * (W3 * D3) / ((W2 * D2) + (W3 * D3))",
+        "b_rule": "W1 * (W2 * D2) / ((W2 * D2) + (W3 * D3))"
+      },
+      "database": "A minimum, blade-length and radius rules present; branch allocation formulas absent",
+      "impact": "Stored radius rule depends on A but only A minimum is supplied",
+      "recommendation": "Add literal formula strings and symbol context after independent reproduction; do not calculate new rows"
+    }
+  ],
+  "live_evidence": "tmp/audit_acoustics/live_calls.json",
+  "automated_evidence": "tmp/audit_acoustics/automated_cells.json",
+  "limitations": [
+    "No exhaustive per-cell visual review of 196-cell air-louver and 121-cell sand-trap matrices",
+    "360 automatic comparisons use PDF text, not independent visual proof of all cells",
+    "Graph digitization excluded; other unimported narrative/drawing facts not exhaustively inventoried",
+    "Native discovery/search responses inspected but only seven get_products calls persisted in full evidence"
+  ],
+  "rendered_pages": {
+    "Access-door.pdf": [
+      4,
+      5
+    ],
+    "Air-louvers.pdf": [
+      10,
+      13
+    ],
+    "DUCT-WORK.pdf": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "G.S.V.D-Cat.pdf": [
+      3,
+      4,
+      6,
+      7,
+      9
+    ],
+    "NON-RETURN-DAMPER.pdf": [
+      3
+    ],
+    "Round-Volume-Damper.pdf": [
+      4,
+      6
+    ],
+    "Sound-attenuators.pdf": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "VOLUM-DAMPER-_PRESSURE-DROP.pdf": [
+      2,
+      4
+    ]
+  }
+}

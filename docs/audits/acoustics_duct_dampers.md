@@ -1,0 +1,17 @@
+# Acoustics, ductwork, dampers and louvers audit
+
+Reviewer4 independently inspected the full rendered relevant pages of eight assigned Alsharqa PDFs. All 26 imported tables (646 stored rows) were covered by at least one visual fixture; larger tables received first/middle/last and high-risk samples. The JSON companion contains exact PDF pages, stable row IDs, expected column mappings and database values for 70 independently keyed visual fixtures / 217 cells. All matched. These are samples, not proof of every stored cell.
+
+A separate geometric-line PDF-text comparison checked all 36 insertion-loss rows / 360 cells against the catalog with zero mismatches. This automated comparison supplements the rendered-page review; it is not 360 independently visually verified cells. All 646 assigned JSON rows also matched SQLite table ownership, variant association, values and source references.
+
+Fifteen native plugin calls were exercised: discovery, three category searches, schema/category discovery and seven bounded row retrievals. One deliberately wrong schema ID produced an explicit error; the other fourteen calls succeeded. Full seven retrieval requests/responses are retained in `tmp/audit_acoustics/live_calls.json`; the earlier discovery/search responses were inspected but not persisted. Signed negative velocities and intake pressures, zero-velocity missing pressure, asymmetric louver dimensions, projected coordinate retention, obscured ACVD coverage and table ownership behaved as expected. A request for another model's table returned a product-level ownership error. Pagination was disclosed on the two-row acoustic sample; continuation exhaustion was not exercised here.
+
+Two P2 content-coverage findings need parent reproduction:
+
+- **ACOUSTICS-CTX-01:** G.S.V.D-Cat PDF pages 3 and 6, under standard construction / TEMPERATURE LIMITS, publish -40 C to +100 C for AFVD and multiblade ACVD respectively. Their stored product/table context omits these limits. This is missing engineering context, not an OCR number substitution.
+- **ACOUSTICS-CTX-02:** DUCT-WORK PDF page 14 labels “Trunk may be divided using” and gives A = W1*(W3*D3)/((W2*D2)+(W3*D3)), B = W1*(W2*D2)/((W2*D2)+(W3*D3)). The imported splitter table includes minimum A, blade length and radii but omits these published formulas. No calculated dimensions are requested.
+
+Source defects were independently confirmed, not mistaken for transcription errors: access-door 12x12 B prints 42 and is unknown; non-return exhaust pressure repeats a volume-flow range and is unknown; MRP optimum-flow heading says Pa and remains unit-unspecified; acoustic p5 and p6 pressures disagree and remain separate; AFVD narrative single-blade limit conflicts with its table; ACVD lower schedule is obscured; louver matrices are asymmetric; VCD page4 numeric matrix has no quantity/unit definition and remains withheld. Negative pressure/velocity signs are retained literally. The duplicated round diameter schedule matches the GSVD source and is imported once.
+
+The complete relevant pages inspected include headers, notes, dimensions and symbols. All source page renders and temporary extraction/comparison programs remain under `tmp/audit_acoustics/`. The JSON rendered-page inventory lists 31 pages. No exhaustive visual check of every louver-matrix cell was performed, no graphs were digitized, and unrelated unimported engineering narratives were not exhaustively inventoried. No production code, dataset, or deployment was changed.
+

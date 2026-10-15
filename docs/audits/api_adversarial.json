@@ -1,0 +1,1404 @@
+{
+  "reviewer": "fifth independent API reviewer",
+  "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+  "native_calls": [
+    {
+      "call": 1,
+      "tool": "discover_catalog",
+      "request": {
+        "limit": 30
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "numeric_filters": "Exact numeric cells only; qualified bounds excluded. Units default to schema units.",
+        "categories": [
+          {
+            "id": "acoustics.sound_attenuators",
+            "label": "Sound Attenuators",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.ceiling_diffusers",
+            "label": "Ceiling diffusers",
+            "models": 2
+          },
+          {
+            "id": "air_outlets.disc_valves",
+            "label": "Disc Valves",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.drum_diffusers",
+            "label": "Drum Diffusers",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.flow_bar_diffusers",
+            "label": "Flow Bar Diffusers",
+            "models": 2
+          },
+          {
+            "id": "air_outlets.grilles",
+            "label": "Grilles",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.jet_diffusers",
+            "label": "Jet Diffusers",
+            "models": 2
+          },
+          {
+            "id": "air_outlets.light_troffer_diffusers",
+            "label": "Light Troffer Diffusers",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.linear_bar_grilles",
+            "label": "Linear Bar Grilles",
+            "models": 4
+          },
+          {
+            "id": "air_outlets.linear_slot_diffusers",
+            "label": "Linear Slot Diffusers",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.louvers",
+            "label": "Louvers",
+            "models": 2
+          },
+          {
+            "id": "air_outlets.round_diffusers",
+            "label": "Round Diffusers",
+            "models": 1
+          },
+          {
+            "id": "air_outlets.swirl_diffusers",
+            "label": "Swirl Diffusers",
+            "models": 1
+          },
+          {
+            "id": "dampers.fire",
+            "label": "Fire",
+            "models": 1
+          },
+          {
+            "id": "dampers.fire_smoke",
+            "label": "Fire Smoke",
+            "models": 5
+          },
+          {
+            "id": "dampers.non_return",
+            "label": "Non Return",
+            "models": 1
+          },
+          {
+            "id": "dampers.splitter",
+            "label": "Splitter",
+            "models": 1
+          },
+          {
+            "id": "dampers.volume_control",
+            "label": "Volume Control",
+            "models": 5
+          },
+          {
+            "id": "ductwork.access_doors",
+            "label": "Access Doors",
+            "models": 1
+          },
+          {
+            "id": "ductwork.accessories",
+            "label": "Accessories",
+            "models": 1
+          },
+          {
+            "id": "ductwork.ducts",
+            "label": "Ducts",
+            "models": 1
+          },
+          {
+            "id": "ductwork.fittings",
+            "label": "Fittings",
+            "models": 1
+          }
+        ],
+        "returned": 22,
+        "next_cursor": null,
+        "operators": [
+          "eq",
+          "lt",
+          "lte",
+          "gt",
+          "gte"
+        ]
+      },
+      "serialized_response_bytes": 2129,
+      "response_o200k_tokens": 565
+    },
+    {
+      "call": 2,
+      "tool": "discover_catalog",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers"
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "numeric_filters": "Exact numeric cells only; qualified bounds excluded. Units default to schema units.",
+        "properties": [
+          {
+            "id": "neck_area",
+            "code": "neck_area",
+            "label": "Published neck area",
+            "type": "number",
+            "unit": "ft2",
+            "categories": [
+              "air_outlets.ceiling_diffusers"
+            ]
+          },
+          {
+            "id": "neck_height",
+            "code": "neck_height",
+            "label": "Nominal neck height",
+            "type": "number",
+            "unit": "in",
+            "categories": [
+              "air_outlets.ceiling_diffusers"
+            ]
+          },
+          {
+            "id": "neck_width",
+            "code": "neck_width",
+            "label": "Nominal neck width",
+            "type": "number",
+            "unit": "in",
+            "categories": [
+              "air_outlets.ceiling_diffusers"
+            ]
+          }
+        ],
+        "schemas": [
+          {
+            "id": "alsharqa.scd.return_sizes.v1",
+            "label": "Additional published return sizes"
+          },
+          {
+            "id": "alsharqa.scd.supply_patterns.v1",
+            "label": "Additional published supply sizes and patterns"
+          },
+          {
+            "id": "alsharqa.scdp.construction.v1",
+            "label": "Perforated face construction"
+          },
+          {
+            "id": "alsharqa.scdp.return.v1",
+            "label": "Perforated return performance"
+          },
+          {
+            "id": "alsharqa.scdp.supply.v1",
+            "label": "Perforated supply performance"
+          },
+          {
+            "id": "ceiling_diffuser.return.v1",
+            "label": "Return performance"
+          },
+          {
+            "id": "ceiling_diffuser.supply.v1",
+            "label": "Supply performance"
+          }
+        ],
+        "returned": 7,
+        "next_cursor": null,
+        "operators": [
+          "eq",
+          "lt",
+          "lte",
+          "gt",
+          "gte"
+        ]
+      },
+      "serialized_response_bytes": 1619,
+      "response_o200k_tokens": 402
+    },
+    {
+      "call": 3,
+      "tool": "discover_catalog",
+      "request": {
+        "schema_id": "ceiling_diffuser.supply.v1"
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "numeric_filters": "Exact numeric cells only; qualified bounds excluded. Units default to schema units.",
+        "schema": {
+          "id": "ceiling_diffuser.supply.v1",
+          "category_id": "air_outlets.ceiling_diffusers",
+          "version": 1,
+          "label": "Supply performance",
+          "columns": [
+            {
+              "code": "airflow",
+              "label": "Total airflow",
+              "type": "number",
+              "unit": "cfm",
+              "role": "input"
+            },
+            {
+              "code": "pressure_drop",
+              "label": "Supply pressure drop",
+              "type": "number",
+              "unit": "inH2O",
+              "role": "output"
+            },
+            {
+              "code": "nc",
+              "label": "Supply room noise criterion",
+              "type": "number",
+              "unit": "NC",
+              "role": "output"
+            },
+            {
+              "code": "side_airflow",
+              "label": "Side airflow (A and B)",
+              "type": "number",
+              "unit": "cfm",
+              "role": "output"
+            },
+            {
+              "code": "throw_100fpm",
+              "label": "Throw at 100 fpm terminal velocity",
+              "type": "number",
+              "unit": "ft",
+              "role": "output"
+            },
+            {
+              "code": "throw_50fpm",
+              "label": "Throw at 50 fpm terminal velocity",
+              "type": "number",
+              "unit": "ft",
+              "role": "output"
+            }
+          ],
+          "row_key": [
+            "airflow"
+          ],
+          "context_schema": {
+            "type": "object",
+            "required": [
+              "mode",
+              "room_effect_db"
+            ]
+          }
+        },
+        "operators": [
+          "eq",
+          "lt",
+          "lte",
+          "gt",
+          "gte"
+        ]
+      },
+      "serialized_response_bytes": 1441,
+      "response_o200k_tokens": 362
+    },
+    {
+      "call": 4,
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "properties": [
+          {
+            "field": "neck_width",
+            "value": 152.4,
+            "unit": "mm"
+          }
+        ],
+        "table": {
+          "schema_id": "ceiling_diffuser.supply.v1",
+          "filters": [
+            {
+              "field": "airflow",
+              "value": 100,
+              "unit": "cfm"
+            }
+          ]
+        }
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd",
+            "label": "Alsharqa SCD ceiling diffuser",
+            "matching_variant": "alsharqa.scd.6x6",
+            "evidence": {
+              "id": "alsharqa.scd.supply",
+              "schema_id": "ceiling_diffuser.supply.v1",
+              "columns": [
+                {
+                  "code": "airflow",
+                  "label": "Total airflow",
+                  "type": "number",
+                  "unit": "cfm",
+                  "role": "input"
+                }
+              ],
+              "context": {
+                "mode": "supply",
+                "room_effect_db": 8,
+                "pattern": "4-way",
+                "directions": "A and B have equal side airflow and throw",
+                "throw_terminal_velocities_fpm": [
+                  100,
+                  50
+                ]
+              },
+              "notes": [
+                "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+              ],
+              "source": {
+                "id": "alsharqa-p9",
+                "label": "Alsharqa ceiling diffusers p.9",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+              },
+              "rows": [
+                {
+                  "id": "alsharqa.scd.supply.6x6.3",
+                  "variant_id": "alsharqa.scd.6x6",
+                  "values": [
+                    100
+                  ],
+                  "source_ref": "alsharqa-p9-6x6-c3"
+                }
+              ],
+              "scope": "One matching published operating point; other matches may exist."
+            }
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      },
+      "serialized_response_bytes": 1472,
+      "response_o200k_tokens": 409
+    },
+    {
+      "call": 5,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.6x6"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "pressure_drop",
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "airflow",
+                "value": 47.19474432,
+                "unit": "L/s"
+              }
+            ],
+            "limit": 2
+          }
+        ],
+        "include_sources": true
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.6x6",
+            "kind": "variant",
+            "parent_id": "alsharqa.scd",
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD 6 x 6 in",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "pressure_drop",
+                    "label": "Supply pressure drop",
+                    "type": "number",
+                    "unit": "inH2O",
+                    "role": "output"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Supply room noise criterion",
+                    "type": "number",
+                    "unit": "NC",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply.6x6.3",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      100,
+                      0.046,
+                      19
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c3"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null,
+                "row_sources": [
+                  {
+                    "id": "alsharqa-p9-6x6-c3",
+                    "label": "Alsharqa p.9, 6x6, column 3",
+                    "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf",
+                    "locator": {
+                      "id": "alsharqa-p9-6x6-c3",
+                      "document_id": "alsharqa-ceiling",
+                      "pdf_page": 9,
+                      "printed_page": "9",
+                      "label": "Alsharqa p.9, 6x6, column 3",
+                      "table": "supply performance",
+                      "size_in": [
+                        6,
+                        6
+                      ],
+                      "operating_column": 3,
+                      "notes_pages": [
+                        9
+                      ]
+                    },
+                    "document": {
+                      "id": "alsharqa-ceiling",
+                      "title": "Alsharqa Ceiling Diffusers",
+                      "published_date": null,
+                      "revision_label": null,
+                      "sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+                      "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "alsharqa-p9",
+                "label": "Alsharqa ceiling diffusers p.9",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf",
+                "locator": {
+                  "id": "alsharqa-p9",
+                  "document_id": "alsharqa-ceiling",
+                  "pdf_page": 9,
+                  "printed_page": "9",
+                  "label": "Alsharqa ceiling diffusers p.9"
+                },
+                "document": {
+                  "id": "alsharqa-ceiling",
+                  "title": "Alsharqa Ceiling Diffusers",
+                  "published_date": null,
+                  "revision_label": null,
+                  "sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "serialized_response_bytes": 3022,
+      "response_o200k_tokens": 953
+    },
+    {
+      "call": 6,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.6x6"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "airflow",
+                "value": 100
+              },
+              {
+                "field": "nc",
+                "value": 18,
+                "op": "lte"
+              }
+            ],
+            "limit": 2
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.6x6",
+            "kind": "variant",
+            "parent_id": "alsharqa.scd",
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD 6 x 6 in",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Supply room noise criterion",
+                    "type": "number",
+                    "unit": "NC",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [],
+                "returned": 0,
+                "next_cursor": null,
+                "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+              }
+            ]
+          }
+        ]
+      },
+      "serialized_response_bytes": 1808,
+      "response_o200k_tokens": 478
+    },
+    {
+      "call": 7,
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "properties": [
+          {
+            "field": "neck_width",
+            "value": 6
+          },
+          {
+            "field": "neck_height",
+            "value": 9
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      },
+      "serialized_response_bytes": 723,
+      "response_o200k_tokens": 161
+    },
+    {
+      "call": 8,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.6x6",
+          "missing",
+          "alsharqa.scd"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "pressure_drop"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.6x6",
+            "kind": "variant",
+            "parent_id": "alsharqa.scd",
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD 6 x 6 in",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "pressure_drop",
+                    "label": "Supply pressure drop",
+                    "type": "number",
+                    "unit": "inH2O",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply.6x6.1",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      63,
+                      0.018
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c1"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": "RRoY98a7RCFP-8-P4lzDlzTce6G4yqSs7sglNuQ8vl17Im9mZnNldCI6MSwicXVlcnkiOiIxMmVmMWUzZDU0MTlhOTJkYTEyY2QzYWRhY2E2YWU1ZDI5NzcxYjYwNzUwNDIzNGU1YWIxYzhjM2JmZDZjZjhjIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+              }
+            ]
+          },
+          {
+            "id": "missing",
+            "error": "Product not found"
+          },
+          {
+            "id": "alsharqa.scd",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD ceiling diffuser",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 21
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "pressure_drop",
+                    "label": "Supply pressure drop",
+                    "type": "number",
+                    "unit": "inH2O",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply.6x6.1",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      63,
+                      0.018
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c1"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": "HQh2zxW1j4PhqBmYDEqG8LGFMY6auRGxtRSVNOOwqXx7Im9mZnNldCI6MSwicXVlcnkiOiJiMzRhZTUxNTQyMzZmYTM4YzQ3MjVhY2ZjN2RjM2FkM2ZhZGJjZTk3OTJhMzM4NjI3MjkxODA1ZjY1MGQwNmY0IiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+              }
+            ]
+          }
+        ]
+      },
+      "serialized_response_bytes": 3439,
+      "response_o200k_tokens": 1186
+    },
+    {
+      "call": 9,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.6x6"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "pressure_drop"
+            ],
+            "limit": 1,
+            "cursor": "RRoY98a7RCFP-8-P4lzDlzTce6G4yqSs7sglNuQ8vl17Im9mZnNldCI6MSwicXVlcnkiOiIxMmVmMWUzZDU0MTlhOTJkYTEyY2QzYWRhY2E2YWU1ZDI5NzcxYjYwNzUwNDIzNGU1YWIxYzhjM2JmZDZjZjhjIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.6x6",
+            "kind": "variant",
+            "parent_id": "alsharqa.scd",
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD 6 x 6 in",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "pressure_drop",
+                    "label": "Supply pressure drop",
+                    "type": "number",
+                    "unit": "inH2O",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply.6x6.2",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      75,
+                      0.026
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c2"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": "byDEwahIwfH5tlvLMiBLCEoFM14jdSD_wD2nrwU01yN7Im9mZnNldCI6MiwicXVlcnkiOiIxMmVmMWUzZDU0MTlhOTJkYTEyY2QzYWRhY2E2YWU1ZDI5NzcxYjYwNzUwNDIzNGU1YWIxYzhjM2JmZDZjZjhjIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+              }
+            ]
+          }
+        ]
+      },
+      "serialized_response_bytes": 1930,
+      "response_o200k_tokens": 647
+    },
+    {
+      "call": 10,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.9x9"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "pressure_drop"
+            ],
+            "limit": 1,
+            "cursor": "RRoY98a7RCFP-8-P4lzDlzTce6G4yqSs7sglNuQ8vl17Im9mZnNldCI6MSwicXVlcnkiOiIxMmVmMWUzZDU0MTlhOTJkYTEyY2QzYWRhY2E2YWU1ZDI5NzcxYjYwNzUwNDIzNGU1YWIxYzhjM2JmZDZjZjhjIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.9x9",
+            "error": "Invalid cursor: query, catalog version or server cursor key changed"
+          }
+        ]
+      },
+      "serialized_response_bytes": 563,
+      "response_o200k_tokens": 139
+    },
+    {
+      "call": 11,
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "table": {
+          "schema_id": "ceiling_diffuser.supply.v1",
+          "filters": [
+            {
+              "field": "airflow",
+              "value": 100,
+              "unit": "Pa"
+            }
+          ]
+        }
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Incompatible unit for airflow; expected cfm"
+          }
+        ],
+        "isError": true
+      },
+      "serialized_response_bytes": 97,
+      "response_o200k_tokens": 26
+    },
+    {
+      "call": 12,
+      "tool": "discover_catalog",
+      "request": {
+        "schema_id": "not-real"
+      },
+      "response": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Unknown schema: not-real; use discover_catalog"
+          }
+        ],
+        "isError": true
+      },
+      "serialized_response_bytes": 100,
+      "response_o200k_tokens": 26
+    },
+    {
+      "call": 13,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd.6x6"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "nc"
+            ],
+            "limit": 2
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd.6x6",
+            "kind": "variant",
+            "parent_id": "alsharqa.scd",
+            "category_id": "air_outlets.ceiling_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SCD",
+            "label": "Alsharqa SCD 6 x 6 in",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.scd.supply",
+                "schema_id": "ceiling_diffuser.supply.v1",
+                "columns": [
+                  {
+                    "code": "airflow",
+                    "label": "Total airflow",
+                    "type": "number",
+                    "unit": "cfm",
+                    "role": "input"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Supply room noise criterion",
+                    "type": "number",
+                    "unit": "NC",
+                    "role": "output"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "room_effect_db": 8,
+                  "pattern": "4-way",
+                  "directions": "A and B have equal side airflow and throw",
+                  "throw_terminal_velocities_fpm": [
+                    100,
+                    50
+                  ]
+                },
+                "notes": [
+                  "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                  "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+                ],
+                "source": {
+                  "id": "alsharqa-p9",
+                  "label": "Alsharqa ceiling diffusers p.9",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.scd.supply.6x6.1",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      63,
+                      {
+                        "value": 18,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c1"
+                  },
+                  {
+                    "id": "alsharqa.scd.supply.6x6.2",
+                    "variant_id": "alsharqa.scd.6x6",
+                    "values": [
+                      75,
+                      {
+                        "value": 18,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-p9-6x6-c2"
+                  }
+                ],
+                "returned": 2,
+                "next_cursor": "tL26SfkZM7CxFIXORHXnt81vFC5fmrNlo-LmETdDq6h7Im9mZnNldCI6MiwicXVlcnkiOiI0NGU2ZGEwMzJiNTU5NjM0MDI4OTZiNDc5MGM5NzhkNTNiODYwODQ3NGVkNWE3NzI1ODIzZmI2YmY5ZDExMDZjIiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ=="
+              }
+            ]
+          }
+        ]
+      },
+      "serialized_response_bytes": 2092,
+      "response_o200k_tokens": 711
+    },
+    {
+      "call": 14,
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.scd"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.scd.supply",
+            "columns": [
+              "not_a_column"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd",
+            "error": "Unknown table columns"
+          }
+        ]
+      },
+      "serialized_response_bytes": 513,
+      "response_o200k_tokens": 126
+    },
+    {
+      "call": 15,
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "table": {
+          "schema_id": "ceiling_diffuser.supply.v1",
+          "filters": [
+            {
+              "field": "airflow",
+              "value": 63
+            },
+            {
+              "field": "pressure_drop",
+              "value": 0.2,
+              "op": "gte"
+            }
+          ]
+        }
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      },
+      "serialized_response_bytes": 723,
+      "response_o200k_tokens": 161
+    }
+  ],
+  "local_checks": {
+    "pagination": {
+      "tables": 76,
+      "pages": 330,
+      "rows": 3707,
+      "duplicates_or_omissions": 0
+    },
+    "unit_equivalence": {
+      "tested_distinct_values": 4752,
+      "failures": 271,
+      "finite_decimal_failure_count": 0,
+      "recurring_decimal_failure_count": 271
+    },
+    "compound_semantics": {
+      "compound_queries": 1560,
+      "failures": [],
+      "validation": [
+        {
+          "name": "operator",
+          "pass": true,
+          "error": "1 validation error for Predicate\nop\n  Input should be 'eq', 'lt', 'lte', 'gt' or 'gte' [type=literal_error, input_value='ne', input_type=str]\n    For further information visit https://errors.pydantic."
+        },
+        {
+          "name": "infinite",
+          "pass": true,
+          "error": "3 validation errors for Predicate\nvalue.float\n  Input should be a finite number [type=finite_number, input_value=inf, input_type=float]\n    For further information visit https://errors.pydantic.dev/2."
+        },
+        {
+          "name": "row_limit",
+          "pass": true,
+          "error": "1 validation error for GetRequest\ntables.0.limit\n  Input should be less than or equal to 100 [type=less_than_equal, input_value=101, input_type=int]\n    For further information visit https://errors.py"
+        },
+        {
+          "name": "unknown_field",
+          "pass": true,
+          "error": "Unknown table field: airflow') OR 1=1 --"
+        },
+        {
+          "name": "boolean_numeric",
+          "pass": true,
+          "error": "neck_width requires a numeric value"
+        },
+        {
+          "name": "string_numeric",
+          "pass": true,
+          "error": "neck_width requires a numeric value"
+        },
+        {
+          "name": "category_schema",
+          "pass": true,
+          "error": "Schema does not belong to category"
+        },
+        {
+          "name": "budget",
+          "pass": true,
+          "error": "Response exceeds byte budget; request fewer fields, tables, IDs or rows"
+        }
+      ]
+    }
+  },
+  "unit_rounding_caveat": {
+    "classification": "Known consequence of strict numeric equality; not a confirmed implementation defect",
+    "sample": {
+      "table": "alsharqa.abjd.panel-dimensions",
+      "field": "face_width",
+      "native_value": 900,
+      "native_unit": "mm",
+      "converted_value": 35.43307086614173,
+      "unit": "in",
+      "native_ids": [
+        "alsharqa.abjd.panel-dimensions.r19"
+      ],
+      "converted_ids": [],
+      "request": {
+        "ids": [
+          "alsharqa.abjd"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.abjd.panel-dimensions",
+            "columns": [
+              "face_width"
+            ],
+            "filters": [
+              {
+                "field": "face_width",
+                "value": 35.43307086614173,
+                "unit": "in"
+              }
+            ],
+            "limit": 100
+          }
+        ]
+      }
+    },
+    "finite_decimal_failures": [],
+    "explanation": "900 mm is exactly 4500/127 in, a recurring decimal. The finite client value 35.43307086614173 in is slightly below 900 mm. Equality and inclusive-boundary differences for this approximated client input do not establish incorrect physical comparisons. Native-unit filters or an explicit meaningful engineering range avoid ambiguity; do not add arbitrary tolerance."
+  },
+  "findings": [
+    {
+      "id": "API-DOC-01",
+      "severity": "P2 documentation",
+      "status": "confirmed",
+      "description": "Installed SupplierAtlas skill says initial catalog is partial Alsharqa SCD demo despite native discovery describing all 22 catalogs/37 models. This stale constraint can prevent fresh agents exploring available categories.",
+      "path": "C:/Users/MahmoudRoshdyRiad/.codex/plugins/cache/atlas-marketplace/supplieratlas/0.1.0-alpha.1/skills/use-supplieratlas/SKILL.md"
+    }
+  ],
+  "pdf_checks": [
+    {
+      "method": "Rendered original PDF with pdftoppm; visually inspected entire page",
+      "file": "data/sources/alsharqa/ceiling-diffusers.pdf",
+      "sha256": "6548714c85b082cda1206210774a42baea2fd164b7e1a39058a977e9c50e57df",
+      "pdf_page": 9,
+      "printed_page": "9",
+      "verified_values": [
+        "6x6 four-way 63 cfm / 0.018 in W.G. / NC <18",
+        "6x6 four-way 75 cfm / 0.026 in W.G. / NC <18",
+        "6x6 four-way 100 cfm / 0.046 in W.G. / NC19",
+        "8 dB room effect; throw in feet corresponding to100/50fpm; size inches; neck area square feet"
+      ],
+      "native_call_references": [
+        5,
+        13
+      ],
+      "render": "tmp/audit_api/ceiling-p9.png"
+    }
+  ],
+  "summary": {
+    "native_calls": 15,
+    "native_response_tokens": 6352,
+    "confirmed_api_correctness_bugs": 0,
+    "confirmed_documentation_findings": 1,
+    "limitations": [
+      "One rendered PDF page only; other reviewers own broader source checks.",
+      "Native calls are bounded samples; exhaustive sweeps ran locally against catalog003, not over hosted transport.",
+      "Unit conversions tested supported dimension pairs using one alternative per native unit; no temperature conversion asserted.",
+      "Cursor product binding directly tested; other query-binding/security claims limited to local code inspection and validation probes.",
+      "No native rate-limit/load/concurrency test or client protocol fuzzing."
+    ]
+  }
+}

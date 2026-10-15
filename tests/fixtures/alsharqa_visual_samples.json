@@ -1,0 +1,6088 @@
+{
+  "date": "2026-10-15",
+  "basis": "Four fresh-context source reviewers; rendered-PDF visual samples. See audit ledgers for method and limitations. Not exhaustive.",
+  "comparisons_in_ledgers": 1798,
+  "unique_rows": 494,
+  "unique_cells": 1798,
+  "samples": [
+    {
+      "row_id": "alsharqa.abjd.panel-dimensions.r1",
+      "table_id": "alsharqa.abjd.panel-dimensions",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "jets_per_panel": 1,
+        "neck_diameter": 150,
+        "face_width": 225,
+        "face_height": 225
+      }
+    },
+    {
+      "row_id": "alsharqa.abjd.panel-dimensions.r13",
+      "table_id": "alsharqa.abjd.panel-dimensions",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "jets_per_panel": 3,
+        "neck_diameter": 150,
+        "face_width": 675,
+        "face_height": 225
+      }
+    },
+    {
+      "row_id": "alsharqa.abjd.panel-dimensions.r24",
+      "table_id": "alsharqa.abjd.panel-dimensions",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "jets_per_panel": 4,
+        "neck_diameter": 400,
+        "face_width": 2060,
+        "face_height": 515
+      }
+    },
+    {
+      "row_id": "alsharqa.abjd.performance.r1",
+      "table_id": "alsharqa.abjd.performance",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 6,
+        "neck_velocity": 800,
+        "ak_printed": 0.077,
+        "airflow": 62,
+        "static_pressure": 0.052,
+        "nc": {
+          "value": 15.0,
+          "qualifier": "lt"
+        },
+        "throw_first": 25,
+        "throw_second": 16,
+        "throw_third": 12
+      }
+    },
+    {
+      "row_id": "alsharqa.abjd.performance.r31",
+      "table_id": "alsharqa.abjd.performance",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 12,
+        "neck_velocity": 800,
+        "ak_printed": 0.236,
+        "airflow": 189,
+        "static_pressure": 0.018,
+        "nc": {
+          "value": 15.0,
+          "qualifier": "lt"
+        },
+        "throw_first": 44,
+        "throw_second": 22,
+        "throw_third": 12
+      }
+    },
+    {
+      "row_id": "alsharqa.abjd.performance.r60",
+      "table_id": "alsharqa.abjd.performance",
+      "source_ref": "alsharqa-ball-jet-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 16,
+        "neck_velocity": 4400,
+        "ak_printed": 0.375,
+        "airflow": 1650,
+        "static_pressure": 2.966,
+        "nc": {
+          "value": 50.0,
+          "qualifier": "gt"
+        },
+        "throw_first": 91,
+        "throw_second": 24,
+        "throw_third": 26
+      }
+    },
+    {
+      "row_id": "alsharqa.access-door.dimensions.r1",
+      "table_id": "alsharqa.access-door.dimensions",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "nominal_size": 6,
+        "neck_width": 4.875,
+        "cam_locks": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.access-door.dimensions.r4",
+      "table_id": "alsharqa.access-door.dimensions",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "b": {
+          "status": "unknown"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.access-door.dimensions.r5",
+      "table_id": "alsharqa.access-door.dimensions",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "a": 14,
+        "b": 14,
+        "neck_width": 12.875
+      }
+    },
+    {
+      "row_id": "alsharqa.access-door.dimensions.r9",
+      "table_id": "alsharqa.access-door.dimensions",
+      "source_ref": "alsharqa-access-door-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "a": 24,
+        "neck_width": 22.875,
+        "cam_locks": 2
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r1",
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r16",
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 850,
+        "height": 1150,
+        "blade_count": 7
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-multiblade.dimensions.r9",
+      "table_id": "alsharqa.acvd-multiblade.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 500,
+        "height": 500,
+        "blade_count": 3
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-round.diameters.r1",
+      "table_id": "alsharqa.acvd-round.diameters",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 80
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-round.diameters.r11",
+      "table_id": "alsharqa.acvd-round.diameters",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 280
+      }
+    },
+    {
+      "row_id": "alsharqa.acvd-round.diameters.r20",
+      "table_id": "alsharqa.acvd-round.diameters",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf9",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 610
+      }
+    },
+    {
+      "row_id": "alsharqa.afvd.dimensions.r1",
+      "table_id": "alsharqa.afvd.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 100,
+        "height": 100,
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.afvd.dimensions.r12",
+      "table_id": "alsharqa.afvd.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 650,
+        "height": 800,
+        "blade_count": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.afvd.dimensions.r22",
+      "table_id": "alsharqa.afvd.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 1200,
+        "height": 1800,
+        "blade_count": 12
+      }
+    },
+    {
+      "row_id": "alsharqa.afvd.dimensions.r5",
+      "table_id": "alsharqa.afvd.dimensions",
+      "source_ref": "alsharqa-g-s-v-d-cat-pdf4",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 300,
+        "height": 300,
+        "blade_count": 2
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.effective-area.r1",
+      "table_id": "alsharqa.air-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 300,
+        "width": 300,
+        "effective_pressure_area": 0.038
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.effective-area.r196",
+      "table_id": "alsharqa.air-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 1000,
+        "width": 1000,
+        "effective_pressure_area": 0.464
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.effective-area.r99",
+      "table_id": "alsharqa.air-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 650,
+        "width": 300,
+        "effective_pressure_area": 0.091
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.pressure.r1",
+      "table_id": "alsharqa.air-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 1.25,
+        "exhaust_pressure": 0.248,
+        "intake_pressure": -0.35
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.pressure.r5",
+      "table_id": "alsharqa.air-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 3,
+        "exhaust_pressure": 1.151,
+        "intake_pressure": -1.69
+      }
+    },
+    {
+      "row_id": "alsharqa.air-louver.pressure.r9",
+      "table_id": "alsharqa.air-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 4.5,
+        "exhaust_pressure": 3.29,
+        "intake_pressure": -3.85
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.dimensions.r1",
+      "table_id": "alsharqa.ascd.dimensions",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 315,
+        "b": 313,
+        "d": 315,
+        "h2": 200,
+        "h3": 425,
+        "l": 435,
+        "d1": 480,
+        "d2": 250,
+        "t": 63
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.dimensions.r3",
+      "table_id": "alsharqa.ascd.dimensions",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 500,
+        "b": 500,
+        "d": 586,
+        "h2": 235,
+        "h3": 630,
+        "l": 600,
+        "d1": 700,
+        "d2": 350,
+        "t": 100
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.dimensions.r5",
+      "table_id": "alsharqa.ascd.dimensions",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 800,
+        "b": 800,
+        "d": 871,
+        "h2": 440,
+        "h3": 1000,
+        "l": 1000,
+        "d1": 1077,
+        "d2": 500,
+        "t": 160
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.performance.r1",
+      "table_id": "alsharqa.ascd.performance",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 315,
+        "airflow": 170,
+        "ak": 0.293,
+        "total_pressure": 0.032,
+        "nc": {
+          "value": 15.0,
+          "qualifier": "lt"
+        },
+        "vertical_throw_first": 5,
+        "vertical_throw_second": 9,
+        "horizontal_throw_first": 4,
+        "horizontal_throw_second": 7
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.performance.r18",
+      "table_id": "alsharqa.ascd.performance",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 500,
+        "airflow": 940,
+        "ak": 0.938,
+        "total_pressure": 0.075,
+        "nc": 25,
+        "vertical_throw_first": 20,
+        "vertical_throw_second": 40,
+        "horizontal_throw_first": 9,
+        "horizontal_throw_second": 18
+      }
+    },
+    {
+      "row_id": "alsharqa.ascd.performance.r35",
+      "table_id": "alsharqa.ascd.performance",
+      "source_ref": "alsharqa-round-swirl-diffuser-pdf7",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 800,
+        "airflow": 2100,
+        "ak": 1.216,
+        "total_pressure": 0.196,
+        "nc": 45,
+        "vertical_throw_first": 27,
+        "vertical_throw_second": 55,
+        "horizontal_throw_first": 13,
+        "horizontal_throw_second": 24
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r1",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf8",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length_rule": "L = W/4, minimum 100 mm"
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r2",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf9",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 100
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r3",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf10",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 85
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r4",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf11",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 118
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r5",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf12",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 85
+      }
+    },
+    {
+      "row_id": "alsharqa.branch-takeoff.dimensions.r6",
+      "table_id": "alsharqa.branch-takeoff.dimensions",
+      "source_ref": "alsharqa-duct-work-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 150,
+        "diameter_min": 80,
+        "diameter_max": 315
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.bolts-nuts.r1",
+      "table_id": "alsharqa.duct-hardware.bolts-nuts",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "thread": "M10",
+        "length": 30
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.bolts-nuts.r2",
+      "table_id": "alsharqa.duct-hardware.bolts-nuts",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "thread": "M10",
+        "length": {
+          "status": "not_applicable"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.clamp.r1",
+      "table_id": "alsharqa.duct-hardware.clamp",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 33,
+        "left_height": 19,
+        "right_height": 30,
+        "thickness": 3,
+        "bolt_diameter": 8,
+        "bolt_length": 25
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.cleat-section.r1",
+      "table_id": "alsharqa.duct-hardware.cleat-section",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "top_overall": 20,
+        "top_flat": 12,
+        "left_height": 12,
+        "lower_horizontal": 14,
+        "right_height": 12
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.corners.r1",
+      "table_id": "alsharqa.duct-hardware.corners",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.corners.r2",
+      "table_id": "alsharqa.duct-hardware.corners",
+      "source_ref": "alsharqa-duct-work-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "sheet_gauge": 16,
+        "carriage_bolt_hole": 0.375
+      }
+    },
+    {
+      "row_id": "alsharqa.duct-hardware.gasket-tape.r1",
+      "table_id": "alsharqa.duct-hardware.gasket-tape",
+      "source_ref": "alsharqa-duct-work-pdf3",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "thickness": 5,
+        "width": 20,
+        "roll_length": 10
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd60.dimensions.r1",
+      "table_id": "alsharqa.fsd60.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 200,
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd60.dimensions.r12",
+      "table_id": "alsharqa.fsd60.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 750,
+        "blade_count": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd60.dimensions.r17",
+      "table_id": "alsharqa.fsd60.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 1000,
+        "blade_count": 6
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd60.dimensions.r9",
+      "table_id": "alsharqa.fsd60.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 600,
+        "blade_count": 4
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd70.dimensions.r1",
+      "table_id": "alsharqa.fsd70.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 200,
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd70.dimensions.r12",
+      "table_id": "alsharqa.fsd70.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 1000,
+        "blade_count": 6
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd70.dimensions.r17",
+      "table_id": "alsharqa.fsd70.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": {
+          "status": "not_supplied"
+        },
+        "blade_count": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.fsd70.dimensions.r8",
+      "table_id": "alsharqa.fsd70.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 600,
+        "blade_count": 4
+      }
+    },
+    {
+      "row_id": "alsharqa.kul.technical-data.r1",
+      "table_id": "alsharqa.kul.technical-data",
+      "source_ref": "alsharqa-non-return-damper-pdf3",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width_min": 200,
+        "height_min": 215,
+        "width_max": 1600,
+        "height_max": 1615,
+        "airflow_min": 110,
+        "airflow_max": 6460,
+        "face_velocity": 2.5,
+        "fresh_air_pressure_drop": 25,
+        "exhaust_air_pressure_drop": {
+          "status": "unknown"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r1",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 40,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r10",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 60,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r14",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 31,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r18",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 240,
+        "nc": 36,
+        "throw_50fpm": 54,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r19",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 76,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r23",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r27",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 304,
+        "nc": 37,
+        "throw_50fpm": 64,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r28",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 92,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r32",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 184,
+        "nc": 20,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r36",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 368,
+        "nc": 38,
+        "throw_50fpm": 69,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r37",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 124,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r41",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 248,
+        "nc": 21,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r45",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 496,
+        "nc": 39,
+        "throw_50fpm": 73,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r46",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 160,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r5",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 80,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 26,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r50",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 320,
+        "nc": 22,
+        "throw_50fpm": 45,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r54",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 640,
+        "nc": 40,
+        "throw_50fpm": 76,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r55",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 192,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 20,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r59",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 384,
+        "nc": 23,
+        "throw_50fpm": 48,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r63",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 768,
+        "nc": 41,
+        "throw_50fpm": 80,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0.supply.r9",
+      "table_id": "alsharqa.lbg-0.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 160,
+        "nc": 34,
+        "throw_50fpm": 45,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r1",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 35,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 6,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r10",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 51,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r14",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 103,
+        "nc": 20,
+        "throw_50fpm": 26,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r18",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 206,
+        "nc": 36,
+        "throw_50fpm": 47,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r19",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 67,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r23",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 135,
+        "nc": 21,
+        "throw_50fpm": 33,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r27",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 271,
+        "nc": 37,
+        "throw_50fpm": 54,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r28",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 83,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r32",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 167,
+        "nc": 22,
+        "throw_50fpm": 37,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r36",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 335,
+        "nc": 38,
+        "throw_50fpm": 57,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r37",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 119,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r41",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 239,
+        "nc": 23,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r45",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 478,
+        "nc": 40,
+        "throw_50fpm": 58,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r46",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 151,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r5",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 71,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 22,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r50",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 303,
+        "nc": 25,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r54",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 607,
+        "nc": 41,
+        "throw_50fpm": 59,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r55",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 183,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.01
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r59",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 367,
+        "nc": 26,
+        "throw_50fpm": 39,
+        "total_pressure": 0.044
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r63",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 735,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-0y.supply.r9",
+      "table_id": "alsharqa.lbg-0y.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 142,
+        "nc": 35,
+        "throw_50fpm": 39,
+        "total_pressure": 0.157
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r1",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 38,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r10",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 56,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r14",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 112,
+        "nc": 20,
+        "throw_50fpm": 29,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r18",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 224,
+        "nc": 37,
+        "throw_50fpm": 51,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r19",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 72,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r23",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 144,
+        "nc": 21,
+        "throw_50fpm": 38,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r27",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 288,
+        "nc": 38,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r28",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 88,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r32",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 176,
+        "nc": 22,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r36",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 352,
+        "nc": 39,
+        "throw_50fpm": 65,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r37",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 122,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r41",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 244,
+        "nc": 23,
+        "throw_50fpm": 42,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r45",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 486,
+        "nc": 40,
+        "throw_50fpm": 68,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r46",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 156,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r5",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 77,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 25,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r50",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 312,
+        "nc": 24,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r54",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 624,
+        "nc": 41,
+        "throw_50fpm": 70,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r55",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 188,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 19,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r59",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 376,
+        "nc": 25,
+        "throw_50fpm": 46,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r63",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 752,
+        "nc": 42,
+        "throw_50fpm": 75,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-15.supply.r9",
+      "table_id": "alsharqa.lbg-15.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 153,
+        "nc": 35,
+        "throw_50fpm": 43,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r1",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 36,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r10",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 52,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r14",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 104,
+        "nc": 20,
+        "throw_50fpm": 27,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r18",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 208,
+        "nc": 38,
+        "throw_50fpm": 49,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r19",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 68,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r23",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 136,
+        "nc": 21,
+        "throw_50fpm": 36,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r27",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 272,
+        "nc": 39,
+        "throw_50fpm": 58,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r28",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 84,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r32",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 168,
+        "nc": 22,
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r36",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 336,
+        "nc": 40,
+        "throw_50fpm": 60,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r37",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r41",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 240,
+        "nc": 24,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r45",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 480,
+        "nc": 41,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r46",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r5",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 72,
+        "nc": 20,
+        "throw_50fpm": 23,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r50",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 304,
+        "nc": 26,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r54",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 608,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r55",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 184,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r59",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 368,
+        "nc": 27,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r63",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 736,
+        "nc": 43,
+        "throw_50fpm": 67,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.lbg-30.supply.r9",
+      "table_id": "alsharqa.lbg-30.supply",
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 144,
+        "nc": 37,
+        "throw_50fpm": 41,
+        "total_pressure": 0.146
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r1",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 45,
+        "b": 83
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r12",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 171,
+        "b": 210.5
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r16",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 328,
+        "b": 372.5
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r4",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 147,
+        "b": 186.5
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r8",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 280,
+        "b": 324.5
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.dimensions.r9",
+      "table_id": "alsharqa.linear-slot.dimensions",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 51,
+        "b": 89
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r1",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.007,
+        "effective_free_area_per_length": 0.046
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r12",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.078,
+        "effective_free_area_per_length": 0.131
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r16",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.31,
+        "effective_free_area_per_length": 0.234
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r4",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.117,
+        "effective_free_area_per_length": 0.184
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r8",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.452,
+        "effective_free_area_per_length": 0.368
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return-header-area.r9",
+      "table_id": "alsharqa.linear-slot.return-header-area",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure_header": 0.005,
+        "effective_free_area_per_length": 0.034
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r1",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r108",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 33
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r144",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 55
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r36",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 35
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r72",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 57
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.return.r73",
+      "table_id": "alsharqa.linear-slot.return",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r1",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 8
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r108",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 32,
+        "throw_100fpm": 23,
+        "throw_50fpm": 32
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r144",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 54,
+        "throw_100fpm": 39,
+        "throw_50fpm": 60
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r36",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 34,
+        "throw_100fpm": 24,
+        "throw_50fpm": 33
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r72",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": 56,
+        "throw_100fpm": 40,
+        "throw_50fpm": 62
+      }
+    },
+    {
+      "row_id": "alsharqa.linear-slot.supply.r73",
+      "table_id": "alsharqa.linear-slot.supply",
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 7
+      }
+    },
+    {
+      "row_id": "alsharqa.mrp.flow-dimensions.r1",
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 80,
+        "allowable_flow_min": 40,
+        "allowable_flow_max": 125,
+        "optimum_min_printed": 50,
+        "optimum_max_printed": 108,
+        "l1": 120,
+        "l2": 40
+      }
+    },
+    {
+      "row_id": "alsharqa.mrp.flow-dimensions.r5",
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 160,
+        "l1": 240,
+        "l2": 40
+      }
+    },
+    {
+      "row_id": "alsharqa.mrp.flow-dimensions.r9",
+      "table_id": "alsharqa.mrp.flow-dimensions",
+      "source_ref": "alsharqa-round-volume-damper-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "diameter": 400,
+        "allowable_flow_max": 3800,
+        "optimum_max_printed": 2850,
+        "l1": 295,
+        "l2": 60
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.construction.r1",
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "source_ref": "alsharqa-duct-work-pdf4",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "construction": "single wall TDF",
+        "insulation_thickness": {
+          "status": "not_applicable"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.construction.r2",
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48,
+        "maximum_air_velocity": 5000
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.construction.r3",
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "source_ref": "alsharqa-duct-work-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": 25,
+        "insulation_density": 48
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.construction.r4",
+      "table_id": "alsharqa.rectangular-duct.construction",
+      "source_ref": "alsharqa-duct-work-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "standard_length": 1200,
+        "insulation_thickness": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.liner-fastening.r1",
+      "table_id": "alsharqa.rectangular-duct.liner-fastening",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "velocity_min": 0,
+        "velocity_max": 2500,
+        "a": 76,
+        "b": 305,
+        "c": 102,
+        "e": 457
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-duct.liner-fastening.r2",
+      "table_id": "alsharqa.rectangular-duct.liner-fastening",
+      "source_ref": "alsharqa-duct-work-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "velocity_min": 2501,
+        "velocity_max": 5000,
+        "a": 76,
+        "b": 152,
+        "c": 102,
+        "e": 406
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.airflow.r1",
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 14,
+        "height": 12,
+        "face_area": 1.17,
+        "face_velocity": 500,
+        "airflow": 583
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.airflow.r126",
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 56,
+        "height": 60,
+        "face_area": 23.33,
+        "face_velocity": 2000,
+        "airflow": 46667
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.airflow.r64",
+      "table_id": "alsharqa.rectangular-silencer.airflow",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "width": 42,
+        "height": 30,
+        "face_area": 8.75,
+        "face_velocity": 500,
+        "airflow": 4375
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r1",
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "lu_ld_over_deq": 3,
+        "pressure_factor": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r4",
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "lu_ld_over_deq": 0.5,
+        "pressure_factor": 3
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.elbow-factors.r7",
+      "table_id": "alsharqa.rectangular-silencer.elbow-factors",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "lu_ld_over_deq": 1,
+        "pressure_factor": 1.75
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.fan-spacing.r1",
+      "table_id": "alsharqa.rectangular-silencer.fan-spacing",
+      "source_ref": "alsharqa-sound-attenuators-pdf7",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "inlet_min_over_deq": 0.75,
+        "outlet_min_over_deq_per_1000fpm": 1,
+        "pressure_factor": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r1",
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": -1750,
+        "lw_63hz": 75,
+        "lw_8000hz": 60
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r5",
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 500,
+        "lw_63hz": 63,
+        "lw_8000hz": 27
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.generated-sound.r8",
+      "table_id": "alsharqa.rectangular-silencer.generated-sound",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 1750,
+        "lw_63hz": 75,
+        "lw_8000hz": 57
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r1",
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 60,
+        "face_velocity": -1750,
+        "static_pressure_drop": 1.28,
+        "il_63hz": 9,
+        "il_8000hz": 17
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r19",
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 36,
+        "face_velocity": -1750,
+        "static_pressure_drop": 0.95,
+        "il_1000hz": 31
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.insertion-loss.r36",
+      "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+      "source_ref": "alsharqa-sound-attenuators-pdf5",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 24,
+        "face_velocity": 1750,
+        "static_pressure_drop": 0.85,
+        "il_63hz": 4,
+        "il_8000hz": 13
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r1",
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 60,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.065
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r15",
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 36,
+        "face_velocity": 500,
+        "static_pressure_loss": 0.042
+      }
+    },
+    {
+      "row_id": "alsharqa.rectangular-silencer.pressure-schedule.r28",
+      "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+      "source_ref": "alsharqa-sound-attenuators-pdf6",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "length": 24,
+        "face_velocity": 2000,
+        "static_pressure_loss": 0.61
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.dimensions.r1",
+      "table_id": "alsharqa.round-diffuser.dimensions",
+      "source_ref": "alsharqa-round-diffusers-pdf7",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 6,
+        "nominal_mm": 160,
+        "d": 263,
+        "n": 223,
+        "e": 154
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.dimensions.r4",
+      "table_id": "alsharqa.round-diffuser.dimensions",
+      "source_ref": "alsharqa-round-diffusers-pdf7",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 12,
+        "nominal_mm": 315,
+        "d": 418,
+        "n": 378,
+        "e": 309
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.dimensions.r6",
+      "table_id": "alsharqa.round-diffuser.dimensions",
+      "source_ref": "alsharqa-round-diffusers-pdf7",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 16,
+        "nominal_mm": 400,
+        "d": 503,
+        "n": 463,
+        "e": 394
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.return.r1",
+      "table_id": "alsharqa.round-diffuser.return",
+      "source_ref": "alsharqa-round-diffusers-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 6,
+        "neck_velocity": 300,
+        "neck_area": 0.196,
+        "airflow": 60,
+        "velocity_pressure": 0.007,
+        "total_pressure_drop_printed": 0.029,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.return.r31",
+      "table_id": "alsharqa.round-diffuser.return",
+      "source_ref": "alsharqa-round-diffusers-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 12,
+        "neck_velocity": 300,
+        "neck_area": 0.785,
+        "airflow": 225,
+        "velocity_pressure": 0.007,
+        "total_pressure_drop_printed": 0.018,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.return.r60",
+      "table_id": "alsharqa.round-diffuser.return",
+      "source_ref": "alsharqa-round-diffusers-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 16,
+        "neck_velocity": 1600,
+        "neck_area": 1.4,
+        "airflow": 2240,
+        "velocity_pressure": 0.161,
+        "total_pressure_drop_printed": 0.411,
+        "nc": 51
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.supply.r1",
+      "table_id": "alsharqa.round-diffuser.supply",
+      "source_ref": "alsharqa-round-diffusers-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 6,
+        "neck_velocity": 300,
+        "neck_area": 0.196,
+        "airflow": 60,
+        "velocity_pressure": 0.007,
+        "total_pressure_drop_printed": 0.025,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "area_factor": 0.13,
+        "throw_first": 3,
+        "throw_second": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.supply.r31",
+      "table_id": "alsharqa.round-diffuser.supply",
+      "source_ref": "alsharqa-round-diffusers-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 12,
+        "neck_velocity": 300,
+        "neck_area": 0.785,
+        "airflow": 225,
+        "velocity_pressure": 0.007,
+        "total_pressure_drop_printed": 0.026,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "area_factor": 0.38,
+        "throw_first": 6,
+        "throw_second": 8
+      }
+    },
+    {
+      "row_id": "alsharqa.round-diffuser.supply.r60",
+      "table_id": "alsharqa.round-diffuser.supply",
+      "source_ref": "alsharqa-round-diffusers-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_in": 16,
+        "neck_velocity": 1600,
+        "neck_area": 1.4,
+        "airflow": 2240,
+        "velocity_pressure": 0.161,
+        "total_pressure_drop_printed": 0.98,
+        "nc": 50,
+        "area_factor": 0.59,
+        "throw_first": 25,
+        "throw_second": 36
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r1",
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 12,
+        "width": 12,
+        "effective_free_area": 0.33
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r121",
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 72,
+        "width": 72,
+        "effective_free_area": 11.95
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r56",
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 42,
+        "width": 12,
+        "effective_free_area": 1.09
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.effective-area.r61",
+      "table_id": "alsharqa.sand-trap-louver.effective-area",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "height": 42,
+        "width": 42,
+        "effective_free_area": 3.91
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.pressure.r1",
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 100,
+        "intake_total_pressure_drop": 0.022
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.pressure.r5",
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 500,
+        "intake_total_pressure_drop": 0.45
+      }
+    },
+    {
+      "row_id": "alsharqa.sand-trap-louver.pressure.r8",
+      "table_id": "alsharqa.sand-trap-louver.pressure",
+      "source_ref": "alsharqa-air-louvers-pdf13",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "face_velocity": 800,
+        "intake_total_pressure_drop": 0.86
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return.12x12.7",
+      "table_id": "alsharqa.scd.return",
+      "source_ref": "alsharqa-p19-12x12-c7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.22,
+        "nc": 47
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return.6x6.3",
+      "table_id": "alsharqa.scd.return",
+      "source_ref": "alsharqa-p19-6x6-c3",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.055,
+        "nc": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return.9x9.3",
+      "table_id": "alsharqa.scd.return",
+      "source_ref": "alsharqa-p19-9x9-c3",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.055,
+        "nc": 24
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r1",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.56,
+        "airflow": 390,
+        "nc": 22
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r11",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.25,
+        "airflow": 1125,
+        "nc": 39
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r120",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.75,
+        "airflow": 438,
+        "nc": 23
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r123",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.75,
+        "airflow": 875,
+        "nc": 36
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r126",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.75,
+        "airflow": 1400,
+        "nc": 52
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r14",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.25,
+        "airflow": 1800,
+        "nc": 55
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r155",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.625,
+        "airflow": 655,
+        "nc": 21
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r158",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.625,
+        "airflow": 1313,
+        "nc": 39
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r161",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.625,
+        "airflow": 2138,
+        "nc": 54
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r169",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 3.5,
+        "airflow": 871,
+        "nc": 24
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r172",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 3.5,
+        "airflow": 1748,
+        "nc": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r175",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 3.5,
+        "airflow": 2800,
+        "nc": 54
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r4",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.56,
+        "airflow": 781,
+        "nc": 36
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r7",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.56,
+        "airflow": 1250,
+        "nc": 52
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r78",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 0.938,
+        "airflow": 234,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r8",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 2.25,
+        "airflow": 562,
+        "nc": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r81",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 0.938,
+        "airflow": 468,
+        "nc": 33
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r84",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf19",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 0.938,
+        "airflow": 756,
+        "nc": 45
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r92",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.31,
+        "airflow": 328,
+        "nc": 21
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r95",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.31,
+        "airflow": 656,
+        "nc": 36
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.return_sizes.r98",
+      "table_id": "alsharqa.scd.return_sizes",
+      "source_ref": "alsharqa-ceiling-pdf20",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "neck_area": 1.31,
+        "airflow": 1050,
+        "nc": 48
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply.12x12.7",
+      "table_id": "alsharqa.scd.supply",
+      "source_ref": "alsharqa-p9-12x12-c7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.186,
+        "nc": 36,
+        "throw_100fpm": 18,
+        "throw_50fpm": 24
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply.6x6.3",
+      "table_id": "alsharqa.scd.supply",
+      "source_ref": "alsharqa-p9-6x6-c3",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.046,
+        "nc": 19,
+        "throw_100fpm": 6,
+        "throw_50fpm": 11
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply.9x9.3",
+      "table_id": "alsharqa.scd.supply",
+      "source_ref": "alsharqa-p9-9x9-c3",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure_drop": 0.046,
+        "nc": 22,
+        "throw_100fpm": 10,
+        "throw_50fpm": 14
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r1",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 63,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r120",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 765,
+        "nc": 22,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r123",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1530,
+        "nc": 36,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r126",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2450,
+        "nc": 54,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r148",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 94,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r151",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 188,
+        "nc": 24,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r154",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 300,
+        "nc": 37,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r176",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 125,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r179",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 250,
+        "nc": 28,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r182",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 400,
+        "nc": 43,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r204",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1000,
+        "nc": 22,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r207",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2000,
+        "nc": 37,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r210",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf11",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 3200,
+        "nc": 55,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r232",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 156,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r235",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 312,
+        "nc": 30,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r238",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 500,
+        "nc": 44,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r260",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 188,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r263",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 375,
+        "nc": 31,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r266",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 600,
+        "nc": 46,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r288",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 219,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r291",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 524,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r294",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf12",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 700,
+        "nc": 47,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r316",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 251,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r319",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 501,
+        "nc": 35,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r322",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 800,
+        "nc": 48,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r344",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 188,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r347",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 375,
+        "nc": 30,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r350",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 600,
+        "nc": 45,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r372",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 234,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r375",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 468,
+        "nc": 31,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r378",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf13",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 756,
+        "nc": 43,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r4",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 125,
+        "nc": 23,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r400",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 281,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r403",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 562,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r406",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 900,
+        "nc": 47,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r428",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 63,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r431",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 656,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r434",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1050,
+        "nc": 45,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r456",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 375,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r459",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 750,
+        "nc": 35,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r462",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf14",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1200,
+        "nc": 50,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r484",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 312,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r487",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 624,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r490",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1000,
+        "nc": 45,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r512",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 375,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r515",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 750,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r518",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1200,
+        "nc": 48,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r540",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 438,
+        "nc": 20,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r543",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 875,
+        "nc": 34,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r546",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf15",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1400,
+        "nc": 49,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r568",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 500,
+        "nc": 22,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r571",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1000,
+        "nc": 37,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r574",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1600,
+        "nc": 50,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r596",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 469,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r599",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 938,
+        "nc": 34,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r602",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1500,
+        "nc": 47,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r624",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 548,
+        "nc": 19,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r627",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1095,
+        "nc": 35,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r630",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf16",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1750,
+        "nc": 48,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r64",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 390,
+        "nc": 19,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r652",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 628,
+        "nc": 21,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r655",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1252,
+        "nc": 36,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r658",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2000,
+        "nc": 50,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r67",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 781,
+        "nc": 33,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r680",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 655,
+        "nc": 18,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r683",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1313,
+        "nc": 36,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r686",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2138,
+        "nc": 50,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r7",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 200,
+        "nc": 36,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r70",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1250,
+        "nc": 49,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r708",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 748,
+        "nc": 20,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r711",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1500,
+        "nc": 37,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r714",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf17",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2400,
+        "nc": 51,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r736",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 871,
+        "nc": 21,
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r739",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1748,
+        "nc": 35,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r741",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "side_airflow_a": 536,
+        "side_airflow_b": 690,
+        "throw_a_100fpm": 19,
+        "throw_a_50fpm": 24,
+        "throw_b_100fpm": 29,
+        "throw_b_50fpm": 35
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r742",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2800,
+        "nc": 51,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r748",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "side_airflow_a": 536,
+        "side_airflow_b": 958,
+        "throw_a_100fpm": 19,
+        "throw_a_50fpm": 24,
+        "throw_b_100fpm": 29,
+        "throw_b_50fpm": 35
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r755",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "side_airflow_b": 1226,
+        "throw_b_100fpm": 31,
+        "throw_b_50fpm": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r757",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 871,
+        "side_airflow_b": 871
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r758",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1053,
+        "side_airflow_b": 1053
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r759",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1400,
+        "side_airflow_b": 1400
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r760",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1748,
+        "side_airflow_b": 1748
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r761",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2100,
+        "side_airflow_b": 2100
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r762",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2452,
+        "side_airflow_b": 2452
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r763",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf18",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 2800,
+        "side_airflow_b": 2800
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r92",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 562,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.018
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r95",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1125,
+        "nc": 35,
+        "pressure_drop": 0.072
+      }
+    },
+    {
+      "row_id": "alsharqa.scd.supply_patterns.r98",
+      "table_id": "alsharqa.scd.supply_patterns",
+      "source_ref": "alsharqa-ceiling-pdf10",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1800,
+        "nc": 51,
+        "pressure_drop": 0.186
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.construction.r1",
+      "table_id": "alsharqa.scdp.construction",
+      "source_ref": "alsharqa-ceiling-pdf21",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "hole_diameter": 4,
+        "hole_pitch": 6,
+        "open_face_percent": 40,
+        "face_thickness": 1.5
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r1",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 63,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.019
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r11",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 281,
+        "nc": 27,
+        "pressure_drop": 0.091
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r14",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 450,
+        "nc": 43,
+        "pressure_drop": 0.198
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r15",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 250,
+        "nc": 20,
+        "pressure_drop": 0.019
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r18",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 500,
+        "nc": 30,
+        "pressure_drop": 0.091
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r21",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 800,
+        "nc": 47,
+        "pressure_drop": 0.198
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r22",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 390,
+        "nc": 21,
+        "pressure_drop": 0.019
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r25",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 781,
+        "nc": 35,
+        "pressure_drop": 0.091
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r28",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1250,
+        "nc": 52,
+        "pressure_drop": 0.198
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r4",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 125,
+        "nc": 26,
+        "pressure_drop": 0.091
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r7",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 200,
+        "nc": 39,
+        "pressure_drop": 0.198
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.return.r8",
+      "table_id": "alsharqa.scdp.return",
+      "source_ref": "alsharqa-ceiling-pdf24",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 140,
+        "nc": 19,
+        "pressure_drop": 0.019
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r1",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 63,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.015
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r29",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 140,
+        "nc": {
+          "value": 18,
+          "qualifier": "lt"
+        },
+        "pressure_drop": 0.015
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r32",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 281,
+        "nc": 26,
+        "pressure_drop": 0.066
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r35",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 450,
+        "nc": 42,
+        "pressure_drop": 0.172
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r4",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 125,
+        "nc": 25,
+        "pressure_drop": 0.066
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r57",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 250,
+        "nc": 19,
+        "pressure_drop": 0.015
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r60",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 500,
+        "nc": 28,
+        "pressure_drop": 0.066
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r63",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 800,
+        "nc": 45,
+        "pressure_drop": 0.172
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r7",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf22",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 200,
+        "nc": 38,
+        "pressure_drop": 0.172
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r85",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf23",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 390,
+        "nc": 20,
+        "pressure_drop": 0.015
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r88",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf23",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 781,
+        "nc": 32,
+        "pressure_drop": 0.066
+      }
+    },
+    {
+      "row_id": "alsharqa.scdp.supply.r91",
+      "table_id": "alsharqa.scdp.supply",
+      "source_ref": "alsharqa-ceiling-pdf23",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "airflow": 1250,
+        "nc": 50,
+        "pressure_drop": 0.172
+      }
+    },
+    {
+      "row_id": "alsharqa.sdl.performance.r1",
+      "table_id": "alsharqa.sdl.performance",
+      "source_ref": "alsharqa-drum-diffuser-pdf3",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_size_group": "225x150 / 175x200",
+        "neck_velocity": 1.0,
+        "airflow": 83,
+        "static_pressure": 0.45,
+        "nc": {
+          "value": 15.0,
+          "qualifier": "lt"
+        },
+        "throw_0_75m_s": 1.0,
+        "throw_0_5m_s": 1.2,
+        "throw_0_25m_s": 1.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sdl.performance.r28",
+      "table_id": "alsharqa.sdl.performance",
+      "source_ref": "alsharqa-drum-diffuser-pdf3",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_size_group": "1600x200 / 1250x250",
+        "neck_velocity": 3.0,
+        "airflow": 1948,
+        "static_pressure": 1.575,
+        "nc": 30,
+        "throw_0_75m_s": 13.4,
+        "throw_0_5m_s": 16.1,
+        "throw_0_25m_s": 24.9
+      }
+    },
+    {
+      "row_id": "alsharqa.sdl.performance.r54",
+      "table_id": "alsharqa.sdl.performance",
+      "source_ref": "alsharqa-drum-diffuser-pdf3",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_size_group": "1750x300 / 1250x375",
+        "neck_velocity": 5.0,
+        "airflow": 5387,
+        "static_pressure": 3.225,
+        "nc": 50,
+        "throw_0_75m_s": 26.2,
+        "throw_0_5m_s": 33.5,
+        "throw_0_25m_s": 54.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.dimensions.r1",
+      "table_id": "alsharqa.sdv.dimensions",
+      "source_ref": "alsharqa-disc-valve-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 80,
+        "a": 115,
+        "b": 62,
+        "c": 42,
+        "d": 77.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.dimensions.r4",
+      "table_id": "alsharqa.sdv.dimensions",
+      "source_ref": "alsharqa-disc-valve-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 160,
+        "a": 211,
+        "b": 130,
+        "c": 54,
+        "d": 157.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.dimensions.r6",
+      "table_id": "alsharqa.sdv.dimensions",
+      "source_ref": "alsharqa-disc-valve-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 250,
+        "a": 305,
+        "b": 215,
+        "c": 75,
+        "d": 248
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.return.r1",
+      "table_id": "alsharqa.sdv.return",
+      "source_ref": "alsharqa-disc-valve-pdf7",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 80,
+        "disc_position": 10,
+        "airflow": 10,
+        "total_pressure_loss": {
+          "value": 0.4,
+          "qualifier": "lt"
+        },
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.return.r144",
+      "table_id": "alsharqa.sdv.return",
+      "source_ref": "alsharqa-disc-valve-pdf8",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 250,
+        "disc_position": -10,
+        "airflow": 200,
+        "total_pressure_loss": {
+          "value": 20.0,
+          "qualifier": "gt"
+        },
+        "nc": 45
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.return.r73",
+      "table_id": "alsharqa.sdv.return",
+      "source_ref": "alsharqa-disc-valve-pdf8",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 160,
+        "disc_position": 10,
+        "airflow": 10,
+        "total_pressure_loss": {
+          "value": 0.4,
+          "qualifier": "lt"
+        },
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.supply.r1",
+      "table_id": "alsharqa.sdv.supply",
+      "source_ref": "alsharqa-disc-valve-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 80,
+        "disc_position": 10,
+        "airflow": 10,
+        "total_pressure_loss": 0.76,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.supply.r144",
+      "table_id": "alsharqa.sdv.supply",
+      "source_ref": "alsharqa-disc-valve-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 250,
+        "disc_position": -10,
+        "airflow": 140,
+        "total_pressure_loss": {
+          "value": 20.0,
+          "qualifier": "gt"
+        },
+        "nc": {
+          "value": 45.0,
+          "qualifier": "gt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sdv.supply.r73",
+      "table_id": "alsharqa.sdv.supply",
+      "source_ref": "alsharqa-disc-valve-pdf6",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "nominal_size": 160,
+        "disc_position": 10,
+        "airflow": 10,
+        "total_pressure_loss": {
+          "value": 0.4,
+          "qualifier": "lt"
+        },
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.dimensions.r1",
+      "table_id": "alsharqa.sfb-ht.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.dimensions.r2",
+      "table_id": "alsharqa.sfb-ht.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.dimensions.r3",
+      "table_id": "alsharqa.sfb-ht.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r1",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 7,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 4.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r11",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 51,
+        "nc": 31,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r14",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 129,
+        "nc": 48,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r15",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 5,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r18",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 46,
+        "nc": 30,
+        "throw_0_8m_s": 5,
+        "throw_0_3m_s": 8.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r21",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 127,
+        "nc": 46,
+        "throw_0_8m_s": 6,
+        "throw_0_3m_s": 10.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r4",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 55,
+        "nc": 33,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r7",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 148,
+        "nc": 49,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-ht.performance.r8",
+      "table_id": "alsharqa.sfb-ht.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 8,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.8,
+        "throw_0_3m_s": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.dimensions.r1",
+      "table_id": "alsharqa.sfb-jt.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.dimensions.r2",
+      "table_id": "alsharqa.sfb-jt.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.dimensions.r3",
+      "table_id": "alsharqa.sfb-jt.dimensions",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r1",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r11",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 31,
+        "nc": 22,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r14",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 95,
+        "nc": 40,
+        "throw_0_8m_s": 5.3,
+        "throw_0_3m_s": 10.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r15",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 1,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.3,
+        "throw_0_3m_s": 2.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r18",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 28,
+        "nc": 28,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 9.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r21",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 88,
+        "nc": 40,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 12.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r4",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 27,
+        "nc": 24,
+        "throw_0_8m_s": 2.8,
+        "throw_0_3m_s": 6.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r7",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 83,
+        "nc": 36,
+        "throw_0_8m_s": 4.5,
+        "throw_0_3m_s": 8.8
+      }
+    },
+    {
+      "row_id": "alsharqa.sfb-jt.performance.r8",
+      "table_id": "alsharqa.sfb-jt.performance",
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfd.construction.r1",
+      "table_id": "alsharqa.sfd.construction",
+      "source_ref": "alsharqa-fire-damper-pdf4",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "frame_thickness": 1.6,
+        "blade_thickness": 1,
+        "blade_ramp_thickness": 1.6,
+        "spring_count": 2
+      }
+    },
+    {
+      "row_id": "alsharqa.sfd.installation-details.r1",
+      "table_id": "alsharqa.sfd.installation-details",
+      "source_ref": "alsharqa-fire-damper-pdf5",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "sleeve_thickness_min": 1.6,
+        "sleeve_thickness_max": 3.5,
+        "retaining_angle_leg": 38,
+        "retaining_angle_thickness": 2,
+        "wall_overlap_min": 25,
+        "fastener_spacing_max": 150,
+        "fastener_end_distance": 50
+      }
+    },
+    {
+      "row_id": "alsharqa.sfd.installation-limits.r1",
+      "table_id": "alsharqa.sfd.installation-limits",
+      "source_ref": "alsharqa-fire-damper-pdf6",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "maximum_width": 27,
+        "maximum_height": 41
+      }
+    },
+    {
+      "row_id": "alsharqa.sfd.installation-limits.r2",
+      "table_id": "alsharqa.sfd.installation-limits",
+      "source_ref": "alsharqa-fire-damper-pdf6",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "maximum_width": 27,
+        "maximum_height": 41
+      }
+    },
+    {
+      "row_id": "alsharqa.sfd.installation-limits.r3",
+      "table_id": "alsharqa.sfd.installation-limits",
+      "source_ref": "alsharqa-fire-damper-pdf6",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "maximum_width": 36,
+        "maximum_height": 36
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.closed-pressure.r1",
+      "table_id": "alsharqa.sfsd-series.closed-pressure",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "pressure": 4
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.closure-velocity.r1",
+      "table_id": "alsharqa.sfsd-series.closure-velocity",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "velocity": 2000
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.closure-velocity.r2",
+      "table_id": "alsharqa.sfsd-series.closure-velocity",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "velocity": 4000
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.fire-resistance.r1",
+      "table_id": "alsharqa.sfsd-series.fire-resistance",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "duration": 1.5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.fire-resistance.r2",
+      "table_id": "alsharqa.sfsd-series.fire-resistance",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "duration": 3
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.leakage-ratings.r1",
+      "table_id": "alsharqa.sfsd-series.leakage-ratings",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "temperature": 350
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.leakage-ratings.r2",
+      "table_id": "alsharqa.sfsd-series.leakage-ratings",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "temperature": 250
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd-series.trip-device.r1",
+      "table_id": "alsharqa.sfsd-series.trip-device",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "model": "BAE165_US",
+        "temperature_f": 165,
+        "temperature_c": 74
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd30.dimensions.r1",
+      "table_id": "alsharqa.sfsd30.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 200,
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd30.dimensions.r12",
+      "table_id": "alsharqa.sfsd30.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 1000,
+        "blade_count": 6
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd30.dimensions.r17",
+      "table_id": "alsharqa.sfsd30.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": {
+          "status": "not_supplied"
+        },
+        "blade_count": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd30.dimensions.r8",
+      "table_id": "alsharqa.sfsd30.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf7",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "height": 600,
+        "blade_count": 4
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r1",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": 1
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r11",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": 5
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r12",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": 6
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r13",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r17",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sfsd50.dimensions.r6",
+      "table_id": "alsharqa.sfsd50.dimensions",
+      "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf9",
+      "audit": "docs/audits/ceiling_fire.json",
+      "expected": {
+        "blade_count": 2
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.multiple-panel.r1",
+      "table_id": "alsharqa.sjd.multiple-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 100,
+        "jet_count": 2,
+        "duct_l": 390,
+        "duct_w": 200,
+        "a": 440,
+        "b": 250,
+        "c": 200
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.multiple-panel.r11",
+      "table_id": "alsharqa.sjd.multiple-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 250,
+        "jet_count": 3,
+        "duct_l": 1030,
+        "duct_w": 350,
+        "a": 1080,
+        "b": 400,
+        "c": 350
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.multiple-panel.r21",
+      "table_id": "alsharqa.sjd.multiple-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 400,
+        "jet_count": 4,
+        "duct_l": 1970,
+        "duct_w": 500,
+        "a": 2020,
+        "b": 550,
+        "c": 500
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.performance.r1",
+      "table_id": "alsharqa.sjd.performance",
+      "source_ref": "alsharqa-jet-diffusers-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 100,
+        "neck_velocity": 1.5,
+        "neck_area": 0.0079,
+        "airflow": 30,
+        "airflow_si_published": 0.0141,
+        "dynamic_pressure": 0.15,
+        "static_pressure": {
+          "value": 0.25,
+          "qualifier": "lt"
+        },
+        "throw_0_25m_s": 2.4,
+        "nc": {
+          "value": 15.0,
+          "qualifier": "lt"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.performance.r32",
+      "table_id": "alsharqa.sjd.performance",
+      "source_ref": "alsharqa-jet-diffusers-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 250,
+        "neck_velocity": 3.5,
+        "neck_area": 0.049,
+        "airflow": 390,
+        "airflow_si_published": 0.184,
+        "dynamic_pressure": 0.79,
+        "static_pressure": 1.42,
+        "throw_0_25m_s": 8.3,
+        "nc": 25
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.performance.r63",
+      "table_id": "alsharqa.sjd.performance",
+      "source_ref": "alsharqa-jet-diffusers-pdf5",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 400,
+        "neck_velocity": 7,
+        "neck_area": 0.126,
+        "airflow": 1960,
+        "airflow_si_published": 0.926,
+        "dynamic_pressure": 3.1,
+        "static_pressure": 2.5,
+        "throw_0_25m_s": 18.3,
+        "nc": 47
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.single-panel.r1",
+      "table_id": "alsharqa.sjd.single-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 100,
+        "duct_l": 200,
+        "duct_w": 200,
+        "a": 250,
+        "b": 250,
+        "e": 100
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.single-panel.r4",
+      "table_id": "alsharqa.sjd.single-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 250,
+        "duct_l": 350,
+        "duct_w": 350,
+        "a": 400,
+        "b": 400,
+        "e": 250
+      }
+    },
+    {
+      "row_id": "alsharqa.sjd.single-panel.r7",
+      "table_id": "alsharqa.sjd.single-panel",
+      "source_ref": "alsharqa-jet-diffusers-pdf4",
+      "audit": "docs/audits/special_outlets.json",
+      "expected": {
+        "neck_diameter": 400,
+        "duct_l": 500,
+        "duct_w": 500,
+        "a": 550,
+        "b": 550,
+        "e": 400
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r1",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 3
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r104",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.129,
+        "nc": 25,
+        "throw_third": 11
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r117",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.256,
+        "nc": 38,
+        "throw_third": 13
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r27",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.327,
+        "nc": 38,
+        "throw_third": 16
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r32",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.193,
+        "nc": 32,
+        "throw_third": 12
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r45",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.328,
+        "nc": 41,
+        "throw_third": 16
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r46",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.036,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r62",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.321,
+        "nc": 40,
+        "throw_third": 51
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r71",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.367,
+        "nc": 40,
+        "throw_third": 51
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r81",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.402,
+        "nc": 43,
+        "throw_third": 16
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r82",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.04,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.dual-side.r99",
+      "table_id": "alsharqa.slt.dual-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "total_pressure_printed": 0.348,
+        "nc": 40,
+        "throw_third": 13
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r1",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 1,
+        "throw_second": 2,
+        "throw_third": 10
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r18",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.38,
+        "nc": 42,
+        "throw_first": 8,
+        "throw_second": 17,
+        "throw_third": 25
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r19",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.063,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 3,
+        "throw_second": 6,
+        "throw_third": 13
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r32",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.24,
+        "nc": 35,
+        "throw_first": 9,
+        "throw_second": 13,
+        "throw_third": 19
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r36",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.538,
+        "nc": 48,
+        "throw_first": 13,
+        "throw_second": 17,
+        "throw_third": 23
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r37",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.056,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 2,
+        "throw_second": 5,
+        "throw_third": 11
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r40",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.225,
+        "nc": 36,
+        "throw_first": 7,
+        "throw_second": 11,
+        "throw_third": 17
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r5",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.171,
+        "nc": 27,
+        "throw_first": 4,
+        "throw_second": 8,
+        "throw_third": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.single-side.r50",
+      "table_id": "alsharqa.slt.single-side",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.493,
+        "nc": 48,
+        "throw_first": 11,
+        "throw_second": 14,
+        "throw_third": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r1",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.001
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r16",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.163
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r17",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r25",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.016
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r32",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.078
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r33",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r41",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.005
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r48",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.025
+      }
+    },
+    {
+      "row_id": "alsharqa.slt.velocity-pressure.r9",
+      "table_id": "alsharqa.slt.velocity-pressure",
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "velocity_pressure": 0.034
+      }
+    },
+    {
+      "row_id": "alsharqa.splitter-damper.dimension-rules.r1",
+      "table_id": "alsharqa.splitter-damper.dimension-rules",
+      "source_ref": "alsharqa-duct-work-pdf14",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "a_min": 100,
+        "blade_length_rule": "1.5 * A",
+        "r1_rule": "0.75 * W3",
+        "r2_rule": "A + R1"
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r1",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 278,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r105",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1667,
+        "nc": 43,
+        "throw": 44
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r106",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 467,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r11",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 694,
+        "static_pressure": 0.053,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r116",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1167,
+        "nc": 28,
+        "throw": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r126",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1867,
+        "nc": 44,
+        "throw": 43
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r127",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 600,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 23
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r137",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1250,
+        "nc": 28,
+        "throw": 40
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r147",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2000,
+        "static_pressure": 0.17,
+        "nc": 44,
+        "throw": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r148",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 600,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 26
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r158",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1500,
+        "nc": 29,
+        "throw": 43
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r168",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2400,
+        "nc": 44,
+        "throw": 46
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r169",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 700,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r179",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1750,
+        "nc": 29,
+        "throw": 47
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r189",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2800,
+        "nc": 45,
+        "throw": 48
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r190",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 750,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r200",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1875,
+        "nc": 29,
+        "throw": 47
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r21",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1111,
+        "nc": 32,
+        "throw": 37
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r210",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 3000,
+        "nc": 45,
+        "throw": 48
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r211",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 800,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 31
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r214",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2000,
+        "static_pressure": 0.041,
+        "nc": 29,
+        "throw": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r22",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 300,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r221",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2000,
+        "nc": 29,
+        "throw": 48
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r231",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 3200,
+        "nc": 45,
+        "throw": 49
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r232",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 900,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 34
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r242",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2250,
+        "nc": 29,
+        "throw": 52
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r252",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 3600,
+        "nc": 45,
+        "throw": 51
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r253",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1000,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 35
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r263",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 2500,
+        "nc": 30,
+        "throw": 53
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r273",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 4000,
+        "nc": 46,
+        "throw": 51
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r274",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1200,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 40
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r284",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 3000,
+        "nc": 31,
+        "throw": 60
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r294",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 4800,
+        "static_pressure": 0.17,
+        "nc": 46,
+        "throw": 66
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r32",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 750,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r42",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1200,
+        "nc": 33,
+        "throw": 37
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r43",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 333,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r53",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 833,
+        "nc": 23,
+        "throw": 33
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r63",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1333,
+        "nc": 38,
+        "throw": 37
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r64",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 400,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r74",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1000,
+        "nc": 28,
+        "throw": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r84",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1600,
+        "nc": 43,
+        "throw": 44
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r85",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 417,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.performance.r95",
+      "table_id": "alsharqa.supply-grille.performance",
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow": 1042,
+        "nc": 28,
+        "throw": 38
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r1",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 100,
+        "airflow_max": 300
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r22",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 200,
+        "airflow_max": 550
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r25",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 325,
+        "airflow_max": 925
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r35",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 500,
+        "airflow_max": 1400
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r41",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 1200,
+        "airflow_max": 3200
+      }
+    },
+    {
+      "row_id": "alsharqa.supply-grille.size-flow-range.r7",
+      "table_id": "alsharqa.supply-grille.size-flow-range",
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "audit": "docs/audits/linear_outlets.json",
+      "expected": {
+        "airflow_min": 350,
+        "airflow_max": 900
+      }
+    },
+    {
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r1",
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "l": 200,
+        "w": 204,
+        "blade_count": 2,
+        "drive_arm_x": 52
+      }
+    },
+    {
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r5",
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "l": 600,
+        "w": 604,
+        "drive_arm_x": 252
+      }
+    },
+    {
+      "row_id": "alsharqa.vcd-airfoil.dimensions.r9",
+      "table_id": "alsharqa.vcd-airfoil.dimensions",
+      "source_ref": "alsharqa-volum-damper-pressure-drop-pdf2",
+      "audit": "docs/audits/acoustics_duct_dampers.json",
+      "expected": {
+        "l": 1000,
+        "w": 1004,
+        "drive_arm_x": 452
+      }
+    }
+  ]
+}

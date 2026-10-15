@@ -31,6 +31,7 @@ Recorded from the project conversation on 2026-10-15:
 | R18 | Publish the demo container publicly on GitHub Container Registry to avoid paid Google Artifact Registry storage. Backend code and the 42 demo engineering records may be public; credentials remain private. | Explicit approval: "Use a public GitHub container" |
 | R19 | Expand Alsharqa coverage to all published product families, retaining engineering tables and necessary technical context only. | "add the rest of Alsharqa engineering tables"; scope clarification: "All published product families" |
 | R20 | Test the installed plugin using realistic engineering selection tasks, measuring token efficiency while checking that essential engineering context is retained. | "test the plugin like an engineer doing a real selection"; "minimum tokens and no missing engineering context" |
+| R21 | Use five Sol subagents for intensive plugin edge-case tests and independent comparisons with the actual supplier PDFs, focusing on data quality and possible OCR errors. | "rais 5 sol subagents"; "checking the information realibility aganist the actual pdf"; "really care about the data quality" |
 
 ## Tool boundaries
 
@@ -98,6 +99,14 @@ is ambiguous, record it as an open question rather than inventing a rule.
 
 ## Current project state
 
+- R21: five fresh-context Sol reviews completed. All22 fresh official PDF hashes
+  match. Visual ledgers cover 1,798 row/column comparisons across494 rows and all76
+  tables; this is sampling, not exhaustive transcription verification. API probes
+  cover all3,707 paginated rows,1,560 compound predicates and4,752 unit conversions.
+  One import error (SCD p18 side flow2452 vs2800), its false source-defect note,
+  two context omissions and stale skill coverage were independently reproduced.
+  Local release004 fixes these;43 tests/lint pass. Deployment/publication pending.
+  See docs/DATA_QUALITY_AUDIT.md and the five ledgers. No claim of zero remaining errors.
 - Engineering-selection evaluation (R20): 32 guided native calls across seven
   scenarios exposed a projection gap (Class II temperature) and an empty-result
   interpretation trap. Generic validated `context_columns` now survives projections;

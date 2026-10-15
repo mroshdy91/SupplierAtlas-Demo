@@ -233,11 +233,13 @@ Unreadable/ill-typed cells are unknown; genuine blanks are not supplied; absent 
 
 - The table explicitly gives velocity pressure in inch W.G.; it does not repeat a unit for total pressure drop. Total-pressure cells remain unit-unspecified rather than silently assuming one.
 - Throw pairs remain in printed order; terminal velocities and room attenuation are not defined in this catalog.
+- The 12-inch / 300-fpm point prints 225 cfm, which does not equal its published neck area times velocity. The published flow is retained; no corrected operating point is inferred.
 
 **alsharqa.round-diffuser.return**
 
 - The table explicitly gives velocity pressure in inch W.G.; it does not repeat a unit for total pressure drop. Total-pressure cells remain unit-unspecified rather than silently assuming one.
 - Throw pairs remain in printed order; terminal velocities and room attenuation are not defined in this catalog.
+- The 12-inch / 300-fpm point prints 225 cfm, which does not equal its published neck area times velocity. The published flow is retained; no corrected operating point is inferred.
 
 ## Sound-attenuators.pdf
 
@@ -297,7 +299,6 @@ Unreadable/ill-typed cells are unknown; genuine blanks are not supplied; absent 
 - Examples: p.12 6x15 area 0.25 ft2; p.13 9x15 and p.14 9x18 area 0.25; p.16 12x24 area 0.25. These conflict with nominal dimensions and some return-table areas.
 - P.12 6x18 at 250 fpm: 3-way throw prints -94 and 2-way side airflow prints 13-18; these misplaced cells are unknown, not usable throws/airflow.
 - P.14 middle block labels 6x21 on the left and 9x21 on the right; width is unknown and that block has a separate ambiguous variant. Its first total flow prints 63 cfm.
-- P.18 21x24 one-way at 700 fpm prints side airflow 2800 versus total 2452. Source inconsistencies require manufacturer clarification before selection.
 
 **alsharqa.scd.return_sizes**
 

@@ -2,6 +2,29 @@
 
 Date: 2026-10-15.
 
+## Five-reviewer PDF quality audit
+
+- User explicitly requested five Sol subagents, intensive plugin edge cases and
+  verification against actual PDFs because of possible OCR/data-quality errors (R21).
+- Use fresh-context reviewers in batches, with separate report ownership. Rendered
+  pages and complete applicable headers/notes are the reference; prior reviewed
+  labels and passing tests are not evidence of transcription accuracy.
+- All 22 local PDF SHA-256 fingerprints match freshly downloaded official files.
+  This establishes source identity, not correctness of the supplier's information.
+- A ceiling p.18 side-flow discrepancy has been independently confirmed: the
+  21x24, one-way, 700 fpm cell is 2452, not the stored 2800. Its old source-defect
+  note is incorrect. This is an import/transcription defect; OCR causation is not
+  established. Corrected literal input and removed false note; stable row ID retained.
+- Completed five reviews: 1,798 visual field comparisons, all76 tables represented,
+  plus exhaustive pagination and independent predicate/unit probes. Two published
+  context omissions added (damper temperatures and splitter formulas); a round
+  diffuser source arithmetic concern is disclosed without changing its number.
+- Regression expectations come from audit ledgers, not generated catalog values.
+  The new source test failed against release003 and passes corrected004. Local43
+  tests/lint pass; report distinguishes sampling from universal accuracy.
+- Skill alpha.2 removes stale SCD-only coverage and explains batch table scope and
+  exact-unit boundaries. Same three tools, request schemas and numeric semantics.
+
 ## Engineering-selection evaluation
 
 - User requirement R20: test the installed plugin on realistic engineering tasks,

@@ -59,4 +59,9 @@ def add_duct(b):
         [("configuration",None,"string"),("a_min","mm"),("blade_length_rule",None,"string"),
          ("r1_rule",None,"string"),("r2_rule",None,"string")],
         [["single blade standard / aerofoil option",100,"1.5 * A","0.75 * W3","A + R1"]],file,14,printed="13",
+        context={"trunk_division_rules": {
+            "A": "((W3 * D3) / ((W2 * D2) + (W3 * D3))) * W1",
+            "B": "((W2 * D2) / ((W2 * D2) + (W3 * D3))) * W1"},
+            "symbol_reference": "W1 x D1, W2 x D2, W3 x D3 and A/B refer to the source branch sketch, PDF p.14.",
+            "calculation_status": "published relationships only; not evaluated"},
         notes=["Symbols refer to the source branch sketch. No calculated dimensions, flow split or pressure-loss coefficients are supplied by this table."])

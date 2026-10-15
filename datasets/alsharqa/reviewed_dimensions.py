@@ -31,7 +31,9 @@ def add_dimensions(b):
     note = "Rows preserve the published width/height/blade schedule; they do not assert an exhaustive set of orderable width-height combinations."
     b.table(model, "dimensions", "Published standard size schedule", dims, pairs, file, 4,
         printed="3", row_key=["width", "height"], variant_columns=["width", "height"],
-        context={"blade_action_standard": "parallel", "blade_action_option": "opposed"},
+        context={"blade_action_standard": "parallel", "blade_action_option": "opposed",
+                 "operating_temperature_c": {"min": -40, "max": 100},
+                 "temperature_scope": "standard construction", "technical_context_pdf_page": 3},
         notes=[note, "The p.3 narrative says single blade up to 300 mm height, while the p.4 table lists two blades at 300 mm; the table is retained with this conflict disclosed."])
     model = b.model("acvd-multiblade", "ACVD", "circular-spigot multiblade volume control damper", "dampers.volume_control", file, 5)
     pairs = [(100,100,1),(150,150,1),(200,200,1),(250,250,1),(300,300,2),(350,350,2),
@@ -39,7 +41,9 @@ def add_dimensions(b):
              (700,900,6),(750,1000,6),(800,1100,7),(850,1150,7)]
     b.table(model, "dimensions", "Visible standard size schedule", dims, pairs, file, 7,
         printed="6", row_key=["width", "height"], variant_columns=["width", "height"],
-        context={"case_length_mm": 380}, notes=[note, "A blue block obscures the lower part of the published schedule. Hidden cells are not inferred."])
+        context={"case_length_mm": 380, "operating_temperature_c": {"min": -40, "max": 100},
+                 "temperature_scope": "standard construction", "technical_context_pdf_page": 6},
+        notes=[note, "A blue block obscures the lower part of the published schedule. Hidden cells are not inferred."])
     model = b.model("acvd-round", "ACVD", "round single-blade volume control damper", "dampers.volume_control", file, 8)
     diameters = [80,100,125,140,150,160,180,200,224,250,280,305,315,350,400,450,500,550,600,610]
     b.table(model, "diameters", "Standard nominal diameters", [("diameter", "mm")],

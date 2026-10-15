@@ -144,7 +144,7 @@ def expand(data):
         elif any(c["code"] == "airflow" for c in schema["columns"]) and "airflow" not in schema["row_key"]:
             # Keep the published flow alongside velocity-based operating points.
             schema["context_columns"] = ["airflow"]
-    data["release"] = "alsharqa-engineering-003"
+    data["release"] = "alsharqa-engineering-004"
     data["coverage"] = {
         "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
         "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",

@@ -1,0 +1,6638 @@
+{
+  "auditor": "linear_outlets",
+  "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+  "method": "Rendered actual PDF pages with PyMuPDF 1.6x and viewed complete relevant pages; independent literal expected cells below then compared to local SQLite. Existing reviewed modules inspected as candidates, not source evidence.",
+  "coverage": {
+    "tables": {
+      "alsharqa.lbg-0.supply": 63,
+      "alsharqa.lbg-0y.supply": 63,
+      "alsharqa.lbg-15.supply": 63,
+      "alsharqa.lbg-30.supply": 63,
+      "alsharqa.linear-slot.dimensions": 16,
+      "alsharqa.linear-slot.return": 144,
+      "alsharqa.linear-slot.return-header-area": 16,
+      "alsharqa.linear-slot.supply": 144,
+      "alsharqa.sfb-ht.dimensions": 3,
+      "alsharqa.sfb-ht.performance": 21,
+      "alsharqa.sfb-jt.dimensions": 3,
+      "alsharqa.sfb-jt.performance": 21,
+      "alsharqa.slt.dual-side": 117,
+      "alsharqa.slt.single-side": 50,
+      "alsharqa.slt.velocity-pressure": 48,
+      "alsharqa.supply-grille.performance": 294,
+      "alsharqa.supply-grille.size-flow-range": 41
+    },
+    "total_rows": 1170,
+    "sample_rows": 211,
+    "sample_cells": 810,
+    "table_pages_viewed": {
+      "Flow-Bar-Diffuser.pdf": [
+        6,
+        7,
+        8
+      ],
+      "Linear-slot-diffuser.pdf": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "Linear-bar-grilles-_-registers.pdf": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "Light-troffer-diffusers.pdf": [
+        6,
+        7
+      ],
+      "Grilles-_-registers.pdf": [
+        10,
+        11,
+        12,
+        13
+      ]
+    }
+  },
+  "findings": [],
+  "checks": [
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r1",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 36
+      },
+      "published": {
+        "static_pressure": 7,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 4.3
+      },
+      "database": {
+        "static_pressure": 7,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 4.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r4",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 101
+      },
+      "published": {
+        "static_pressure": 55,
+        "nc": 33,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.3
+      },
+      "database": {
+        "static_pressure": 55,
+        "nc": 33,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r7",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 165
+      },
+      "published": {
+        "static_pressure": 148,
+        "nc": 49,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.5
+      },
+      "database": {
+        "static_pressure": 148,
+        "nc": 49,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.5
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r8",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 43
+      },
+      "published": {
+        "static_pressure": 8,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.8,
+        "throw_0_3m_s": 5
+      },
+      "database": {
+        "static_pressure": 8,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.8,
+        "throw_0_3m_s": 5
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r11",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 108
+      },
+      "published": {
+        "static_pressure": 51,
+        "nc": 31,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.5
+      },
+      "database": {
+        "static_pressure": 51,
+        "nc": 31,
+        "throw_0_8m_s": 4.3,
+        "throw_0_3m_s": 7.5
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r14",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 173
+      },
+      "published": {
+        "static_pressure": 129,
+        "nc": 48,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.8
+      },
+      "database": {
+        "static_pressure": 129,
+        "nc": 48,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 9.8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r15",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 43
+      },
+      "published": {
+        "static_pressure": 5,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 5
+      },
+      "database": {
+        "static_pressure": 5,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 1.5,
+        "throw_0_3m_s": 5
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r18",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 129
+      },
+      "published": {
+        "static_pressure": 46,
+        "nc": 30,
+        "throw_0_8m_s": 5,
+        "throw_0_3m_s": 8.3
+      },
+      "database": {
+        "static_pressure": 46,
+        "nc": 30,
+        "throw_0_8m_s": 5,
+        "throw_0_3m_s": 8.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.performance",
+      "pdf_page": 6,
+      "row_id": "alsharqa.sfb-ht.performance.r21",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 216
+      },
+      "published": {
+        "static_pressure": 127,
+        "nc": 46,
+        "throw_0_8m_s": 6,
+        "throw_0_3m_s": 10.8
+      },
+      "database": {
+        "static_pressure": 127,
+        "nc": 46,
+        "throw_0_8m_s": 6,
+        "throw_0_3m_s": 10.8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-ht.dimensions.r1",
+      "coordinates": {
+        "slot_opening": 25
+      },
+      "published": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      },
+      "database": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-ht.dimensions.r2",
+      "coordinates": {
+        "slot_opening": 38
+      },
+      "published": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      },
+      "database": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-ht.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-ht.dimensions.r3",
+      "coordinates": {
+        "slot_opening": 50
+      },
+      "published": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      },
+      "database": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r1",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 31
+      },
+      "published": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      },
+      "database": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r4",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 124
+      },
+      "published": {
+        "static_pressure": 27,
+        "nc": 24,
+        "throw_0_8m_s": 2.8,
+        "throw_0_3m_s": 6.8
+      },
+      "database": {
+        "static_pressure": 27,
+        "nc": 24,
+        "throw_0_8m_s": 2.8,
+        "throw_0_3m_s": 6.8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r7",
+      "coordinates": {
+        "slot_opening": 25,
+        "airflow_per_length": 217
+      },
+      "published": {
+        "static_pressure": 83,
+        "nc": 36,
+        "throw_0_8m_s": 4.5,
+        "throw_0_3m_s": 8.8
+      },
+      "database": {
+        "static_pressure": 83,
+        "nc": 36,
+        "throw_0_8m_s": 4.5,
+        "throw_0_3m_s": 8.8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r8",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 46
+      },
+      "published": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      },
+      "database": {
+        "static_pressure": 2,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.5,
+        "throw_0_3m_s": 2.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r11",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 186
+      },
+      "published": {
+        "static_pressure": 31,
+        "nc": 22,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 8
+      },
+      "database": {
+        "static_pressure": 31,
+        "nc": 22,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r14",
+      "coordinates": {
+        "slot_opening": 38,
+        "airflow_per_length": 325
+      },
+      "published": {
+        "static_pressure": 95,
+        "nc": 40,
+        "throw_0_8m_s": 5.3,
+        "throw_0_3m_s": 10.8
+      },
+      "database": {
+        "static_pressure": 95,
+        "nc": 40,
+        "throw_0_8m_s": 5.3,
+        "throw_0_3m_s": 10.8
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r15",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 54
+      },
+      "published": {
+        "static_pressure": 1,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.3,
+        "throw_0_3m_s": 2.3
+      },
+      "database": {
+        "static_pressure": 1,
+        "nc": {
+          "value": 10.0,
+          "qualifier": "lt"
+        },
+        "throw_0_8m_s": 0.3,
+        "throw_0_3m_s": 2.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r18",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 240
+      },
+      "published": {
+        "static_pressure": 28,
+        "nc": 28,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 9.3
+      },
+      "database": {
+        "static_pressure": 28,
+        "nc": 28,
+        "throw_0_8m_s": 3,
+        "throw_0_3m_s": 9.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.performance",
+      "pdf_page": 7,
+      "row_id": "alsharqa.sfb-jt.performance.r21",
+      "coordinates": {
+        "slot_opening": 50,
+        "airflow_per_length": 426
+      },
+      "published": {
+        "static_pressure": 88,
+        "nc": 40,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 12.3
+      },
+      "database": {
+        "static_pressure": 88,
+        "nc": 40,
+        "throw_0_8m_s": 5.5,
+        "throw_0_3m_s": 12.3
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-jt.dimensions.r1",
+      "coordinates": {
+        "slot_opening": 25
+      },
+      "published": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      },
+      "database": {
+        "a": 25,
+        "b": 25,
+        "w": 70,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-jt.dimensions.r2",
+      "coordinates": {
+        "slot_opening": 38
+      },
+      "published": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      },
+      "database": {
+        "a": 29,
+        "b": 38,
+        "w": 95,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.sfb-jt.dimensions",
+      "pdf_page": 8,
+      "row_id": "alsharqa.sfb-jt.dimensions.r3",
+      "coordinates": {
+        "slot_opening": 50
+      },
+      "published": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      },
+      "database": {
+        "a": 37,
+        "b": 50,
+        "w": 121,
+        "h": 46
+      },
+      "source_ref": "alsharqa-flow-bar-diffuser-pdf8",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r1",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 40,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 40,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r5",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 80,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 26,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 80,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 26,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r9",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 160,
+        "nc": 34,
+        "throw_50fpm": 45,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.1,
+        "airflow_per_length": 160,
+        "nc": 34,
+        "throw_50fpm": 45,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r10",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 60,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 60,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r14",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 31,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 31,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r18",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 240,
+        "nc": 36,
+        "throw_50fpm": 54,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.15,
+        "airflow_per_length": 240,
+        "nc": 36,
+        "throw_50fpm": 54,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r19",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 76,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 76,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r23",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r27",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 304,
+        "nc": 37,
+        "throw_50fpm": 64,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.19,
+        "airflow_per_length": 304,
+        "nc": 37,
+        "throw_50fpm": 64,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r28",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 92,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 92,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r32",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 184,
+        "nc": 20,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 184,
+        "nc": 20,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r36",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 368,
+        "nc": 38,
+        "throw_50fpm": 69,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.23,
+        "airflow_per_length": 368,
+        "nc": 38,
+        "throw_50fpm": 69,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r37",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 124,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 124,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r41",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 248,
+        "nc": 21,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 248,
+        "nc": 21,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r45",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 496,
+        "nc": 39,
+        "throw_50fpm": 73,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.31,
+        "airflow_per_length": 496,
+        "nc": 39,
+        "throw_50fpm": 73,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r46",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 160,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 160,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r50",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 320,
+        "nc": 22,
+        "throw_50fpm": 45,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 320,
+        "nc": 22,
+        "throw_50fpm": 45,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r54",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 640,
+        "nc": 40,
+        "throw_50fpm": 76,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.4,
+        "airflow_per_length": 640,
+        "nc": 40,
+        "throw_50fpm": 76,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r55",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 192,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 20,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 192,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 20,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r59",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 384,
+        "nc": 23,
+        "throw_50fpm": 48,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 384,
+        "nc": 23,
+        "throw_50fpm": 48,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0.supply",
+      "pdf_page": 9,
+      "row_id": "alsharqa.lbg-0.supply.r63",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 768,
+        "nc": 41,
+        "throw_50fpm": 80,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.48,
+        "airflow_per_length": 768,
+        "nc": 41,
+        "throw_50fpm": 80,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf9",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r1",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 35,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 6,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 35,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 6,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r5",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 71,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 22,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 71,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 22,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r9",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 142,
+        "nc": 35,
+        "throw_50fpm": 39,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": {
+          "status": "unknown"
+        },
+        "airflow_per_length": 142,
+        "nc": 35,
+        "throw_50fpm": 39,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r10",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 51,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 51,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r14",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 103,
+        "nc": 20,
+        "throw_50fpm": 26,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 103,
+        "nc": 20,
+        "throw_50fpm": 26,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r18",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 206,
+        "nc": 36,
+        "throw_50fpm": 47,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.145,
+        "airflow_per_length": 206,
+        "nc": 36,
+        "throw_50fpm": 47,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r19",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 67,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 67,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r23",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 135,
+        "nc": 21,
+        "throw_50fpm": 33,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 135,
+        "nc": 21,
+        "throw_50fpm": 33,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r27",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 271,
+        "nc": 37,
+        "throw_50fpm": 54,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.186,
+        "airflow_per_length": 271,
+        "nc": 37,
+        "throw_50fpm": 54,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r28",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 83,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 83,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r32",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 167,
+        "nc": 22,
+        "throw_50fpm": 37,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 167,
+        "nc": 22,
+        "throw_50fpm": 37,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r36",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 335,
+        "nc": 38,
+        "throw_50fpm": 57,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.225,
+        "airflow_per_length": 335,
+        "nc": 38,
+        "throw_50fpm": 57,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r37",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 119,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 119,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r41",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 239,
+        "nc": 23,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 239,
+        "nc": 23,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r45",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 478,
+        "nc": 40,
+        "throw_50fpm": 58,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 478,
+        "nc": 40,
+        "throw_50fpm": 58,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r46",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 151,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 151,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r50",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 303,
+        "nc": 25,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 303,
+        "nc": 25,
+        "throw_50fpm": 38,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r54",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 607,
+        "nc": 41,
+        "throw_50fpm": 59,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.398,
+        "airflow_per_length": 607,
+        "nc": 41,
+        "throw_50fpm": 59,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r55",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 183,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.01
+      },
+      "database": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 183,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.01
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r59",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 367,
+        "nc": 26,
+        "throw_50fpm": 39,
+        "total_pressure": 0.044
+      },
+      "database": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 367,
+        "nc": 26,
+        "throw_50fpm": 39,
+        "total_pressure": 0.044
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-0y.supply",
+      "pdf_page": 10,
+      "row_id": "alsharqa.lbg-0y.supply.r63",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 735,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.157
+      },
+      "database": {
+        "ak_per_length": 0.478,
+        "airflow_per_length": 735,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.157
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r1",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 38,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 38,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r5",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 77,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 25,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 77,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_50fpm": 25,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r9",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 153,
+        "nc": 35,
+        "throw_50fpm": 43,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.095,
+        "airflow_per_length": 153,
+        "nc": 35,
+        "throw_50fpm": 43,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r10",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 56,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 56,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 9,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r14",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 112,
+        "nc": 20,
+        "throw_50fpm": 29,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 112,
+        "nc": 20,
+        "throw_50fpm": 29,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r18",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 224,
+        "nc": 37,
+        "throw_50fpm": 51,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.14,
+        "airflow_per_length": 224,
+        "nc": 37,
+        "throw_50fpm": 51,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r19",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 72,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 72,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 11,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r23",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 144,
+        "nc": 21,
+        "throw_50fpm": 38,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 144,
+        "nc": 21,
+        "throw_50fpm": 38,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r27",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 288,
+        "nc": 38,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.18,
+        "airflow_per_length": 288,
+        "nc": 38,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r28",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 88,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 88,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 13,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r32",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 176,
+        "nc": 22,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 176,
+        "nc": 22,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r36",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 352,
+        "nc": 39,
+        "throw_50fpm": 65,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.22,
+        "airflow_per_length": 352,
+        "nc": 39,
+        "throw_50fpm": 65,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r37",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 122,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 122,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 15,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r41",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 244,
+        "nc": 23,
+        "throw_50fpm": 42,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 244,
+        "nc": 23,
+        "throw_50fpm": 42,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r45",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 486,
+        "nc": 40,
+        "throw_50fpm": 68,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.3,
+        "airflow_per_length": 486,
+        "nc": 40,
+        "throw_50fpm": 68,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r46",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 156,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 156,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 17,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r50",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 312,
+        "nc": 24,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 312,
+        "nc": 24,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r54",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 624,
+        "nc": 41,
+        "throw_50fpm": 70,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.39,
+        "airflow_per_length": 624,
+        "nc": 41,
+        "throw_50fpm": 70,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r55",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 188,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 19,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 188,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 19,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r59",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 376,
+        "nc": 25,
+        "throw_50fpm": 46,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 376,
+        "nc": 25,
+        "throw_50fpm": 46,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-15.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.lbg-15.supply.r63",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 752,
+        "nc": 42,
+        "throw_50fpm": 75,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.47,
+        "airflow_per_length": 752,
+        "nc": 42,
+        "throw_50fpm": 75,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r1",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 36,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 36,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 7,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r5",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 72,
+        "nc": 20,
+        "throw_50fpm": 23,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 72,
+        "nc": 20,
+        "throw_50fpm": 23,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r9",
+      "coordinates": {
+        "width": 3,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 144,
+        "nc": 37,
+        "throw_50fpm": 41,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.09,
+        "airflow_per_length": 144,
+        "nc": 37,
+        "throw_50fpm": 41,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r10",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 52,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 52,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 8,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r14",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 104,
+        "nc": 20,
+        "throw_50fpm": 27,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 104,
+        "nc": 20,
+        "throw_50fpm": 27,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r18",
+      "coordinates": {
+        "width": 4,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 208,
+        "nc": 38,
+        "throw_50fpm": 49,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.13,
+        "airflow_per_length": 208,
+        "nc": 38,
+        "throw_50fpm": 49,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r19",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 68,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 68,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 10,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r23",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 136,
+        "nc": 21,
+        "throw_50fpm": 36,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 136,
+        "nc": 21,
+        "throw_50fpm": 36,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r27",
+      "coordinates": {
+        "width": 5,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 272,
+        "nc": 39,
+        "throw_50fpm": 58,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.17,
+        "airflow_per_length": 272,
+        "nc": 39,
+        "throw_50fpm": 58,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r28",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 84,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 84,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 12,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r32",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 168,
+        "nc": 22,
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 168,
+        "nc": 22,
+        "throw_50fpm": 39,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r36",
+      "coordinates": {
+        "width": 6,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 336,
+        "nc": 40,
+        "throw_50fpm": 60,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.21,
+        "airflow_per_length": 336,
+        "nc": 40,
+        "throw_50fpm": 60,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r37",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 120,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 14,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r41",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 240,
+        "nc": 24,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 240,
+        "nc": 24,
+        "throw_50fpm": 40,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r45",
+      "coordinates": {
+        "width": 8,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 480,
+        "nc": 41,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.29,
+        "airflow_per_length": 480,
+        "nc": 41,
+        "throw_50fpm": 61,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r46",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 152,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 16,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r50",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 304,
+        "nc": 26,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 304,
+        "nc": 26,
+        "throw_50fpm": 41,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r54",
+      "coordinates": {
+        "width": 10,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 608,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.38,
+        "airflow_per_length": 608,
+        "nc": 42,
+        "throw_50fpm": 62,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r55",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 400
+      },
+      "published": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 184,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      },
+      "database": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 184,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 18,
+        "total_pressure": 0.009
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r59",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 800
+      },
+      "published": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 368,
+        "nc": 27,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "database": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 368,
+        "nc": 27,
+        "throw_50fpm": 43,
+        "total_pressure": 0.036
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.lbg-30.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.lbg-30.supply.r63",
+      "coordinates": {
+        "width": 12,
+        "face_velocity": 1600
+      },
+      "published": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 736,
+        "nc": 43,
+        "throw_50fpm": 67,
+        "total_pressure": 0.146
+      },
+      "database": {
+        "ak_per_length": 0.46,
+        "airflow_per_length": 736,
+        "nc": 43,
+        "throw_50fpm": 67,
+        "total_pressure": 0.146
+      },
+      "source_ref": "alsharqa-linear-bar-grilles-registers-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.linear-slot.supply.r1",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 1,
+        "airflow_per_length": 10
+      },
+      "published": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 8
+      },
+      "database": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 8
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.linear-slot.supply.r36",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 4,
+        "airflow_per_length": 120
+      },
+      "published": {
+        "nc": 34,
+        "throw_100fpm": 24,
+        "throw_50fpm": 33
+      },
+      "database": {
+        "nc": 34.0,
+        "throw_100fpm": 24,
+        "throw_50fpm": 33
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 11,
+      "row_id": "alsharqa.linear-slot.supply.r72",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 8,
+        "airflow_per_length": 400
+      },
+      "published": {
+        "nc": 56,
+        "throw_100fpm": 40,
+        "throw_50fpm": 62
+      },
+      "database": {
+        "nc": 56.0,
+        "throw_100fpm": 40,
+        "throw_50fpm": 62
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.linear-slot.supply.r73",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 1,
+        "airflow_per_length": 10
+      },
+      "published": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 7
+      },
+      "database": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw_100fpm": 4,
+        "throw_50fpm": 7
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.linear-slot.supply.r108",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 4,
+        "airflow_per_length": 120
+      },
+      "published": {
+        "nc": 32,
+        "throw_100fpm": 23,
+        "throw_50fpm": 32
+      },
+      "database": {
+        "nc": 32.0,
+        "throw_100fpm": 23,
+        "throw_50fpm": 32
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.supply",
+      "pdf_page": 12,
+      "row_id": "alsharqa.linear-slot.supply.r144",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 8,
+        "airflow_per_length": 400
+      },
+      "published": {
+        "nc": 54,
+        "throw_100fpm": 39,
+        "throw_50fpm": 60
+      },
+      "database": {
+        "nc": 54.0,
+        "throw_100fpm": 39,
+        "throw_50fpm": 60
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf12",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return.r1",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 1,
+        "airflow_per_length": 10
+      },
+      "published": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      },
+      "database": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return.r36",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 4,
+        "airflow_per_length": 120
+      },
+      "published": {
+        "nc": 35
+      },
+      "database": {
+        "nc": 35.0
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return.r72",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 8,
+        "airflow_per_length": 400
+      },
+      "published": {
+        "nc": 57
+      },
+      "database": {
+        "nc": 57.0
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return.r73",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 1,
+        "airflow_per_length": 10
+      },
+      "published": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      },
+      "database": {
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        }
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return.r108",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 4,
+        "airflow_per_length": 120
+      },
+      "published": {
+        "nc": 33
+      },
+      "database": {
+        "nc": 33.0
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return.r144",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 8,
+        "airflow_per_length": 400
+      },
+      "published": {
+        "nc": 55
+      },
+      "database": {
+        "nc": 55.0
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return-header-area.r1",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 1
+      },
+      "published": {
+        "static_pressure_header": 0.007,
+        "effective_free_area_per_length": 0.046
+      },
+      "database": {
+        "static_pressure_header": 0.007,
+        "effective_free_area_per_length": 0.046
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return-header-area.r4",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 4
+      },
+      "published": {
+        "static_pressure_header": 0.117,
+        "effective_free_area_per_length": 0.184
+      },
+      "database": {
+        "static_pressure_header": 0.117,
+        "effective_free_area_per_length": 0.184
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 13,
+      "row_id": "alsharqa.linear-slot.return-header-area.r8",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 8
+      },
+      "published": {
+        "static_pressure_header": 0.452,
+        "effective_free_area_per_length": 0.368
+      },
+      "database": {
+        "static_pressure_header": 0.452,
+        "effective_free_area_per_length": 0.368
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return-header-area.r9",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 1
+      },
+      "published": {
+        "static_pressure_header": 0.005,
+        "effective_free_area_per_length": 0.034
+      },
+      "database": {
+        "static_pressure_header": 0.005,
+        "effective_free_area_per_length": 0.034
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return-header-area.r12",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 4
+      },
+      "published": {
+        "static_pressure_header": 0.078,
+        "effective_free_area_per_length": 0.131
+      },
+      "database": {
+        "static_pressure_header": 0.078,
+        "effective_free_area_per_length": 0.131
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.return-header-area",
+      "pdf_page": 14,
+      "row_id": "alsharqa.linear-slot.return-header-area.r16",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 8
+      },
+      "published": {
+        "static_pressure_header": 0.31,
+        "effective_free_area_per_length": 0.234
+      },
+      "database": {
+        "static_pressure_header": 0.31,
+        "effective_free_area_per_length": 0.234
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf14",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r1",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 1
+      },
+      "published": {
+        "a": 45,
+        "b": 83
+      },
+      "database": {
+        "a": 45,
+        "b": 83
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r4",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 4
+      },
+      "published": {
+        "a": 147,
+        "b": 186.5
+      },
+      "database": {
+        "a": 147,
+        "b": 186.5
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r8",
+      "coordinates": {
+        "slot_width": 0.75,
+        "slot_count": 8
+      },
+      "published": {
+        "a": 280,
+        "b": 324.5
+      },
+      "database": {
+        "a": 280,
+        "b": 324.5
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r9",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 1
+      },
+      "published": {
+        "a": 51,
+        "b": 89
+      },
+      "database": {
+        "a": 51,
+        "b": 89
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r12",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 4
+      },
+      "published": {
+        "a": 171,
+        "b": 210.5
+      },
+      "database": {
+        "a": 171,
+        "b": 210.5
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.linear-slot.dimensions",
+      "pdf_page": 10,
+      "row_id": "alsharqa.linear-slot.dimensions.r16",
+      "coordinates": {
+        "slot_width": 1,
+        "slot_count": 8
+      },
+      "published": {
+        "a": 328,
+        "b": 372.5
+      },
+      "database": {
+        "a": 328,
+        "b": 372.5
+      },
+      "source_ref": "alsharqa-linear-slot-diffuser-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r1",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 5,
+        "airflow": 50
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 1,
+        "throw_second": 2,
+        "throw_third": 10
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 1,
+        "throw_second": 2,
+        "throw_third": 10
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r18",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 6,
+        "airflow": 140
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.38,
+        "nc": 42,
+        "throw_first": 8,
+        "throw_second": 17,
+        "throw_third": 25
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.38,
+        "nc": 42,
+        "throw_first": 8,
+        "throw_second": 17,
+        "throw_third": 25
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r19",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 5,
+        "airflow": 40
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.063,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 3,
+        "throw_second": 6,
+        "throw_third": 13
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.063,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 3,
+        "throw_second": 6,
+        "throw_third": 13
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r36",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 6,
+        "airflow": 120
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.538,
+        "nc": 48,
+        "throw_first": 13,
+        "throw_second": 17,
+        "throw_third": 23
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.538,
+        "nc": 48,
+        "throw_first": 13,
+        "throw_second": 17,
+        "throw_third": 23
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r37",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 5,
+        "airflow": 30
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.056,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 2,
+        "throw_second": 5,
+        "throw_third": 11
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.056,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_first": 2,
+        "throw_second": 5,
+        "throw_third": 11
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r50",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 6,
+        "airflow": 90
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.493,
+        "nc": 48,
+        "throw_first": 11,
+        "throw_second": 14,
+        "throw_third": 20
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.493,
+        "nc": 48,
+        "throw_first": 11,
+        "throw_second": 14,
+        "throw_third": 20
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r5",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 5,
+        "airflow": 90
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.171,
+        "nc": 27,
+        "throw_first": 4,
+        "throw_second": 8,
+        "throw_third": 20
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.171,
+        "nc": 27,
+        "throw_first": 4,
+        "throw_second": 8,
+        "throw_third": 20
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r32",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 6,
+        "airflow": 80
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.24,
+        "nc": 35,
+        "throw_first": 9,
+        "throw_second": 13,
+        "throw_third": 19
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.24,
+        "nc": 35,
+        "throw_first": 9,
+        "throw_second": 13,
+        "throw_third": 19
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.single-side",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.single-side.r40",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 5,
+        "airflow": 60
+      },
+      "published": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.225,
+        "nc": 36,
+        "throw_first": 7,
+        "throw_second": 11,
+        "throw_third": 17
+      },
+      "database": {
+        "neck_shape": "oval",
+        "total_pressure_printed": 0.225,
+        "nc": 36,
+        "throw_first": 7,
+        "throw_second": 11,
+        "throw_third": 17
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r1",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 5,
+        "neck_shape": "round",
+        "airflow": 60
+      },
+      "published": {
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 3
+      },
+      "database": {
+        "total_pressure_printed": 0.053,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 3
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r27",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 8,
+        "neck_shape": "round",
+        "airflow": 220
+      },
+      "published": {
+        "total_pressure_printed": 0.327,
+        "nc": 38,
+        "throw_third": 16
+      },
+      "database": {
+        "total_pressure_printed": 0.327,
+        "nc": 38,
+        "throw_third": 16
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r32",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 5,
+        "neck_shape": "LP oval",
+        "airflow": 140
+      },
+      "published": {
+        "total_pressure_printed": 0.193,
+        "nc": 32,
+        "throw_third": 12
+      },
+      "database": {
+        "total_pressure_printed": 0.193,
+        "nc": 32,
+        "throw_third": 12
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r45",
+      "coordinates": {
+        "fixture_length": 4,
+        "neck_size": 6,
+        "neck_shape": "LP oval",
+        "airflow": 220
+      },
+      "published": {
+        "total_pressure_printed": 0.328,
+        "nc": 41,
+        "throw_third": 16
+      },
+      "database": {
+        "total_pressure_printed": 0.328,
+        "nc": 41,
+        "throw_third": 16
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r46",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 5,
+        "neck_shape": "round",
+        "airflow": 50
+      },
+      "published": {
+        "total_pressure_printed": 0.036,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      },
+      "database": {
+        "total_pressure_printed": 0.036,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r62",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 6,
+        "neck_shape": "round",
+        "airflow": 160
+      },
+      "published": {
+        "total_pressure_printed": 0.321,
+        "nc": 40,
+        "throw_third": 51
+      },
+      "database": {
+        "total_pressure_printed": 0.321,
+        "nc": 40,
+        "throw_third": 51
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r71",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 5,
+        "neck_shape": "LP oval",
+        "airflow": 160
+      },
+      "published": {
+        "total_pressure_printed": 0.367,
+        "nc": 40,
+        "throw_third": 51
+      },
+      "database": {
+        "total_pressure_printed": 0.367,
+        "nc": 40,
+        "throw_third": 51
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r81",
+      "coordinates": {
+        "fixture_length": 3,
+        "neck_size": 6,
+        "neck_shape": "LP oval",
+        "airflow": 180
+      },
+      "published": {
+        "total_pressure_printed": 0.402,
+        "nc": 43,
+        "throw_third": 16
+      },
+      "database": {
+        "total_pressure_printed": 0.402,
+        "nc": 43,
+        "throw_third": 16
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r82",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 5,
+        "neck_shape": "round",
+        "airflow": 40
+      },
+      "published": {
+        "total_pressure_printed": 0.04,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      },
+      "database": {
+        "total_pressure_printed": 0.04,
+        "nc": {
+          "status": "not_supplied"
+        },
+        "throw_third": 7
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r99",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 6,
+        "neck_shape": "round",
+        "airflow": 120
+      },
+      "published": {
+        "total_pressure_printed": 0.348,
+        "nc": 40,
+        "throw_third": 13
+      },
+      "database": {
+        "total_pressure_printed": 0.348,
+        "nc": 40,
+        "throw_third": 13
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r104",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 5,
+        "neck_shape": "LP oval",
+        "airflow": 80
+      },
+      "published": {
+        "total_pressure_printed": 0.129,
+        "nc": 25,
+        "throw_third": 11
+      },
+      "database": {
+        "total_pressure_printed": 0.129,
+        "nc": 25,
+        "throw_third": 11
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.dual-side",
+      "pdf_page": 7,
+      "row_id": "alsharqa.slt.dual-side.r117",
+      "coordinates": {
+        "fixture_length": 2,
+        "neck_size": 6,
+        "neck_shape": "LP oval",
+        "airflow": 120
+      },
+      "published": {
+        "total_pressure_printed": 0.256,
+        "nc": 38,
+        "throw_third": 13
+      },
+      "database": {
+        "total_pressure_printed": 0.256,
+        "nc": 38,
+        "throw_third": 13
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf7",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r1",
+      "coordinates": {
+        "neck_size": 5,
+        "airflow": 20
+      },
+      "published": {
+        "velocity_pressure": 0.001
+      },
+      "database": {
+        "velocity_pressure": 0.001
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r9",
+      "coordinates": {
+        "neck_size": 5,
+        "airflow": 100
+      },
+      "published": {
+        "velocity_pressure": 0.034
+      },
+      "database": {
+        "velocity_pressure": 0.034
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r16",
+      "coordinates": {
+        "neck_size": 5,
+        "airflow": 220
+      },
+      "published": {
+        "velocity_pressure": 0.163
+      },
+      "database": {
+        "velocity_pressure": 0.163
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r17",
+      "coordinates": {
+        "neck_size": 6,
+        "airflow": 20
+      },
+      "published": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      },
+      "database": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r25",
+      "coordinates": {
+        "neck_size": 6,
+        "airflow": 100
+      },
+      "published": {
+        "velocity_pressure": 0.016
+      },
+      "database": {
+        "velocity_pressure": 0.016
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r32",
+      "coordinates": {
+        "neck_size": 6,
+        "airflow": 220
+      },
+      "published": {
+        "velocity_pressure": 0.078
+      },
+      "database": {
+        "velocity_pressure": 0.078
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r33",
+      "coordinates": {
+        "neck_size": 8,
+        "airflow": 20
+      },
+      "published": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      },
+      "database": {
+        "velocity_pressure": {
+          "status": "not_supplied"
+        }
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r41",
+      "coordinates": {
+        "neck_size": 8,
+        "airflow": 100
+      },
+      "published": {
+        "velocity_pressure": 0.005
+      },
+      "database": {
+        "velocity_pressure": 0.005
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.slt.velocity-pressure",
+      "pdf_page": 6,
+      "row_id": "alsharqa.slt.velocity-pressure.r48",
+      "coordinates": {
+        "neck_size": 8,
+        "airflow": 220
+      },
+      "published": {
+        "velocity_pressure": 0.025
+      },
+      "database": {
+        "velocity_pressure": 0.025
+      },
+      "source_ref": "alsharqa-light-troffer-diffusers-pdf6",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r1",
+      "coordinates": {
+        "size_group_in": "16x12 / 20x10 / 24x8",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 278,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19
+      },
+      "database": {
+        "airflow": 278.0,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r11",
+      "coordinates": {
+        "size_group_in": "16x12 / 20x10 / 24x8",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 694,
+        "static_pressure": 0.053,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32
+      },
+      "database": {
+        "airflow": 694.0,
+        "static_pressure": 0.053,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r147",
+      "coordinates": {
+        "size_group_in": "20x18 / 30x12 / 36x10",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 2000,
+        "static_pressure": 0.17,
+        "nc": 44,
+        "throw": 46
+      },
+      "database": {
+        "airflow": 2000.0,
+        "static_pressure": 0.17,
+        "nc": 44.0,
+        "throw": 46.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r148",
+      "coordinates": {
+        "size_group_in": "24x18 / 30x14 / 36x12",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 600,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 26
+      },
+      "database": {
+        "airflow": 600.0,
+        "static_pressure": 0.0065,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 26.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r214",
+      "coordinates": {
+        "size_group_in": "24x24",
+        "velocity": 500,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 2000,
+        "static_pressure": 0.041,
+        "nc": 29,
+        "throw": 38
+      },
+      "database": {
+        "airflow": 2000.0,
+        "static_pressure": 0.041,
+        "nc": 29.0,
+        "throw": 38.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r294",
+      "coordinates": {
+        "size_group_in": "36x24",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 4800,
+        "static_pressure": 0.17,
+        "nc": 46,
+        "throw": 66
+      },
+      "database": {
+        "airflow": 4800.0,
+        "static_pressure": 0.17,
+        "nc": 46.0,
+        "throw": 66.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r1",
+      "coordinates": {
+        "width": 12,
+        "height": 6
+      },
+      "published": {
+        "airflow_min": 100,
+        "airflow_max": 300
+      },
+      "database": {
+        "airflow_min": 100,
+        "airflow_max": 300
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r7",
+      "coordinates": {
+        "width": 36,
+        "height": 6
+      },
+      "published": {
+        "airflow_min": 350,
+        "airflow_max": 900
+      },
+      "database": {
+        "airflow_min": 350,
+        "airflow_max": 900
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r22",
+      "coordinates": {
+        "width": 12,
+        "height": 12
+      },
+      "published": {
+        "airflow_min": 200,
+        "airflow_max": 550
+      },
+      "database": {
+        "airflow_min": 200,
+        "airflow_max": 550
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r25",
+      "coordinates": {
+        "width": 20,
+        "height": 12
+      },
+      "published": {
+        "airflow_min": 325,
+        "airflow_max": 925
+      },
+      "database": {
+        "airflow_min": 325,
+        "airflow_max": 925
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r41",
+      "coordinates": {
+        "width": 36,
+        "height": 24
+      },
+      "published": {
+        "airflow_min": 1200,
+        "airflow_max": 3200
+      },
+      "database": {
+        "airflow_min": 1200,
+        "airflow_max": 3200
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.size-flow-range",
+      "pdf_page": 10,
+      "row_id": "alsharqa.supply-grille.size-flow-range.r35",
+      "coordinates": {
+        "width": 20,
+        "height": 18
+      },
+      "published": {
+        "airflow_min": 500,
+        "airflow_max": 1400
+      },
+      "database": {
+        "airflow_min": 500,
+        "airflow_max": 1400
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf10",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r21",
+      "coordinates": {
+        "size_group_in": "16x12 / 20x10 / 24x8",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1111,
+        "nc": 32,
+        "throw": 37
+      },
+      "database": {
+        "airflow": 1111.0,
+        "nc": 32.0,
+        "throw": 37.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r22",
+      "coordinates": {
+        "size_group_in": "16x14 / 18x12 / 36x6",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 300,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19
+      },
+      "database": {
+        "airflow": 300.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 19.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r32",
+      "coordinates": {
+        "size_group_in": "16x14 / 18x12 / 36x6",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 750,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32
+      },
+      "database": {
+        "airflow": 750.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 32.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r42",
+      "coordinates": {
+        "size_group_in": "16x14 / 18x12 / 36x6",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1200,
+        "nc": 33,
+        "throw": 37
+      },
+      "database": {
+        "airflow": 1200.0,
+        "nc": 33.0,
+        "throw": 37.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r43",
+      "coordinates": {
+        "size_group_in": "18x14 / 20x12 / 24x10 / 30x8",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 333,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21
+      },
+      "database": {
+        "airflow": 333.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r53",
+      "coordinates": {
+        "size_group_in": "18x14 / 20x12 / 24x10 / 30x8",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 833,
+        "nc": 23,
+        "throw": 33
+      },
+      "database": {
+        "airflow": 833.0,
+        "nc": 23.0,
+        "throw": 33.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r63",
+      "coordinates": {
+        "size_group_in": "18x14 / 20x12 / 24x10 / 30x8",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1333,
+        "nc": 38,
+        "throw": 37
+      },
+      "database": {
+        "airflow": 1333.0,
+        "nc": 38.0,
+        "throw": 37.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r64",
+      "coordinates": {
+        "size_group_in": "20x14 / 24x12 / 36x8",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 400,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20
+      },
+      "database": {
+        "airflow": 400.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r74",
+      "coordinates": {
+        "size_group_in": "20x14 / 24x12 / 36x8",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1000,
+        "nc": 28,
+        "throw": 38
+      },
+      "database": {
+        "airflow": 1000.0,
+        "nc": 28.0,
+        "throw": 38.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r84",
+      "coordinates": {
+        "size_group_in": "20x14 / 24x12 / 36x8",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1600,
+        "nc": 43,
+        "throw": 44
+      },
+      "database": {
+        "airflow": 1600.0,
+        "nc": 43.0,
+        "throw": 44.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r85",
+      "coordinates": {
+        "size_group_in": "30x10",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 417,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20
+      },
+      "database": {
+        "airflow": 417.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 20.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r95",
+      "coordinates": {
+        "size_group_in": "30x10",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1042,
+        "nc": 28,
+        "throw": 38
+      },
+      "database": {
+        "airflow": 1042.0,
+        "nc": 28.0,
+        "throw": 38.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r105",
+      "coordinates": {
+        "size_group_in": "30x10",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1667,
+        "nc": 43,
+        "throw": 44
+      },
+      "database": {
+        "airflow": 1667.0,
+        "nc": 43.0,
+        "throw": 44.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r106",
+      "coordinates": {
+        "size_group_in": "24x14",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 467,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21
+      },
+      "database": {
+        "airflow": 467.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 21.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r116",
+      "coordinates": {
+        "size_group_in": "24x14",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1167,
+        "nc": 28,
+        "throw": 38
+      },
+      "database": {
+        "airflow": 1167.0,
+        "nc": 28.0,
+        "throw": 38.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r126",
+      "coordinates": {
+        "size_group_in": "24x14",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 1867,
+        "nc": 44,
+        "throw": 43
+      },
+      "database": {
+        "airflow": 1867.0,
+        "nc": 44.0,
+        "throw": 43.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r127",
+      "coordinates": {
+        "size_group_in": "20x18 / 30x12 / 36x10",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 600,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 23
+      },
+      "database": {
+        "airflow": 600.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 23.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 11,
+      "row_id": "alsharqa.supply-grille.performance.r137",
+      "coordinates": {
+        "size_group_in": "20x18 / 30x12 / 36x10",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1250,
+        "nc": 28,
+        "throw": 40
+      },
+      "database": {
+        "airflow": 1250.0,
+        "nc": 28.0,
+        "throw": 40.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf11",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r158",
+      "coordinates": {
+        "size_group_in": "24x18 / 30x14 / 36x12",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1500,
+        "nc": 29,
+        "throw": 43
+      },
+      "database": {
+        "airflow": 1500.0,
+        "nc": 29.0,
+        "throw": 43.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r168",
+      "coordinates": {
+        "size_group_in": "24x18 / 30x14 / 36x12",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 2400,
+        "nc": 44,
+        "throw": 46
+      },
+      "database": {
+        "airflow": 2400.0,
+        "nc": 44.0,
+        "throw": 46.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r169",
+      "coordinates": {
+        "size_group_in": "36x14",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 700,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30
+      },
+      "database": {
+        "airflow": 700.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r179",
+      "coordinates": {
+        "size_group_in": "36x14",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1750,
+        "nc": 29,
+        "throw": 47
+      },
+      "database": {
+        "airflow": 1750.0,
+        "nc": 29.0,
+        "throw": 47.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r189",
+      "coordinates": {
+        "size_group_in": "36x14",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 2800,
+        "nc": 45,
+        "throw": 48
+      },
+      "database": {
+        "airflow": 2800.0,
+        "nc": 45.0,
+        "throw": 48.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r190",
+      "coordinates": {
+        "size_group_in": "30x18",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 750,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30
+      },
+      "database": {
+        "airflow": 750.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 30.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r200",
+      "coordinates": {
+        "size_group_in": "30x18",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 1875,
+        "nc": 29,
+        "throw": 47
+      },
+      "database": {
+        "airflow": 1875.0,
+        "nc": 29.0,
+        "throw": 47.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r210",
+      "coordinates": {
+        "size_group_in": "30x18",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 3000,
+        "nc": 45,
+        "throw": 48
+      },
+      "database": {
+        "airflow": 3000.0,
+        "nc": 45.0,
+        "throw": 48.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r211",
+      "coordinates": {
+        "size_group_in": "24x24",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 800,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 31
+      },
+      "database": {
+        "airflow": 800.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 31.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r221",
+      "coordinates": {
+        "size_group_in": "24x24",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 2000,
+        "nc": 29,
+        "throw": 48
+      },
+      "database": {
+        "airflow": 2000.0,
+        "nc": 29.0,
+        "throw": 48.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r231",
+      "coordinates": {
+        "size_group_in": "24x24",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 3200,
+        "nc": 45,
+        "throw": 49
+      },
+      "database": {
+        "airflow": 3200.0,
+        "nc": 45.0,
+        "throw": 49.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r232",
+      "coordinates": {
+        "size_group_in": "36x18",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 900,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 34
+      },
+      "database": {
+        "airflow": 900.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 34.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r242",
+      "coordinates": {
+        "size_group_in": "36x18",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 2250,
+        "nc": 29,
+        "throw": 52
+      },
+      "database": {
+        "airflow": 2250.0,
+        "nc": 29.0,
+        "throw": 52.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r252",
+      "coordinates": {
+        "size_group_in": "36x18",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 3600,
+        "nc": 45,
+        "throw": 51
+      },
+      "database": {
+        "airflow": 3600.0,
+        "nc": 45.0,
+        "throw": 51.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r253",
+      "coordinates": {
+        "size_group_in": "30x24",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 1000,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 35
+      },
+      "database": {
+        "airflow": 1000.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 35.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r263",
+      "coordinates": {
+        "size_group_in": "30x24",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 2500,
+        "nc": 30,
+        "throw": 53
+      },
+      "database": {
+        "airflow": 2500.0,
+        "nc": 30.0,
+        "throw": 53.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r273",
+      "coordinates": {
+        "size_group_in": "30x24",
+        "velocity": 800,
+        "deflection": 45
+      },
+      "published": {
+        "airflow": 4000,
+        "nc": 46,
+        "throw": 51
+      },
+      "database": {
+        "airflow": 4000.0,
+        "nc": 46.0,
+        "throw": 51.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r274",
+      "coordinates": {
+        "size_group_in": "36x24",
+        "velocity": 200,
+        "deflection": 0
+      },
+      "published": {
+        "airflow": 1200,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 40
+      },
+      "database": {
+        "airflow": 1200.0,
+        "nc": {
+          "value": 20.0,
+          "qualifier": "lt"
+        },
+        "throw": 40.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    },
+    {
+      "table": "alsharqa.supply-grille.performance",
+      "pdf_page": 13,
+      "row_id": "alsharqa.supply-grille.performance.r284",
+      "coordinates": {
+        "size_group_in": "36x24",
+        "velocity": 500,
+        "deflection": 22.5
+      },
+      "published": {
+        "airflow": 3000,
+        "nc": 31,
+        "throw": 60
+      },
+      "database": {
+        "airflow": 3000.0,
+        "nc": 31.0,
+        "throw": 60.0
+      },
+      "source_ref": "alsharqa-grilles-registers-pdf13",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "Stratified visual sampling, not independent full double entry of every cell.",
+    "Original PDFs are scanned/rasterized; no OCR used as sole evidence.",
+    "Drawings, generic room noise recommendations and conversion tables were overview-screened but not entered as product performance.",
+    "No numeric conversion stress test in this audit.",
+    "Batch with distinct table IDs for different models returns per-product table ownership errors; split calls succeed. This is a usability limitation, not source corruption."
+  ],
+  "native_calls": [
+    {
+      "tool": "discover_catalog",
+      "request": {
+        "limit": 20
+      },
+      "outcome": "20 categories returned, continuation explicitly present; catalog version alsharqa-engineering-003+b7a55ea019a3"
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "limit": 5
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.sfb-ht",
+            "label": "Alsharqa flow bar high throw"
+          },
+          {
+            "id": "alsharqa.sfb-jt",
+            "label": "Alsharqa flow bar jet throw"
+          }
+        ],
+        "returned": 2,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.linear_slot_diffusers",
+        "limit": 5
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.linear-slot",
+            "label": "Alsharqa linear slot diffuser"
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.linear_bar_grilles",
+        "limit": 5
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.lbg-0",
+            "label": "Alsharqa linear bar grille 0"
+          },
+          {
+            "id": "alsharqa.lbg-0y",
+            "label": "Alsharqa linear bar grille 0Y"
+          },
+          {
+            "id": "alsharqa.lbg-15",
+            "label": "Alsharqa linear bar grille 15"
+          },
+          {
+            "id": "alsharqa.lbg-30",
+            "label": "Alsharqa linear bar grille 30"
+          }
+        ],
+        "returned": 4,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.light_troffer_diffusers",
+        "limit": 5
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.slt",
+            "label": "Alsharqa light troffer diffuser"
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.grilles",
+        "limit": 5
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.supply-grille",
+            "label": "Alsharqa supply grille and register"
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "tool": "discover_catalog",
+      "request": {
+        "schema_id": "alsharqa.linear-slot.supply.v1"
+      },
+      "outcome": "Correct cfm/ft airflow and feet/100 and 50fpm throw endpoint schema."
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.sfb-jt",
+          "alsharqa.slt",
+          "alsharqa.supply-grille"
+        ],
+        "tables": [
+          "alsharqa.sfb-jt.performance",
+          "alsharqa.slt.dual-side",
+          "alsharqa.supply-grille.performance"
+        ]
+      },
+      "outcome": "Each product returned Requested table does not belong to this product. This record abbreviates table query predicates; successful split requests follow.",
+      "reproducibility": "Same three IDs and three tables reproduces ownership errors; columns/filters do not cause this behavior."
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.sfb-jt"
+        ],
+        "tables": [
+          {
+            "table_id": "alsharqa.sfb-jt.performance",
+            "columns": [
+              "slot_opening",
+              "airflow_per_length",
+              "static_pressure",
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "slot_opening",
+                "value": 25
+              },
+              {
+                "field": "airflow_per_length",
+                "op": "lte",
+                "value": 62
+              }
+            ],
+            "limit": 3
+          }
+        ],
+        "include_sources": true
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.sfb-jt",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.flow_bar_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SFB-JT",
+            "label": "Alsharqa flow bar jet throw",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.sfb-jt.performance",
+                "schema_id": "alsharqa.sfb-jt.performance.v1",
+                "row_count": 21
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.sfb-jt.performance",
+                "schema_id": "alsharqa.sfb-jt.performance.v1",
+                "columns": [
+                  {
+                    "code": "slot_opening",
+                    "label": "Slot opening",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "airflow_per_length",
+                    "label": "Airflow per length",
+                    "type": "number",
+                    "unit": "L/s/m"
+                  },
+                  {
+                    "code": "static_pressure",
+                    "label": "Static pressure",
+                    "type": "number",
+                    "unit": "Pa"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  }
+                ],
+                "context": {
+                  "active_length_mm": 1200,
+                  "room_absorption_db": 10,
+                  "air_pattern": "1-way",
+                  "throw_condition": "isothermal",
+                  "inlet_duct_velocity_m_s": {
+                    "qualifier": "lt",
+                    "value": 4
+                  },
+                  "plenum_effect_included": false
+                },
+                "notes": [
+                  "Airflow is per meter of length; NC and throw are for a 1200 mm active section.",
+                  "Published length factors for throw: 600 mm 0.72; 3000 mm 1.7; 3600 mm 1.8. No calculated rows are stored.",
+                  "For divided flow, use the airflow apportioned to each direction.",
+                  "The source instructs adding 3 NC when a supply unit is used as a return; these rows remain unadjusted supply values."
+                ],
+                "source": {
+                  "id": "alsharqa-flow-bar-diffuser-pdf7",
+                  "label": "Alsharqa Flow-Bar-Diffuser, PDF p.7",
+                  "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.sfb-jt.performance.r1",
+                    "variant_id": "alsharqa.sfb-jt.25",
+                    "values": [
+                      25,
+                      31,
+                      2,
+                      {
+                        "value": 10,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-flow-bar-diffuser-pdf7"
+                  },
+                  {
+                    "id": "alsharqa.sfb-jt.performance.r2",
+                    "variant_id": "alsharqa.sfb-jt.25",
+                    "values": [
+                      25,
+                      62,
+                      7,
+                      {
+                        "value": 10,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-flow-bar-diffuser-pdf7"
+                  }
+                ],
+                "returned": 2,
+                "next_cursor": null,
+                "row_sources": [
+                  {
+                    "id": "alsharqa-flow-bar-diffuser-pdf7",
+                    "label": "Alsharqa Flow-Bar-Diffuser, PDF p.7",
+                    "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf",
+                    "locator": {
+                      "id": "alsharqa-flow-bar-diffuser-pdf7",
+                      "document_id": "alsharqa-flow-bar-diffuser",
+                      "pdf_page": 7,
+                      "printed_page": "6",
+                      "label": "Alsharqa Flow-Bar-Diffuser, PDF p.7"
+                    },
+                    "document": {
+                      "id": "alsharqa-flow-bar-diffuser",
+                      "title": "Alsharqa Flow-Bar-Diffuser",
+                      "published_date": null,
+                      "revision_label": null,
+                      "sha256": "8dc18d71df7c5af815fbbb55c09177d88d8eada42d1ca0c6f9a8c17705e73f60",
+                      "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "alsharqa-flow-bar-diffuser-pdf7",
+                "label": "Alsharqa Flow-Bar-Diffuser, PDF p.7",
+                "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf",
+                "locator": {
+                  "id": "alsharqa-flow-bar-diffuser-pdf7",
+                  "document_id": "alsharqa-flow-bar-diffuser",
+                  "pdf_page": 7,
+                  "printed_page": "6",
+                  "label": "Alsharqa Flow-Bar-Diffuser, PDF p.7"
+                },
+                "document": {
+                  "id": "alsharqa-flow-bar-diffuser",
+                  "title": "Alsharqa Flow-Bar-Diffuser",
+                  "published_date": null,
+                  "revision_label": null,
+                  "sha256": "8dc18d71df7c5af815fbbb55c09177d88d8eada42d1ca0c6f9a8c17705e73f60",
+                  "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.slt"
+        ],
+        "tables": [
+          {
+            "table_id": "alsharqa.slt.dual-side",
+            "columns": [
+              "fixture_length",
+              "neck_size",
+              "neck_shape",
+              "airflow",
+              "nc",
+              "throw_third"
+            ],
+            "filters": [
+              {
+                "field": "fixture_length",
+                "value": 3
+              },
+              {
+                "field": "airflow",
+                "value": 160
+              }
+            ],
+            "limit": 5
+          }
+        ],
+        "include_sources": true
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.slt",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.light_troffer_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SLT-S / SLT-D",
+            "label": "Alsharqa light troffer diffuser",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.slt.dual-side",
+                "schema_id": "alsharqa.slt.dual-side.v1",
+                "row_count": 117
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.slt.dual-side",
+                "schema_id": "alsharqa.slt.dual-side.v1",
+                "columns": [
+                  {
+                    "code": "fixture_length",
+                    "label": "Fixture length",
+                    "type": "number",
+                    "unit": "ft"
+                  },
+                  {
+                    "code": "neck_size",
+                    "label": "Neck size",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "neck_shape",
+                    "label": "Neck shape",
+                    "type": "string",
+                    "unit": null
+                  },
+                  {
+                    "code": "airflow",
+                    "label": "Airflow",
+                    "type": "number",
+                    "unit": "cfm"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  },
+                  {
+                    "code": "throw_third",
+                    "label": "Throw third",
+                    "type": "number",
+                    "unit": "ft"
+                  }
+                ],
+                "context": {
+                  "side_configuration": "dual",
+                  "nc_room_attenuation_status": "not supplied"
+                },
+                "notes": [
+                  "Throw terminal velocities, total-pressure units and NC room attenuation are not specified on these performance pages.",
+                  "NC dashes have no defined numeric threshold in this catalog and remain not supplied.",
+                  "The 3-foot fixture at 160 cfm prints throw 7-11-51 ft; this anomalous triple is retained as printed, not corrected to 15."
+                ],
+                "source": {
+                  "id": "alsharqa-light-troffer-diffusers-pdf7",
+                  "label": "Alsharqa Light-troffer-diffusers, PDF p.7",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.slt.dual-side.r53",
+                    "variant_id": "alsharqa.slt.3x5xround",
+                    "values": [
+                      3,
+                      5,
+                      "round",
+                      160,
+                      40,
+                      51
+                    ],
+                    "source_ref": "alsharqa-light-troffer-diffusers-pdf7"
+                  },
+                  {
+                    "id": "alsharqa.slt.dual-side.r62",
+                    "variant_id": "alsharqa.slt.3x6xround",
+                    "values": [
+                      3,
+                      6,
+                      "round",
+                      160,
+                      40,
+                      51
+                    ],
+                    "source_ref": "alsharqa-light-troffer-diffusers-pdf7"
+                  },
+                  {
+                    "id": "alsharqa.slt.dual-side.r71",
+                    "variant_id": "alsharqa.slt.3x5xlp-oval",
+                    "values": [
+                      3,
+                      5,
+                      "LP oval",
+                      160,
+                      40,
+                      51
+                    ],
+                    "source_ref": "alsharqa-light-troffer-diffusers-pdf7"
+                  },
+                  {
+                    "id": "alsharqa.slt.dual-side.r80",
+                    "variant_id": "alsharqa.slt.3x6xlp-oval",
+                    "values": [
+                      3,
+                      6,
+                      "LP oval",
+                      160,
+                      40,
+                      51
+                    ],
+                    "source_ref": "alsharqa-light-troffer-diffusers-pdf7"
+                  }
+                ],
+                "returned": 4,
+                "next_cursor": null,
+                "row_sources": [
+                  {
+                    "id": "alsharqa-light-troffer-diffusers-pdf7",
+                    "label": "Alsharqa Light-troffer-diffusers, PDF p.7",
+                    "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf",
+                    "locator": {
+                      "id": "alsharqa-light-troffer-diffusers-pdf7",
+                      "document_id": "alsharqa-light-troffer-diffusers",
+                      "pdf_page": 7,
+                      "printed_page": "7",
+                      "label": "Alsharqa Light-troffer-diffusers, PDF p.7"
+                    },
+                    "document": {
+                      "id": "alsharqa-light-troffer-diffusers",
+                      "title": "Alsharqa Light-troffer-diffusers",
+                      "published_date": null,
+                      "revision_label": null,
+                      "sha256": "51d20fa6a4af9cfc477061c89d602e86bb6ffaa496c5818e45ce482a19dc0751",
+                      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "alsharqa-light-troffer-diffusers-pdf7",
+                "label": "Alsharqa Light-troffer-diffusers, PDF p.7",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf",
+                "locator": {
+                  "id": "alsharqa-light-troffer-diffusers-pdf7",
+                  "document_id": "alsharqa-light-troffer-diffusers",
+                  "pdf_page": 7,
+                  "printed_page": "7",
+                  "label": "Alsharqa Light-troffer-diffusers, PDF p.7"
+                },
+                "document": {
+                  "id": "alsharqa-light-troffer-diffusers",
+                  "title": "Alsharqa Light-troffer-diffusers",
+                  "published_date": null,
+                  "revision_label": null,
+                  "sha256": "51d20fa6a4af9cfc477061c89d602e86bb6ffaa496c5818e45ce482a19dc0751",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Light-troffer-diffusers.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.supply-grille"
+        ],
+        "tables": [
+          {
+            "table_id": "alsharqa.supply-grille.performance",
+            "columns": [
+              "size_group_in",
+              "velocity",
+              "deflection",
+              "throw",
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "size_group_in",
+                "value": "24x24"
+              },
+              {
+                "field": "velocity",
+                "value": 500
+              }
+            ],
+            "limit": 5
+          }
+        ],
+        "include_sources": true
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.supply-grille",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.grilles",
+            "brand_key": "alsharqa",
+            "model_code": "Supply grille / register",
+            "label": "Alsharqa supply grille and register",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.supply-grille.performance",
+                "schema_id": "alsharqa.supply-grille.performance.v1",
+                "row_count": 294
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.supply-grille.performance",
+                "schema_id": "alsharqa.supply-grille.performance.v1",
+                "columns": [
+                  {
+                    "code": "size_group_in",
+                    "label": "Size group in",
+                    "type": "string",
+                    "unit": null
+                  },
+                  {
+                    "code": "velocity",
+                    "label": "Velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "deflection",
+                    "label": "Deflection",
+                    "type": "number",
+                    "unit": "deg"
+                  },
+                  {
+                    "code": "airflow",
+                    "label": "Airflow",
+                    "type": "number",
+                    "unit": "cfm"
+                  },
+                  {
+                    "code": "throw",
+                    "label": "Throw",
+                    "type": "number",
+                    "unit": "ft"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "throw_terminal_velocity_status": "not supplied",
+                  "nc_room_attenuation_status": "not supplied",
+                  "nc_angle_specificity": "one NC series is published for each size/flow, not separate angle series"
+                },
+                "notes": [
+                  "PDF p.12 repeats p.11; imported once. Each listed size group shares the published performance series.",
+                  "The 24x24 group at 500 fpm and 0 degrees prints throw 38 ft, between 51 and 66 ft. That non-monotonic source value is retained without correction.",
+                  "Ak, airflow and velocity do not always satisfy a consistent conversion in the source. They are transcribed independently; no recalculated values replace them."
+                ],
+                "source": {
+                  "id": "alsharqa-grilles-registers-pdf11",
+                  "label": "Alsharqa Grilles-_-registers, PDF p.11",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.supply-grille.performance.r214",
+                    "variant_id": "alsharqa.supply-grille.24x24",
+                    "values": [
+                      "24x24",
+                      500,
+                      0,
+                      2000,
+                      38,
+                      29
+                    ],
+                    "source_ref": "alsharqa-grilles-registers-pdf13"
+                  },
+                  {
+                    "id": "alsharqa.supply-grille.performance.r221",
+                    "variant_id": "alsharqa.supply-grille.24x24",
+                    "values": [
+                      "24x24",
+                      500,
+                      22.5,
+                      2000,
+                      48,
+                      29
+                    ],
+                    "source_ref": "alsharqa-grilles-registers-pdf13"
+                  },
+                  {
+                    "id": "alsharqa.supply-grille.performance.r228",
+                    "variant_id": "alsharqa.supply-grille.24x24",
+                    "values": [
+                      "24x24",
+                      500,
+                      45,
+                      2000,
+                      39,
+                      29
+                    ],
+                    "source_ref": "alsharqa-grilles-registers-pdf13"
+                  }
+                ],
+                "returned": 3,
+                "next_cursor": null,
+                "row_sources": [
+                  {
+                    "id": "alsharqa-grilles-registers-pdf13",
+                    "label": "Alsharqa Grilles-_-registers, PDF p.13",
+                    "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf",
+                    "locator": {
+                      "id": "alsharqa-grilles-registers-pdf13",
+                      "document_id": "alsharqa-grilles-registers",
+                      "pdf_page": 13,
+                      "printed_page": null,
+                      "label": "Alsharqa Grilles-_-registers, PDF p.13"
+                    },
+                    "document": {
+                      "id": "alsharqa-grilles-registers",
+                      "title": "Alsharqa Grilles-_-registers",
+                      "published_date": null,
+                      "revision_label": null,
+                      "sha256": "b3ddfdda1ef2fbda1bbeb42b4d3040fe228ee1da8f7f127e7a088a16544cc7ef",
+                      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "alsharqa-grilles-registers-pdf11",
+                "label": "Alsharqa Grilles-_-registers, PDF p.11",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf",
+                "locator": {
+                  "id": "alsharqa-grilles-registers-pdf11",
+                  "document_id": "alsharqa-grilles-registers",
+                  "pdf_page": 11,
+                  "printed_page": null,
+                  "label": "Alsharqa Grilles-_-registers, PDF p.11"
+                },
+                "document": {
+                  "id": "alsharqa-grilles-registers",
+                  "title": "Alsharqa Grilles-_-registers",
+                  "published_date": null,
+                  "revision_label": null,
+                  "sha256": "b3ddfdda1ef2fbda1bbeb42b4d3040fe228ee1da8f7f127e7a088a16544cc7ef",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Grilles-_-registers.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.lbg-0y"
+        ],
+        "tables": [
+          {
+            "table_id": "alsharqa.lbg-0y.supply",
+            "columns": [
+              "width",
+              "face_velocity",
+              "ak_per_length",
+              "airflow_per_length",
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "width",
+                "value": 3
+              }
+            ],
+            "limit": 3
+          }
+        ],
+        "include_sources": true
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.lbg-0y",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.linear_bar_grilles",
+            "brand_key": "alsharqa",
+            "model_code": "LBG-0Y",
+            "label": "Alsharqa linear bar grille 0Y",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.lbg-0y.supply",
+                "schema_id": "alsharqa.lbg-0y.supply.v1",
+                "row_count": 63
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.lbg-0y.supply",
+                "schema_id": "alsharqa.lbg-0y.supply.v1",
+                "columns": [
+                  {
+                    "code": "width",
+                    "label": "Width",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "face_velocity",
+                    "label": "Face velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "ak_per_length",
+                    "label": "Ak per length",
+                    "type": "number",
+                    "unit": "ft2/ft"
+                  },
+                  {
+                    "code": "airflow_per_length",
+                    "label": "Airflow per length",
+                    "type": "number",
+                    "unit": "cfm/ft"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  }
+                ],
+                "context": {
+                  "mode": "supply",
+                  "damper": "without damper",
+                  "room_effect_db": 8,
+                  "throw_reference_length_ft": 8
+                },
+                "notes": [
+                  "Airflow and Ak are per foot of run; throw is for an eight-foot grille, as printed in the footnote.",
+                  "The 3-inch LBG-0Y Ak prints 0.97 ft2/ft, exceeding its gross face area; it is withheld as unknown. The 12-inch/800 fpm throw 37\u00e2\u20ac\u201c39 ft remains as printed."
+                ],
+                "source": {
+                  "id": "alsharqa-linear-bar-grilles-registers-pdf10",
+                  "label": "Alsharqa Linear-bar-grilles-_-registers, PDF p.10",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.lbg-0y.supply.r1",
+                    "variant_id": "alsharqa.lbg-0y.3",
+                    "values": [
+                      3,
+                      400,
+                      {
+                        "status": "unknown"
+                      },
+                      35,
+                      {
+                        "value": 20,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10"
+                  },
+                  {
+                    "id": "alsharqa.lbg-0y.supply.r2",
+                    "variant_id": "alsharqa.lbg-0y.3",
+                    "values": [
+                      3,
+                      500,
+                      {
+                        "status": "unknown"
+                      },
+                      44,
+                      {
+                        "value": 20,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10"
+                  },
+                  {
+                    "id": "alsharqa.lbg-0y.supply.r3",
+                    "variant_id": "alsharqa.lbg-0y.3",
+                    "values": [
+                      3,
+                      600,
+                      {
+                        "status": "unknown"
+                      },
+                      53,
+                      {
+                        "value": 20,
+                        "qualifier": "lt"
+                      }
+                    ],
+                    "source_ref": "alsharqa-linear-bar-grilles-registers-pdf10"
+                  }
+                ],
+                "returned": 3,
+                "next_cursor": "3rUy5-lSPcFm9OWS5HQvdn8VUaRN87SuMkn2xeCWWc17Im9mZnNldCI6MywicXVlcnkiOiJlOWY0YjQ3YzBkODFkMTZkNjkxYzBmZWVlZDVkNTkxMTk5YzE2NGU1NTdjNTg5YjdhY2NkNzU1NzYxMDBiODQ4IiwidmVyc2lvbiI6ImFsc2hhcnFhLWVuZ2luZWVyaW5nLTAwMytiN2E1NWVhMDE5YTMifQ==",
+                "row_sources": [
+                  {
+                    "id": "alsharqa-linear-bar-grilles-registers-pdf10",
+                    "label": "Alsharqa Linear-bar-grilles-_-registers, PDF p.10",
+                    "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf",
+                    "locator": {
+                      "id": "alsharqa-linear-bar-grilles-registers-pdf10",
+                      "document_id": "alsharqa-linear-bar-grilles-registers",
+                      "pdf_page": 10,
+                      "printed_page": "10",
+                      "label": "Alsharqa Linear-bar-grilles-_-registers, PDF p.10"
+                    },
+                    "document": {
+                      "id": "alsharqa-linear-bar-grilles-registers",
+                      "title": "Alsharqa Linear-bar-grilles-_-registers",
+                      "published_date": null,
+                      "revision_label": null,
+                      "sha256": "69613a365ff434e738ab29b294da8d2f3b0e6ddc27a5c6218ff21a7c00367fc0",
+                      "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf"
+                    }
+                  }
+                ]
+              }
+            ],
+            "sources": [
+              {
+                "id": "alsharqa-linear-bar-grilles-registers-pdf10",
+                "label": "Alsharqa Linear-bar-grilles-_-registers, PDF p.10",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf",
+                "locator": {
+                  "id": "alsharqa-linear-bar-grilles-registers-pdf10",
+                  "document_id": "alsharqa-linear-bar-grilles-registers",
+                  "pdf_page": 10,
+                  "printed_page": "10",
+                  "label": "Alsharqa Linear-bar-grilles-_-registers, PDF p.10"
+                },
+                "document": {
+                  "id": "alsharqa-linear-bar-grilles-registers",
+                  "title": "Alsharqa Linear-bar-grilles-_-registers",
+                  "published_date": null,
+                  "revision_label": null,
+                  "sha256": "69613a365ff434e738ab29b294da8d2f3b0e6ddc27a5c6218ff21a7c00367fc0",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-bar-grilles-_-registers.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.linear_slot_diffusers",
+        "table": {
+          "schema_id": "alsharqa.linear-slot.supply.v1",
+          "filters": [
+            {
+              "field": "slot_width",
+              "value": 0.75
+            },
+            {
+              "field": "slot_count",
+              "value": 1
+            },
+            {
+              "field": "airflow_per_length",
+              "value": 10
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 20
+            }
+          ]
+        },
+        "limit": 2
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "table": {
+          "schema_id": "alsharqa.sfb-ht.performance.v1",
+          "filters": [
+            {
+              "field": "slot_opening",
+              "value": 25
+            },
+            {
+              "field": "airflow_per_length",
+              "value": 122
+            },
+            {
+              "field": "static_pressure",
+              "op": "lte",
+              "value": 7
+            }
+          ]
+        },
+        "limit": 2
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.linear-slot"
+        ],
+        "tables": [
+          {
+            "table_id": "alsharqa.linear-slot.return-header-area",
+            "columns": [
+              "static_pressure_header"
+            ],
+            "filters": [
+              {
+                "field": "slot_width",
+                "value": 1
+              },
+              {
+                "field": "slot_count",
+                "value": 8
+              }
+            ],
+            "limit": 2
+          }
+        ]
+      },
+      "response": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.linear-slot",
+            "kind": "model",
+            "parent_id": null,
+            "category_id": "air_outlets.linear_slot_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "Linear slot diffuser",
+            "label": "Alsharqa linear slot diffuser",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.linear-slot.return-header-area",
+                "schema_id": "alsharqa.linear-slot.return-header-area.v1",
+                "row_count": 16
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.linear-slot.return-header-area",
+                "schema_id": "alsharqa.linear-slot.return-header-area.v1",
+                "columns": [
+                  {
+                    "code": "slot_width",
+                    "label": "Slot width",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "slot_count",
+                    "label": "Slot count",
+                    "type": "number",
+                    "unit": null
+                  },
+                  {
+                    "code": "static_pressure_header",
+                    "label": "Static pressure header",
+                    "type": "number",
+                    "unit": "inH2O"
+                  }
+                ],
+                "context": {
+                  "area_caption_model": "DLC-CR",
+                  "pressure_operating_airflow_status": "not supplied"
+                },
+                "notes": [
+                  "The source places pressure values under slot-count columns above multiple airflow rows, without assigning a flow. Do not treat the pressure header as a performance curve or pair it with arbitrary airflow.",
+                  "The 1-inch effective-area series is smaller than the 3/4-inch series as printed; no cross-size correction is inferred."
+                ],
+                "source": {
+                  "id": "alsharqa-linear-slot-diffuser-pdf13",
+                  "label": "Alsharqa Linear-slot-diffuser, PDF p.13",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-slot-diffuser.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.linear-slot.return-header-area.r16",
+                    "variant_id": "alsharqa.linear-slot.1x8",
+                    "values": [
+                      1,
+                      8,
+                      0.31
+                    ],
+                    "source_ref": "alsharqa-linear-slot-diffuser-pdf14"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "native_call_count": 15,
+  "observed_source_defects": [
+    {
+      "pdf": "Light-troffer-diffusers.pdf",
+      "page": 7,
+      "table": "dual-side",
+      "row": "3 ft fixture, 160 cfm, all four neck options",
+      "column": "third throw",
+      "published": 51,
+      "database": 51,
+      "assessment": "Printed anomalous 7-11-51 triple retained with warning; no import error."
+    },
+    {
+      "pdf": "Grilles-_-registers.pdf",
+      "page": 13,
+      "table": "performance",
+      "row": "24x24, 500fpm, 0deg",
+      "column": "throw",
+      "published": 38,
+      "database": 38,
+      "assessment": "Printed nonmonotonic 38 retained with warning; no import error."
+    },
+    {
+      "pdf": "Linear-bar-grilles-_-registers.pdf",
+      "page": 10,
+      "table": "LBG-0Y supply",
+      "row": "3 inch width, every velocity",
+      "column": "Ak",
+      "published": 0.97,
+      "database": {
+        "status": "unknown"
+      },
+      "assessment": "Source exceeds gross area; deliberately withheld and warning preserves original value."
+    },
+    {
+      "pdf": "Linear-slot-diffuser.pdf",
+      "page": 14,
+      "table": "effective area",
+      "row": "all slot counts",
+      "column": "Ak",
+      "assessment": "1 inch series smaller than 3/4 inch as printed, retained and warned."
+    }
+  ],
+  "context_review": [
+    {
+      "pdf": "Flow-Bar-Diffuser.pdf",
+      "pages": [
+        6,
+        7
+      ],
+      "verified": [
+        "1200mm active length for NC/throw",
+        "L/s/m flow",
+        "10dB absorption",
+        "isothermal throws at 0.8/0.5/0.3m/s",
+        "inlet velocity less than4m/s",
+        "no plenum effect",
+        "600mm throw multiplier0.72;3000mm1.7;3600mm1.8",
+        "one-way/divided-flow allocation",
+        "JT return NC+3"
+      ],
+      "omission": "No material interpretation omission confirmed. NC octave-band/power reference wording compressed to NC plus room absorption."
+    },
+    {
+      "pdf": "Linear-slot-diffuser.pdf",
+      "pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "verified": [
+        "CFM per foot",
+        "NC4ft and10dB room attenuation",
+        "supply horizontal throw100/50fpm",
+        "vertical NC-5",
+        "return with deflection blades",
+        "pressure header unpaired with operating flow",
+        "Ak per foot"
+      ],
+      "omission": "No material interpretation omission confirmed."
+    },
+    {
+      "pdf": "Linear-bar-grilles-_-registers.pdf",
+      "pages": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "verified": [
+        "CFM and Ak per foot",
+        "8ft grille throw",
+        "100/50fpm endpoints",
+        "NC8dB room effect",
+        "supply without damper",
+        "total pressure not static"
+      ],
+      "omission": "No material interpretation omission confirmed."
+    },
+    {
+      "pdf": "Light-troffer-diffusers.pdf",
+      "pages": [
+        6,
+        7
+      ],
+      "verified": [
+        "single/dual and fixture length",
+        "neck shape/size association",
+        "undefined NC dashes not supplied",
+        "unknown total-pressure unit retained unqualified",
+        "unknown throw endpoint velocities not inferred",
+        "velocity pressure separately supplied in inWG"
+      ],
+      "omission": "No material interpretation omission confirmed."
+    },
+    {
+      "pdf": "Grilles-_-registers.pdf",
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "verified": [
+        "shared multi-size groups",
+        "static pressure depends on angle and velocity",
+        "single NC series not independently angle-specific",
+        "unknown throw terminal velocity and NC attenuation disclosed",
+        "overview range distinct from duty rows",
+        "duplicate p12 imported once"
+      ],
+      "omission": "No material interpretation omission confirmed."
+    }
+  ]
+}

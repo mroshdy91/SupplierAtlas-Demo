@@ -60,4 +60,5 @@ def add_round(b):
             "Round-diffusers.pdf",pages[0],row_pages=pages,row_key=["nominal_in","neck_velocity"],variant_columns=["nominal_in"],
             context={"mode":mode,"room_attenuation_status":"not supplied","throw_terminal_velocities_status":"not supplied"},
             notes=["The table explicitly gives velocity pressure in inch W.G.; it does not repeat a unit for total pressure drop. Total-pressure cells remain unit-unspecified rather than silently assuming one.",
-                   "Throw pairs remain in printed order; terminal velocities and room attenuation are not defined in this catalog."])
+                   "Throw pairs remain in printed order; terminal velocities and room attenuation are not defined in this catalog.",
+                   "The 12-inch / 300-fpm point prints 225 cfm, which does not equal its published neck area times velocity. The published flow is retained; no corrected operating point is inferred."])

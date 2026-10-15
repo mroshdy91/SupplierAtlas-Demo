@@ -58,8 +58,7 @@ def add_ceiling(b):
                "Published area, total/side airflow and throw pairs contain inconsistencies, including reversed throw pairs and non-monotonic series. Values are literal, not recalculated or corrected; do not infer physical consistency.",
                "Examples: p.12 6x15 area 0.25 ft2; p.13 9x15 and p.14 9x18 area 0.25; p.16 12x24 area 0.25. These conflict with nominal dimensions and some return-table areas.",
                "P.12 6x18 at 250 fpm: 3-way throw prints -94 and 2-way side airflow prints 13-18; these misplaced cells are unknown, not usable throws/airflow.",
-               "P.14 middle block labels 6x21 on the left and 9x21 on the right; width is unknown and that block has a separate ambiguous variant. Its first total flow prints 63 cfm.",
-               "P.18 21x24 one-way at 700 fpm prints side airflow 2800 versus total 2452. Source inconsistencies require manufacturer clarification before selection."])
+               "P.14 middle block labels 6x21 on the left and 9x21 on the right; width is unknown and that block has a separate ambiguous variant. Its first total flow prints 63 cfm."])
     # Remaining return rows, independently transcribed (not copied from supply).
     groups = [
         (19,15,15,1.56,"390 469 625 781 938 1095 1250","22 25 31 36 40 47 52"),
