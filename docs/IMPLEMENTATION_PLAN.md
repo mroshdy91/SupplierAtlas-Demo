@@ -10,17 +10,18 @@ Updated: 2026-10-15. Status: hosted demo live; published marketplace plugin inst
   Independent agent and other-client qualification remain future work.
 - Additive `context_columns` metadata preserves conditions without new tools or
   changed request schemas. Release 003 has unchanged 37 models /76 tables /3,707 rows.
-  Hosted verification of the updated runtime is pending.
+  Hosted SDK checks and 11 native post-deployment calls match validated local
+  responses; exactly three tools remain exposed. See DEPLOYMENT.md.
 - User expanded scope to all published Alsharqa product families. Reviewed all
   22 catalogs / 248 pages: 37 models, 76 tables, 3,707 rows packaged and deployed.
   Original 42 reference rows preserved. All 22 source fingerprints verified.
   See ALSHARQA_COVERAGE.md for imports, duplicate pages and explicit exclusions.
 - Generic importer, read-only SQLite snapshot, bounded query layer and all three
   MCP tools implemented with official Python SDK 2.3. Locked dependencies in uv.lock.
-- 32 tests pass, including cross-family source regressions, 763-row pagination,
+- 40 tests pass, including cross-family source regressions, 763-row pagination,
   units, source qualification, bounded output, sparse/5,000-row data, stdio and HTTP.
   CI container checks, hosted HTTP and installed native plugin calls also passed.
-  Live release: `alsharqa-engineering-002+935114259de3`; see DEPLOYMENT.md.
+  Live release: `alsharqa-engineering-003+b7a55ea019a3`; see DEPLOYMENT.md.
 - Compact-response measurement and plugin skill validation completed. Codex
   0.162.0-alpha.17.2 on Windows installed the marketplace release and verified
   bearer authentication and exactly three tools. Independent LLM task evaluation

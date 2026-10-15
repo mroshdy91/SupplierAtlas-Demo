@@ -19,6 +19,10 @@ Date: 2026-10-15.
   bounded projected retrieval with full variant tables while asserting identical
   context/notes/sources and selected values. No blanket minimal-token claim.
 - See SELECTION_EVALUATION.md/JSON for scenarios and exact measurement boundaries.
+- Verified delivery: 40 tests, lint, all 22 PDF hashes, local/hosted HTTP, CI
+  container checks and 11 native post-deployment calls passed. Runtime commit
+  `fc65173d210529af3eda1f698e1198f0b7d2d4cd`, revision `supplieratlas-demo-00004-dfd`.
+  Cost settings retained; no marketplace/plugin release or reinstall required.
 
 ## All-family engineering expansion
 

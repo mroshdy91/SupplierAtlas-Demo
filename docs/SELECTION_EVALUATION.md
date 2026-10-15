@@ -62,7 +62,10 @@ For the Class II diagnostic, the old class-only search plus temperature retrieva
 cost 950 response tokens over two calls. The corrected search supplies both in
 one 455-token response: 52% fewer tokens while fixing the missing context.
 Some individual responses deliberately grow to preserve conditions or explain
-empty results. Globally minimal tokens and universal context completeness are
+empty results. Replaying all 32 original calls unchanged grows from 13,201 to
+13,606 response tokens (3.1%); it deliberately includes the now-redundant rating
+lookup. The gains above measure targeted retrieval and avoiding that extra call,
+not a blanket reduction in every response. Globally minimal tokens and universal context completeness are
 not established by this finite test suite.
 
 ## Efficient agent workflow
@@ -78,5 +81,10 @@ not established by this finite test suite.
 - Carry units, conditions, bounds, notes and unresolved source conflicts into the
   engineering answer. Broader suitability remains the engineer's task.
 
-Local validation is complete. Hosted deployment verification is recorded in
-`DEPLOYMENT.md` and the post-deployment native transcript when available.
+Local validation: 40 tests and lint pass; all 22 source fingerprints verified.
+GitHub CI run 38747553950 passed tests and the constrained container check.
+Hosted release `alsharqa-engineering-003+b7a55ea019a3`, Cloud Run revision
+`supplieratlas-demo-00004-dfd`, serves 100% traffic. Eleven native calls covering
+the seven tasks and updated schema exactly match the validated local responses;
+see `evaluations/selection_native_after.json`. Hosted SDK/health/auth checks passed.
+Existing cost controls were read back unchanged; see `DEPLOYMENT.md`.

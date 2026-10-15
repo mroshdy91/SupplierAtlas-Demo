@@ -1,0 +1,1049 @@
+{
+  "method": "Post-deployment installed native plugin verification; reuse discovery from the guided trial, repeat seven scoped tasks and changed schema. Not an independent agent trial.",
+  "calls": [
+    {
+      "scenario": "rating_schema",
+      "tool": "discover_catalog",
+      "request": {
+        "schema_id": "alsharqa.sfsd-series.leakage-ratings.v1"
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "numeric_filters": "Exact numeric cells only; qualified bounds excluded. Units default to schema units.",
+        "schema": {
+          "id": "alsharqa.sfsd-series.leakage-ratings.v1",
+          "category_id": "dampers.fire_smoke",
+          "version": 1,
+          "label": "Published leakage class and temperature pairs",
+          "columns": [
+            {
+              "code": "leakage_class",
+              "label": "Leakage class",
+              "type": "string",
+              "unit": null
+            },
+            {
+              "code": "temperature",
+              "label": "Temperature",
+              "type": "number",
+              "unit": "degF"
+            }
+          ],
+          "row_key": [
+            "leakage_class"
+          ],
+          "context_schema": {
+            "type": "object"
+          },
+          "context_columns": [
+            "temperature"
+          ]
+        },
+        "operators": [
+          "eq",
+          "lt",
+          "lte",
+          "gt",
+          "gte"
+        ]
+      }
+    },
+    {
+      "scenario": "ceiling",
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.ceiling_diffusers",
+        "table": {
+          "schema_id": "ceiling_diffuser.supply.v1",
+          "filters": [
+            {
+              "field": "airflow",
+              "value": 100
+            },
+            {
+              "field": "pressure_drop",
+              "op": "lte",
+              "value": 15,
+              "unit": "Pa"
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 25
+            },
+            {
+              "field": "throw_50fpm",
+              "op": "gte",
+              "value": 10
+            }
+          ]
+        },
+        "fields": [
+          "neck_width",
+          "neck_height"
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.scd",
+            "label": "Alsharqa SCD ceiling diffuser",
+            "matching_variant": "alsharqa.scd.6x6",
+            "properties": {
+              "neck_width": {
+                "value": 6,
+                "unit": "in",
+                "source_ref": "alsharqa-p9"
+              },
+              "neck_height": {
+                "value": 6,
+                "unit": "in",
+                "source_ref": "alsharqa-p9"
+              }
+            },
+            "evidence": {
+              "id": "alsharqa.scd.supply",
+              "schema_id": "ceiling_diffuser.supply.v1",
+              "columns": [
+                {
+                  "code": "airflow",
+                  "label": "Total airflow",
+                  "type": "number",
+                  "unit": "cfm",
+                  "role": "input"
+                },
+                {
+                  "code": "pressure_drop",
+                  "label": "Supply pressure drop",
+                  "type": "number",
+                  "unit": "inH2O",
+                  "role": "output"
+                },
+                {
+                  "code": "nc",
+                  "label": "Supply room noise criterion",
+                  "type": "number",
+                  "unit": "NC",
+                  "role": "output"
+                },
+                {
+                  "code": "throw_50fpm",
+                  "label": "Throw at 50 fpm terminal velocity",
+                  "type": "number",
+                  "unit": "ft",
+                  "role": "output"
+                }
+              ],
+              "context": {
+                "mode": "supply",
+                "room_effect_db": 8,
+                "pattern": "4-way",
+                "directions": "A and B have equal side airflow and throw",
+                "throw_terminal_velocities_fpm": [
+                  100,
+                  50
+                ]
+              },
+              "notes": [
+                "NC is the room noise criterion based on an 8 dB room effect; bounds are preserved.",
+                "Throw values apply to the four-way pattern. Published rounding of side airflow is retained."
+              ],
+              "source": {
+                "id": "alsharqa-p9",
+                "label": "Alsharqa ceiling diffusers p.9",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/ceiling-diffusers.pdf"
+              },
+              "rows": [
+                {
+                  "id": "alsharqa.scd.supply.6x6.3",
+                  "variant_id": "alsharqa.scd.6x6",
+                  "values": [
+                    100,
+                    0.046,
+                    19,
+                    11
+                  ],
+                  "source_ref": "alsharqa-p9-6x6-c3"
+                }
+              ],
+              "scope": "One matching published operating point; other matches may exist."
+            }
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "scenario": "flowbar_70lps",
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "table": {
+          "schema_id": "alsharqa.sfb-ht.performance.v1",
+          "filters": [
+            {
+              "field": "airflow_per_length",
+              "op": "gte",
+              "value": 57.75
+            },
+            {
+              "field": "airflow_per_length",
+              "op": "lte",
+              "value": 58.916666667
+            },
+            {
+              "field": "static_pressure",
+              "op": "lte",
+              "value": 25
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 20
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "gte",
+              "value": 3.5
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "lte",
+              "value": 5
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.sfb-ht",
+            "label": "Alsharqa flow bar high throw",
+            "matching_variant": "alsharqa.sfb-ht.25",
+            "evidence": {
+              "id": "alsharqa.sfb-ht.performance",
+              "schema_id": "alsharqa.sfb-ht.performance.v1",
+              "columns": [
+                {
+                  "code": "slot_opening",
+                  "label": "Slot opening",
+                  "type": "number",
+                  "unit": "mm"
+                },
+                {
+                  "code": "airflow_per_length",
+                  "label": "Airflow per length",
+                  "type": "number",
+                  "unit": "L/s/m"
+                },
+                {
+                  "code": "static_pressure",
+                  "label": "Static pressure",
+                  "type": "number",
+                  "unit": "Pa"
+                },
+                {
+                  "code": "nc",
+                  "label": "Nc",
+                  "type": "number",
+                  "unit": "NC"
+                },
+                {
+                  "code": "throw_0_5m_s",
+                  "label": "Throw 0 5m s",
+                  "type": "number",
+                  "unit": "m"
+                }
+              ],
+              "context": {
+                "active_length_mm": 1200,
+                "room_absorption_db": 10,
+                "air_pattern": "1-way",
+                "throw_condition": "isothermal",
+                "inlet_duct_velocity_m_s": {
+                  "qualifier": "lt",
+                  "value": 4
+                },
+                "plenum_effect_included": false
+              },
+              "notes": [
+                "Airflow is per meter of length; NC and throw are for a 1200 mm active section.",
+                "Published length factors for throw: 600 mm 0.72; 3000 mm 1.7; 3600 mm 1.8. No calculated rows are stored.",
+                "For divided flow, use the airflow apportioned to each direction."
+              ],
+              "source": {
+                "id": "alsharqa-flow-bar-diffuser-pdf6",
+                "label": "Alsharqa Flow-Bar-Diffuser, PDF p.6",
+                "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf"
+              },
+              "rows": [
+                {
+                  "id": "alsharqa.sfb-ht.performance.r2",
+                  "variant_id": "alsharqa.sfb-ht.25",
+                  "values": [
+                    25,
+                    58,
+                    18,
+                    16,
+                    4
+                  ],
+                  "source_ref": "alsharqa-flow-bar-diffuser-pdf6"
+                }
+              ],
+              "scope": "One matching published operating point; other matches may exist."
+            }
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "scenario": "flowbar",
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "table": {
+          "schema_id": "alsharqa.sfb-ht.performance.v1",
+          "filters": [
+            {
+              "field": "airflow_per_length",
+              "value": 80
+            },
+            {
+              "field": "static_pressure",
+              "op": "lte",
+              "value": 35
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 25
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "gte",
+              "value": 4
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "lte",
+              "value": 7
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "scenario": "flowbar",
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "table": {
+          "schema_id": "alsharqa.sfb-jt.performance.v1",
+          "filters": [
+            {
+              "field": "airflow_per_length",
+              "value": 80
+            },
+            {
+              "field": "static_pressure",
+              "op": "lte",
+              "value": 35
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 25
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "gte",
+              "value": 4
+            },
+            {
+              "field": "throw_0_5m_s",
+              "op": "lte",
+              "value": 7
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "scenario": "qualified_nc",
+      "tool": "search_products",
+      "request": {
+        "category": "air_outlets.flow_bar_diffusers",
+        "table": {
+          "schema_id": "alsharqa.sfb-ht.performance.v1",
+          "filters": [
+            {
+              "field": "slot_opening",
+              "value": 25
+            },
+            {
+              "field": "airflow_per_length",
+              "value": 36
+            },
+            {
+              "field": "nc",
+              "op": "lte",
+              "value": 15
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "scenario": "fire_smoke_diagnostic",
+      "tool": "search_products",
+      "request": {
+        "category": "dampers.fire_smoke",
+        "table": {
+          "schema_id": "alsharqa.sfsd-series.leakage-ratings.v1",
+          "filters": [
+            {
+              "field": "leakage_class",
+              "value": "II"
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.sfsd-series",
+            "label": "Alsharqa fire smoke damper series published ratings",
+            "matching_variant": "alsharqa.sfsd-series.ii",
+            "evidence": {
+              "id": "alsharqa.sfsd-series.leakage-ratings",
+              "schema_id": "alsharqa.sfsd-series.leakage-ratings.v1",
+              "columns": [
+                {
+                  "code": "leakage_class",
+                  "label": "Leakage class",
+                  "type": "string",
+                  "unit": null
+                },
+                {
+                  "code": "temperature",
+                  "label": "Temperature",
+                  "type": "number",
+                  "unit": "degF"
+                }
+              ],
+              "context": {
+                "status": "manufacturer-published claim; certification not independently verified",
+                "scope": "SFSD series; source does not map ratings to individual sizes or actuator combinations",
+                "ul_file_as_printed": "R22165"
+              },
+              "notes": [
+                "These separately listed ratings must not be combined into an assumed certified configuration. The database does not verify listing, installation approval or suitability."
+              ],
+              "source": {
+                "id": "alsharqa-motorized-fire-smoke-damper-pdf2",
+                "label": "Alsharqa Motorized-Fire-Smoke-Damper, PDF p.2",
+                "url": "https://alsharqa.com/wp-content/uploads/2025/04/Motorized-Fire-Smoke-Damper.pdf"
+              },
+              "rows": [
+                {
+                  "id": "alsharqa.sfsd-series.leakage-ratings.r2",
+                  "variant_id": "alsharqa.sfsd-series.ii",
+                  "values": [
+                    "II",
+                    250
+                  ],
+                  "source_ref": "alsharqa-motorized-fire-smoke-damper-pdf2"
+                }
+              ],
+              "scope": "One matching published operating point; other matches may exist."
+            }
+          }
+        ],
+        "returned": 1,
+        "next_cursor": null
+      }
+    },
+    {
+      "scenario": "fire_smoke",
+      "tool": "search_products",
+      "request": {
+        "category": "dampers.fire_smoke",
+        "table": {
+          "schema_id": "alsharqa.sfsd-series.leakage-ratings.v1",
+          "filters": [
+            {
+              "field": "leakage_class",
+              "value": "II"
+            },
+            {
+              "field": "temperature",
+              "value": 350
+            }
+          ]
+        }
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [],
+        "returned": 0,
+        "next_cursor": null,
+        "empty_result_hint": "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+      }
+    },
+    {
+      "scenario": "qualified_nc",
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.sfb-ht.25"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.sfb-ht.performance",
+            "columns": [
+              "nc",
+              "static_pressure"
+            ],
+            "filters": [
+              {
+                "field": "airflow_per_length",
+                "value": 36
+              }
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.sfb-ht.25",
+            "kind": "variant",
+            "parent_id": "alsharqa.sfb-ht",
+            "category_id": "air_outlets.flow_bar_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "SFB-HT",
+            "label": "Alsharqa flow bar high throw 25",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.sfb-ht.performance",
+                "schema_id": "alsharqa.sfb-ht.performance.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.sfb-ht.performance",
+                "schema_id": "alsharqa.sfb-ht.performance.v1",
+                "columns": [
+                  {
+                    "code": "slot_opening",
+                    "label": "Slot opening",
+                    "type": "number",
+                    "unit": "mm"
+                  },
+                  {
+                    "code": "airflow_per_length",
+                    "label": "Airflow per length",
+                    "type": "number",
+                    "unit": "L/s/m"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  },
+                  {
+                    "code": "static_pressure",
+                    "label": "Static pressure",
+                    "type": "number",
+                    "unit": "Pa"
+                  }
+                ],
+                "context": {
+                  "active_length_mm": 1200,
+                  "room_absorption_db": 10,
+                  "air_pattern": "1-way",
+                  "throw_condition": "isothermal",
+                  "inlet_duct_velocity_m_s": {
+                    "qualifier": "lt",
+                    "value": 4
+                  },
+                  "plenum_effect_included": false
+                },
+                "notes": [
+                  "Airflow is per meter of length; NC and throw are for a 1200 mm active section.",
+                  "Published length factors for throw: 600 mm 0.72; 3000 mm 1.7; 3600 mm 1.8. No calculated rows are stored.",
+                  "For divided flow, use the airflow apportioned to each direction."
+                ],
+                "source": {
+                  "id": "alsharqa-flow-bar-diffuser-pdf6",
+                  "label": "Alsharqa Flow-Bar-Diffuser, PDF p.6",
+                  "url": "https://alsharqa.com/wp-content/uploads/2026/02/Flow-Bar-Diffuser.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.sfb-ht.performance.r1",
+                    "variant_id": "alsharqa.sfb-ht.25",
+                    "values": [
+                      25,
+                      36,
+                      {
+                        "value": 10,
+                        "qualifier": "lt"
+                      },
+                      7
+                    ],
+                    "source_ref": "alsharqa-flow-bar-diffuser-pdf6"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "silencer",
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.rectangular-silencer.48"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.rectangular-silencer.insertion-loss",
+            "columns": [
+              "static_pressure_drop",
+              "il_500hz",
+              "il_1000hz"
+            ],
+            "filters": [
+              {
+                "field": "face_velocity",
+                "value": 1000
+              }
+            ],
+            "limit": 1
+          },
+          {
+            "table_id": "alsharqa.rectangular-silencer.pressure-schedule",
+            "columns": [
+              "static_pressure_loss"
+            ],
+            "filters": [
+              {
+                "field": "face_velocity",
+                "value": 1000
+              }
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.rectangular-silencer.48",
+            "kind": "variant",
+            "parent_id": "alsharqa.rectangular-silencer",
+            "category_id": "acoustics.sound_attenuators",
+            "brand_key": "alsharqa",
+            "model_code": "Rectangular sound attenuator",
+            "label": "Alsharqa rectangular sound attenuator 48",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.rectangular-silencer.insertion-loss",
+                "schema_id": "alsharqa.rectangular-silencer.insertion-loss.v1",
+                "row_count": 9
+              },
+              {
+                "id": "alsharqa.rectangular-silencer.pressure-schedule",
+                "schema_id": "alsharqa.rectangular-silencer.pressure-schedule.v1",
+                "row_count": 7
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.rectangular-silencer.insertion-loss",
+                "schema_id": "alsharqa.rectangular-silencer.insertion-loss.v1",
+                "columns": [
+                  {
+                    "code": "length",
+                    "label": "Length",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "face_velocity",
+                    "label": "Face velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "static_pressure_drop",
+                    "label": "Static pressure drop",
+                    "type": "number",
+                    "unit": "inH2O"
+                  },
+                  {
+                    "code": "il_500hz",
+                    "label": "Il 500hz",
+                    "type": "number",
+                    "unit": "dB"
+                  },
+                  {
+                    "code": "il_1000hz",
+                    "label": "Il 1000hz",
+                    "type": "number",
+                    "unit": "dB"
+                  }
+                ],
+                "context": {
+                  "face_velocity_unit_basis": "fpm on adjacent pressure table, PDF p.6",
+                  "velocity_sign_meaning_status": "not supplied"
+                },
+                "notes": [
+                  "The source's positive/negative velocity signs are preserved; it does not define their relation to sound propagation.",
+                  "Zero-velocity pressure is a dash, retained as not supplied rather than zero.",
+                  "Pressure values on p.5 disagree with the separate p.6 pressure schedule at common velocities. Both tables retain their own source context; no preferred pressure curve is inferred."
+                ],
+                "source": {
+                  "id": "alsharqa-sound-attenuators-pdf5",
+                  "label": "Alsharqa Sound-attenuators, PDF p.5",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Sound-attenuators.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.rectangular-silencer.insertion-loss.r16",
+                    "variant_id": "alsharqa.rectangular-silencer.48",
+                    "values": [
+                      48,
+                      1000,
+                      0.36,
+                      26,
+                      30
+                    ],
+                    "source_ref": "alsharqa-sound-attenuators-pdf5"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              },
+              {
+                "id": "alsharqa.rectangular-silencer.pressure-schedule",
+                "schema_id": "alsharqa.rectangular-silencer.pressure-schedule.v1",
+                "columns": [
+                  {
+                    "code": "length",
+                    "label": "Length",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "face_velocity",
+                    "label": "Face velocity",
+                    "type": "number",
+                    "unit": "fpm"
+                  },
+                  {
+                    "code": "static_pressure_loss",
+                    "label": "Static pressure loss",
+                    "type": "number",
+                    "unit": "inH2O"
+                  }
+                ],
+                "context": {},
+                "notes": [
+                  "This p.6 schedule conflicts with pressure values attached to p.5 insertion-loss data. They remain separate; resolve the applicable design with the supplier."
+                ],
+                "source": {
+                  "id": "alsharqa-sound-attenuators-pdf6",
+                  "label": "Alsharqa Sound-attenuators, PDF p.6",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Sound-attenuators.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.rectangular-silencer.pressure-schedule.r10",
+                    "variant_id": "alsharqa.rectangular-silencer.48",
+                    "values": [
+                      48,
+                      1000,
+                      0.211
+                    ],
+                    "source_ref": "alsharqa-sound-attenuators-pdf6"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "scenario": "slot_return",
+      "tool": "get_products",
+      "request": {
+        "ids": [
+          "alsharqa.linear-slot.0-75x2"
+        ],
+        "fields": [],
+        "tables": [
+          {
+            "table_id": "alsharqa.linear-slot.return",
+            "columns": [
+              "nc"
+            ],
+            "filters": [
+              {
+                "field": "airflow_per_length",
+                "value": 60
+              }
+            ],
+            "limit": 1
+          },
+          {
+            "table_id": "alsharqa.linear-slot.return-header-area",
+            "columns": [
+              "static_pressure_header"
+            ],
+            "limit": 1
+          }
+        ]
+      },
+      "result": {
+        "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+        "coverage": {
+          "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
+          "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",
+          "content": "37 models, 76 tables, 3707 rows. Advertising and generic guidance excluded; publication dates unknown."
+        },
+        "products": [
+          {
+            "id": "alsharqa.linear-slot.0-75x2",
+            "kind": "variant",
+            "parent_id": "alsharqa.linear-slot",
+            "category_id": "air_outlets.linear_slot_diffusers",
+            "brand_key": "alsharqa",
+            "model_code": "Linear slot diffuser",
+            "label": "Alsharqa linear slot diffuser 0.75 x 2",
+            "properties": {},
+            "tables": [
+              {
+                "id": "alsharqa.linear-slot.return",
+                "schema_id": "alsharqa.linear-slot.return.v1",
+                "row_count": 9
+              },
+              {
+                "id": "alsharqa.linear-slot.return-header-area",
+                "schema_id": "alsharqa.linear-slot.return-header-area.v1",
+                "row_count": 1
+              }
+            ],
+            "data": [
+              {
+                "id": "alsharqa.linear-slot.return",
+                "schema_id": "alsharqa.linear-slot.return.v1",
+                "columns": [
+                  {
+                    "code": "slot_width",
+                    "label": "Slot width",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "slot_count",
+                    "label": "Slot count",
+                    "type": "number",
+                    "unit": null
+                  },
+                  {
+                    "code": "airflow_per_length",
+                    "label": "Airflow per length",
+                    "type": "number",
+                    "unit": "cfm/ft"
+                  },
+                  {
+                    "code": "nc",
+                    "label": "Nc",
+                    "type": "number",
+                    "unit": "NC"
+                  }
+                ],
+                "context": {
+                  "mode": "return",
+                  "nc_reference_length_ft": 4,
+                  "room_attenuation_db": 10,
+                  "discharge": "return with deflection blades"
+                },
+                "notes": [
+                  "Airflow is CFM per foot of diffuser, while NC uses a four-foot unit.",
+                  "The static-pressure header has no identified operating-flow row; it is available in a separate table and is not attached to every NC operating point."
+                ],
+                "source": {
+                  "id": "alsharqa-linear-slot-diffuser-pdf13",
+                  "label": "Alsharqa Linear-slot-diffuser, PDF p.13",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-slot-diffuser.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.linear-slot.return.r34",
+                    "variant_id": "alsharqa.linear-slot.0-75x2",
+                    "values": [
+                      0.75,
+                      2,
+                      60,
+                      33
+                    ],
+                    "source_ref": "alsharqa-linear-slot-diffuser-pdf13"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              },
+              {
+                "id": "alsharqa.linear-slot.return-header-area",
+                "schema_id": "alsharqa.linear-slot.return-header-area.v1",
+                "columns": [
+                  {
+                    "code": "slot_width",
+                    "label": "Slot width",
+                    "type": "number",
+                    "unit": "in"
+                  },
+                  {
+                    "code": "slot_count",
+                    "label": "Slot count",
+                    "type": "number",
+                    "unit": null
+                  },
+                  {
+                    "code": "static_pressure_header",
+                    "label": "Static pressure header",
+                    "type": "number",
+                    "unit": "inH2O"
+                  }
+                ],
+                "context": {
+                  "area_caption_model": "DLC-CR",
+                  "pressure_operating_airflow_status": "not supplied"
+                },
+                "notes": [
+                  "The source places pressure values under slot-count columns above multiple airflow rows, without assigning a flow. Do not treat the pressure header as a performance curve or pair it with arbitrary airflow.",
+                  "The 1-inch effective-area series is smaller than the 3/4-inch series as printed; no cross-size correction is inferred."
+                ],
+                "source": {
+                  "id": "alsharqa-linear-slot-diffuser-pdf13",
+                  "label": "Alsharqa Linear-slot-diffuser, PDF p.13",
+                  "url": "https://alsharqa.com/wp-content/uploads/2025/04/Linear-slot-diffuser.pdf"
+                },
+                "rows": [
+                  {
+                    "id": "alsharqa.linear-slot.return-header-area.r2",
+                    "variant_id": "alsharqa.linear-slot.0-75x2",
+                    "values": [
+                      0.75,
+                      2,
+                      0.03
+                    ],
+                    "source_ref": "alsharqa-linear-slot-diffuser-pdf13"
+                  }
+                ],
+                "returned": 1,
+                "next_cursor": null
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

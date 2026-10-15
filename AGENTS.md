@@ -104,20 +104,22 @@ is ambiguous, record it as an open question rather than inventing a rule.
   numeric empty results explain excluded bounds/missing cells without changing matching.
   Local catalog `alsharqa-engineering-003+b7a55ea019a3` retains all counts and row IDs.
   See `docs/SELECTION_EVALUATION.md` for evidence, token measurements and limitations.
-  Hosted deployment of these improvements is pending verification.
+  40 tests, lint, local/hosted HTTP, CI container checks and 11 post-deployment
+  native calls passed. Guided tasks are verified; independent-agent qualification
+  is not claimed. Context dependencies are declared on 16 schemas.
 - Expansion delivered (2026-10-15): all 22 published Alsharqa catalog families
   reviewed (248 PDF pages). Hosted package has 37 models, 758 variant/reference
   records, 76 technical tables and 3,707 rows. Original 42 SCD rows/IDs preserved.
   Table-page audit: 66 imported, 3 duplicate tables imported once, 1 unlabeled VCD
   matrix withheld. Obscured ACVD cells and unusable source cells remain unknown or
   explicitly excluded; no graph digitization or silent source repair.
-- Expanded validation: 32 tests, lint, all 22 PDF hashes, cross-family reference
+- Expanded validation: 40 tests, lint, all 22 PDF hashes, cross-family reference
   cells, complete pagination, response budgets, local HTTP and CI container checks
   passed. Hosted SDK checks and the installed plugin's three native tools passed.
-- Live catalog `alsharqa-engineering-002+935114259de3`, revision
-  `supplieratlas-demo-00003-crh`, 100% traffic. Runtime commit
-  `8a4b45e5ade2ca1a165c36bb6db9c9b48fa93ae5`, CI run `38743151751`.
-  Image digest `sha256:4623b5a0485459b5ed2e1673c5213c33355b914dc293ded8ee47914a9c60b9c1`.
+- Live catalog `alsharqa-engineering-003+b7a55ea019a3`, revision
+  `supplieratlas-demo-00004-dfd`, 100% traffic. Runtime commit
+  `fc65173d210529af3eda1f698e1198f0b7d2d4cd`, CI run `38747553950`.
+  Image digest `sha256:c36889fdfbf9f41439afba4c27afbe5689f22f780a6ae4b983b40baf716e5289`.
   Existing plugin v0.1.0-alpha.1 remains compatible; no reinstall/marketplace change needed.
 - Cost controls retained: scale-to-zero, service max 1, 0.5 CPU / 256 MiB,
   concurrency 1, timeout 30, throttling on and startup boost off. Deployment script
