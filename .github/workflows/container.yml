@@ -1,0 +1,51 @@
+name: Publish demo container
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  packages: write
+concurrency:
+  group: demo-container
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Fetch exact source revision
+        env:
+          REPOSITORY: ${{ github.repository }}
+          REVISION: ${{ github.sha }}
+        run: |
+          git init .
+          git remote add origin "https://github.com/$REPOSITORY.git"
+          git fetch --depth=1 origin "$REVISION"
+          git checkout --detach FETCH_HEAD
+      - name: Validate and build catalog
+        run: |
+          python3 -m venv .venv
+          .venv/bin/pip install -r requirements.txt pytest httpx
+          .venv/bin/pip install --no-deps .
+          .venv/bin/python datasets/alsharqa/prepare.py
+          .venv/bin/supplier-atlas-build datasets/alsharqa/catalog.json data/catalog.sqlite
+          .venv/bin/pytest -q
+      - name: Build and verify container
+        run: |
+          docker build -t supplieratlas-demo:local .
+          bash deploy/smoke_container.sh
+      - name: Publish immutable revision tag
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.actor }}
+          REVISION: ${{ github.sha }}
+        run: |
+          image=ghcr.io/mroshdy91/supplieratlas-demo
+          printf '%s' "$GH_TOKEN" | docker login ghcr.io -u "$GH_USER" --password-stdin
+          docker tag supplieratlas-demo:local "$image:$REVISION"
+          docker tag supplieratlas-demo:local "$image:demo-001"
+          docker push "$image:$REVISION"
+          docker push "$image:demo-001"
+          docker logout ghcr.io
+
