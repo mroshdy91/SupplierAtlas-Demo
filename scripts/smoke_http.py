@@ -10,7 +10,11 @@ from mcp.client.streamable_http import streamable_http_client
 
 async def main(url):
     token = os.environ.get("SUPPLIER_ATLAS_TOKEN")
-    async with httpx2.AsyncClient(headers={"Authorization": f"Bearer {token}"} if token else {}) as http:
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
+    identity_token = os.environ.get("SUPPLIER_ATLAS_GOOGLE_ID_TOKEN")
+    if identity_token:
+        headers["X-Serverless-Authorization"] = f"Bearer {identity_token}"
+    async with httpx2.AsyncClient(headers=headers) as http:
         await check(streamable_http_client(url, http_client=http))
 
 
