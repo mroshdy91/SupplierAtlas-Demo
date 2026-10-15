@@ -30,6 +30,10 @@ UNITS = {
     "h": ("time", 3600), "min": ("time", 60), "s": ("time", 1),
 }
 OPS = {"eq": "=", "lt": "<", "lte": "<=", "gt": ">", "gte": ">="}
+EMPTY_NUMERIC_HINT = (
+    "No matching published scalar row. Numeric filters exclude qualified bounds and missing cells; "
+    "no interpolation. Relax a filter to inspect nearby points or bounds; an empty result is not a suitability verdict."
+)
 
 
 def comparison(expression, predicate, definition):
@@ -237,15 +241,20 @@ class Catalog:
                     item["evidence"] = self.format_rows(db, table, schema, [evidence], selected or None)
                     item["evidence"]["scope"] = "One matching published operating point; other matches may exist."
                 results.append(item)
-            return self.bounded({"catalog_version": version, "coverage": coverage, "products": results,
-                **self.page(rows, request.limit, offset, query, version)})
+            result = {"catalog_version": version, "coverage": coverage, "products": results,
+                      **self.page(rows, request.limit, offset, query, version)}
+            predicates = [*request.properties, *(request.table.filters if request.table else [])]
+            if not results and offset == 0 and any(type(p.value) in (int, float) for p in predicates):
+                result["empty_result_hint"] = EMPTY_NUMERIC_HINT
+            return self.bounded(result)
 
     def format_rows(self, db, table, schema, rows, selected=None):
         available = {c["code"]: c for c in schema["columns"]}
         if selected is not None and set(selected) - available.keys():
             raise QueryError("Unknown table columns")
         # Include operating coordinates even when the caller projects outputs only.
-        codes = list(dict.fromkeys([*schema["row_key"], *(selected if selected is not None else available)]))
+        codes = list(dict.fromkeys([*schema["row_key"], *schema.get("context_columns", []),
+                                   *(selected if selected is not None else available)]))
         return {"id": table["id"], "schema_id": schema["id"], "columns": [available[c] for c in codes],
             "context": json.loads(table["context_json"]), "notes": json.loads(table["notes_json"]),
             "source": self.source(db, table["source_ref_id"]),
@@ -294,6 +303,8 @@ class Catalog:
                             [table["id"], product["kind"], product_id, *params, table_request.limit+1, offset]).fetchall()
                         formatted = self.format_rows(db, table, schema, rows[:table_request.limit], table_request.columns)
                         formatted.update(self.page(rows, table_request.limit, offset, query, version))
+                        if not rows and offset == 0 and any(type(p.value) in (int, float) for p in table_request.filters):
+                            formatted["empty_result_hint"] = EMPTY_NUMERIC_HINT
                         if request.include_sources:
                             refs = dict.fromkeys(r["source_ref_id"] for r in rows[:table_request.limit])
                             formatted["row_sources"] = [self.source(db, ref, True) for ref in refs]

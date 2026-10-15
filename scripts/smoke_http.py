@@ -33,7 +33,7 @@ async def check(transport):
         for model, table_id, filters, columns, expected in [
             ("alsharqa.scd","alsharqa.scd.supply_patterns",
              [{"field":"size_label","value":"21x24"},{"field":"ways","value":3},{"field":"neck_velocity","value":800}],
-             ["airflow","throw_b_50fpm"],["21x24",3,800,2800,40]),
+             ["airflow","throw_b_50fpm"],["21x24",3,800,21,24,2800,40]),
             ("alsharqa.sfsd-series","alsharqa.sfsd-series.leakage-ratings",
              [{"field":"leakage_class","value":"II"}],None,["II",250]),
             ("alsharqa.duct-hardware","alsharqa.duct-hardware.clamp",[],None,["SACL-30",33,19,30,3,8,25]),

@@ -129,7 +129,22 @@ def expand(data):
     add_duct(builder)
     add_grilles(builder)
     add_ceiling(builder)
-    data["release"] = "alsharqa-engineering-002"
+    # Interpretation dependencies, not new cells or changes to operating-point identity.
+    context_columns = {
+        "alsharqa.sfsd-series.leakage-ratings.v1": ["temperature"],
+        "alsharqa.sfsd30.dimensions.v1": ["height"],
+        "alsharqa.fsd60.dimensions.v1": ["height"],
+        "alsharqa.fsd70.dimensions.v1": ["height"],
+        "alsharqa.kul.technical-data.v1": ["face_velocity"],
+        "alsharqa.scd.supply_patterns.v1": ["neck_width", "neck_height", "airflow"],
+    }
+    for schema in data["schemas"]:
+        if schema["id"] in context_columns:
+            schema["context_columns"] = context_columns[schema["id"]]
+        elif any(c["code"] == "airflow" for c in schema["columns"]) and "airflow" not in schema["row_key"]:
+            # Keep the published flow alongside velocity-based operating points.
+            schema["context_columns"] = ["airflow"]
+    data["release"] = "alsharqa-engineering-003"
     data["coverage"] = {
         "scope": "Engineering data across all 22 Alsharqa catalogs inventoried 2026-10-15.",
         "exceptions": "Source defects/unknown units are disclosed in table notes; obscured cells and the unlabeled VCD matrix are withheld. Curves are not digitized. No interpolation.",

@@ -81,6 +81,11 @@ def validate_package(data):
             raise ValueError("Invalid or duplicate column codes")
         if not s["row_key"] or not set(s["row_key"]) <= set(codes):
             raise ValueError("Invalid row key")
+        context_columns = s.get("context_columns", [])
+        if (not isinstance(context_columns, list)
+                or any(not isinstance(c, str) or c not in codes for c in context_columns)
+                or len(context_columns) != len(set(context_columns))):
+            raise ValueError("Invalid context columns")
         Draft202012Validator.check_schema(s["context_schema"])
     for table in data["tables"]:
         schema = schemas[table["schema_id"]]

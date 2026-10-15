@@ -1,0 +1,361 @@
+{
+  "method": "Primary agent guided live plugin scenarios; prior implementation context was available. Not a blinded independent agent trial.",
+  "catalog_version": "alsharqa-engineering-003+b7a55ea019a3",
+  "measurement": "cl100k_base; actual SDK text and full CallToolResult measured separately. Baseline native results normalized to compact JSON. Client model-context/billing tokens may differ. No latency claim.",
+  "scenario_checks_passed": 7,
+  "calls": [
+    {
+      "call": 0,
+      "scenario": "shared_discovery",
+      "tool": "discover_catalog",
+      "request_tokens": 5,
+      "before_text_tokens": 699,
+      "after_text_tokens": 700,
+      "after_full_result_tokens": 1490
+    },
+    {
+      "call": 1,
+      "scenario": "flowbar",
+      "tool": "discover_catalog",
+      "request_tokens": 13,
+      "before_text_tokens": 233,
+      "after_text_tokens": 235,
+      "after_full_result_tokens": 550
+    },
+    {
+      "call": 2,
+      "scenario": "ceiling",
+      "tool": "discover_catalog",
+      "request_tokens": 13,
+      "before_text_tokens": 395,
+      "after_text_tokens": 397,
+      "after_full_result_tokens": 889
+    },
+    {
+      "call": 3,
+      "scenario": "silencer",
+      "tool": "discover_catalog",
+      "request_tokens": 13,
+      "before_text_tokens": 313,
+      "after_text_tokens": 315,
+      "after_full_result_tokens": 714
+    },
+    {
+      "call": 4,
+      "scenario": "slot_return",
+      "tool": "discover_catalog",
+      "request_tokens": 13,
+      "before_text_tokens": 232,
+      "after_text_tokens": 234,
+      "after_full_result_tokens": 548
+    },
+    {
+      "call": 5,
+      "scenario": "fire_smoke",
+      "tool": "discover_catalog",
+      "request_tokens": 12,
+      "before_text_tokens": 356,
+      "after_text_tokens": 358,
+      "after_full_result_tokens": 806
+    },
+    {
+      "call": 6,
+      "scenario": "flowbar",
+      "tool": "discover_catalog",
+      "request_tokens": 18,
+      "before_text_tokens": 356,
+      "after_text_tokens": 358,
+      "after_full_result_tokens": 805
+    },
+    {
+      "call": 7,
+      "scenario": "flowbar",
+      "tool": "discover_catalog",
+      "request_tokens": 18,
+      "before_text_tokens": 356,
+      "after_text_tokens": 358,
+      "after_full_result_tokens": 805
+    },
+    {
+      "call": 8,
+      "scenario": "ceiling",
+      "tool": "discover_catalog",
+      "request_tokens": 15,
+      "before_text_tokens": 355,
+      "after_text_tokens": 357,
+      "after_full_result_tokens": 804
+    },
+    {
+      "call": 9,
+      "scenario": "ceiling",
+      "tool": "discover_catalog",
+      "request_tokens": 18,
+      "before_text_tokens": 514,
+      "after_text_tokens": 528,
+      "after_full_result_tokens": 1163
+    },
+    {
+      "call": 10,
+      "scenario": "silencer",
+      "tool": "discover_catalog",
+      "request_tokens": 21,
+      "before_text_tokens": 439,
+      "after_text_tokens": 441,
+      "after_full_result_tokens": 979
+    },
+    {
+      "call": 11,
+      "scenario": "silencer",
+      "tool": "discover_catalog",
+      "request_tokens": 22,
+      "before_text_tokens": 259,
+      "after_text_tokens": 261,
+      "after_full_result_tokens": 605
+    },
+    {
+      "call": 12,
+      "scenario": "slot_return",
+      "tool": "discover_catalog",
+      "request_tokens": 16,
+      "before_text_tokens": 273,
+      "after_text_tokens": 275,
+      "after_full_result_tokens": 632
+    },
+    {
+      "call": 13,
+      "scenario": "slot_return",
+      "tool": "discover_catalog",
+      "request_tokens": 18,
+      "before_text_tokens": 281,
+      "after_text_tokens": 283,
+      "after_full_result_tokens": 648
+    },
+    {
+      "call": 14,
+      "scenario": "fire_smoke",
+      "tool": "discover_catalog",
+      "request_tokens": 22,
+      "before_text_tokens": 235,
+      "after_text_tokens": 242,
+      "after_full_result_tokens": 566
+    },
+    {
+      "call": 15,
+      "scenario": "flowbar",
+      "tool": "search_products",
+      "request_tokens": 105,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 16,
+      "scenario": "flowbar",
+      "tool": "search_products",
+      "request_tokens": 105,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 17,
+      "scenario": "ceiling",
+      "tool": "search_products",
+      "request_tokens": 94,
+      "before_text_tokens": 534,
+      "after_text_tokens": 536,
+      "after_full_result_tokens": 1163
+    },
+    {
+      "call": 18,
+      "scenario": "ceiling",
+      "tool": "search_products",
+      "request_tokens": 113,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 19,
+      "scenario": "silencer",
+      "tool": "search_products",
+      "request_tokens": 85,
+      "before_text_tokens": 511,
+      "after_text_tokens": 517,
+      "after_full_result_tokens": 1125
+    },
+    {
+      "call": 20,
+      "scenario": "slot_return",
+      "tool": "search_products",
+      "request_tokens": 74,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 21,
+      "scenario": "fire_smoke",
+      "tool": "search_products",
+      "request_tokens": 55,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 22,
+      "scenario": "flowbar_exact_diagnostic",
+      "tool": "search_products",
+      "request_tokens": 44,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 23,
+      "scenario": "flowbar_70lps",
+      "tool": "search_products",
+      "request_tokens": 132,
+      "before_text_tokens": 550,
+      "after_text_tokens": 552,
+      "after_full_result_tokens": 1197
+    },
+    {
+      "call": 24,
+      "scenario": "slot_return_diagnostic",
+      "tool": "search_products",
+      "request_tokens": 62,
+      "before_text_tokens": 450,
+      "after_text_tokens": 452,
+      "after_full_result_tokens": 990
+    },
+    {
+      "call": 25,
+      "scenario": "qualified_nc",
+      "tool": "search_products",
+      "request_tokens": 66,
+      "before_text_tokens": 116,
+      "after_text_tokens": 160,
+      "after_full_result_tokens": 385
+    },
+    {
+      "call": 26,
+      "scenario": "fire_smoke_diagnostic",
+      "tool": "search_products",
+      "request_tokens": 48,
+      "before_text_tokens": 434,
+      "after_text_tokens": 455,
+      "after_full_result_tokens": 993
+    },
+    {
+      "call": 27,
+      "scenario": "secondary_table_discovery",
+      "tool": "get_products",
+      "request_tokens": 26,
+      "before_text_tokens": 1744,
+      "after_text_tokens": 1746,
+      "after_full_result_tokens": 3647
+    },
+    {
+      "call": 28,
+      "scenario": "qualified_nc",
+      "tool": "get_products",
+      "request_tokens": 60,
+      "before_text_tokens": 584,
+      "after_text_tokens": 588,
+      "after_full_result_tokens": 1273
+    },
+    {
+      "call": 29,
+      "scenario": "silencer",
+      "tool": "get_products",
+      "request_tokens": 113,
+      "before_text_tokens": 907,
+      "after_text_tokens": 913,
+      "after_full_result_tokens": 1942
+    },
+    {
+      "call": 30,
+      "scenario": "slot_return",
+      "tool": "get_products",
+      "request_tokens": 80,
+      "before_text_tokens": 863,
+      "after_text_tokens": 867,
+      "after_full_result_tokens": 1848
+    },
+    {
+      "call": 31,
+      "scenario": "fire_smoke",
+      "tool": "get_products",
+      "request_tokens": 47,
+      "before_text_tokens": 516,
+      "after_text_tokens": 518,
+      "after_full_result_tokens": 1123
+    }
+  ],
+  "projection_comparisons": [
+    {
+      "scenario": "qualified_nc",
+      "projected_text_tokens": 588,
+      "unfiltered_variant_page_text_tokens": 1070,
+      "unfiltered_has_more_pages": false,
+      "identical_context_notes_sources_and_selected_cells": true
+    },
+    {
+      "scenario": "silencer",
+      "projected_text_tokens": 913,
+      "unfiltered_variant_page_text_tokens": 2160,
+      "unfiltered_has_more_pages": false,
+      "identical_context_notes_sources_and_selected_cells": true
+    },
+    {
+      "scenario": "slot_return",
+      "projected_text_tokens": 867,
+      "unfiltered_variant_page_text_tokens": 1370,
+      "unfiltered_has_more_pages": false,
+      "identical_context_notes_sources_and_selected_cells": true
+    },
+    {
+      "scenario": "fire_smoke",
+      "projected_text_tokens": 518,
+      "unfiltered_variant_page_text_tokens": 518,
+      "unfiltered_has_more_pages": false,
+      "identical_context_notes_sources_and_selected_cells": true
+    }
+  ],
+  "discovery_text_tokens": 5342,
+  "warm_successful_searches": {
+    "ceiling": {
+      "call": 17,
+      "scenario": "ceiling",
+      "tool": "search_products",
+      "request_tokens": 94,
+      "before_text_tokens": 534,
+      "after_text_tokens": 536,
+      "after_full_result_tokens": 1163
+    },
+    "flowbar_70lps": {
+      "call": 23,
+      "scenario": "flowbar_70lps",
+      "tool": "search_products",
+      "request_tokens": 132,
+      "before_text_tokens": 550,
+      "after_text_tokens": 552,
+      "after_full_result_tokens": 1197
+    }
+  },
+  "rating_diagnostic_before": {
+    "calls": 2,
+    "text_tokens": 950
+  },
+  "rating_diagnostic_after": {
+    "calls": 1,
+    "text_tokens": 455
+  },
+  "limitations": [
+    "Guided agent had implementation context; no independent agent or other-client qualification.",
+    "Seven scoped engineering tasks, not complete HVAC design or universal source validation.",
+    "Qualified bounds still require inspection; no interpolation, certification verification or source conflict repair.",
+    "Projection reduction is against bounded unfiltered variant pages, not full catalogs. Discovery/schema cache is tied to catalog version."
+  ]
+}

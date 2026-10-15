@@ -1,5 +1,17 @@
 # SupplierAtlas database design
 
+## Selection-driven projection requirements (2026-10-15)
+
+Optional schema `context_columns` lists existing columns whose values are necessary
+to interpret projected evidence (e.g. a leakage class's test temperature). Import
+validation rejects unknown/duplicate/non-string references. Both search evidence
+and known-product rows return row keys + context columns + requested columns,
+deduplicated in that order, with units, context, notes and sources retained.
+This metadata is additive and does not change row identity, column meaning or the
+three public request schemas. Catalog release/hash changes invalidate old cursors.
+An empty first page with numeric predicates explains scalar-only matching and
+excluded bounds/missing cells; it does not assert product unsuitability.
+
 Updated: 2026-10-15. Status: implemented SQLite design exercised across all 22 Alsharqa catalog families.
 
 ## Expanded dataset implementation

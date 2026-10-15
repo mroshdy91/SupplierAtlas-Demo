@@ -54,7 +54,7 @@ def test_ceiling_cross_page_coordinates_and_unknown_cells(catalog):
         filters=[{"field":"size_label","value":"21x24"},{"field":"ways","value":3},
                  {"field":"neck_velocity","value":800}])
     row = mapping(result)
-    assert row == {"size_label":"21x24","ways":3,"neck_velocity":800,"airflow":2800,
+    assert row == {"size_label":"21x24","ways":3,"neck_velocity":800,"neck_width":21,"neck_height":24,"airflow":2800,
                    "side_airflow_b":1094,"throw_b_50fpm":40}
     assert result["rows"][0]["source_ref"].endswith("pdf18")
     malformed = table(catalog,"alsharqa.scd","supply_patterns",
