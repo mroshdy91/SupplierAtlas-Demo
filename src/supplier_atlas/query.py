@@ -20,8 +20,14 @@ class QueryError(ValueError):
 UNITS = {
     "in": ("length", .0254), "mm": ("length", .001), "m": ("length", 1), "ft": ("length", .3048),
     "ft2": ("area", .09290304), "m2": ("area", 1),
-    "cfm": ("flow", .0004719474432), "L/s": ("flow", .001), "m3/s": ("flow", 1),
+    "cfm": ("flow", 1.69901079552), "L/s": ("flow", 3.6), "m3/s": ("flow", 3600),
+    "m3/h": ("flow", 1),
     "inH2O": ("pressure", 249.08891), "Pa": ("pressure", 1), "NC": ("NC", 1),
+    "mmH2O": ("pressure", 9.80665),
+    "fpm": ("velocity", .00508), "m/s": ("velocity", 1),
+    "cfm/ft": ("flow_per_length", .001548384), "L/s/m": ("flow_per_length", .001),
+    "ft2/ft": ("area_per_length", .3048), "m2/m": ("area_per_length", 1),
+    "h": ("time", 3600), "min": ("time", 60), "s": ("time", 1),
 }
 OPS = {"eq": "=", "lt": "<", "lte": "<=", "gt": ">", "gte": ">="}
 
@@ -265,10 +271,13 @@ class Catalog:
                     if any(r.table_id not in table_map for r in request.tables):
                         raise QueryError("Requested table does not belong to this product")
                     for table in tables:
+                        if request.tables and table["id"] not in {r.table_id for r in request.tables}:
+                            continue
                         count = db.execute("SELECT COUNT(*) FROM table_rows WHERE table_id=? AND (?='model' OR variant_id=?)",
                                            (table["id"], product["kind"], product_id)).fetchone()[0]
                         item["tables"].append({"id": table["id"], "schema_id": table["schema_id"], "row_count": count})
-                    variants = db.execute("SELECT id,label FROM products WHERE parent_id=? ORDER BY id LIMIT 21", (product_id,)).fetchall()
+                    variants = [] if request.tables else db.execute(
+                        "SELECT id,label FROM products WHERE parent_id=? ORDER BY id LIMIT 21", (product_id,)).fetchall()
                     if variants:
                         item["variants"] = [dict(v) for v in variants[:20]]
                         item["variants_complete"] = len(variants) <= 20
@@ -286,14 +295,15 @@ class Catalog:
                         formatted = self.format_rows(db, table, schema, rows[:table_request.limit], table_request.columns)
                         formatted.update(self.page(rows, table_request.limit, offset, query, version))
                         if request.include_sources:
-                            formatted["row_sources"] = [self.source(db, r["source_ref_id"], True) for r in rows[:table_request.limit]]
+                            refs = dict.fromkeys(r["source_ref_id"] for r in rows[:table_request.limit])
+                            formatted["row_sources"] = [self.source(db, ref, True) for ref in refs]
                         item["data"].append(formatted)
                     if request.include_sources:
                         refs = {v["source_ref"] for v in item["properties"].values() if "source_ref" in v}
-                        refs.update(t["source_ref_id"] for t in tables)
+                        refs.update(t["source_ref_id"] for t in tables
+                                    if not request.tables or t["id"] in {r.table_id for r in request.tables})
                         item["sources"] = [self.source(db, ref, True) for ref in sorted(refs)]
                     results.append(item)
                 except QueryError as exc:
                     results.append({"id": product_id, "error": str(exc)})
             return self.bounded({"catalog_version": version, "coverage": coverage, "products": results})
-

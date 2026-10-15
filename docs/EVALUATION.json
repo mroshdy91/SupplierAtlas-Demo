@@ -1,0 +1,61 @@
+{
+  "scope": "Deterministic MCP calls, not an independent agent evaluation. Token counts are tokenizer-specific; client context behavior may differ.",
+  "scenarios": [
+    {
+      "scenario": "discover",
+      "calls": 1,
+      "text_bytes": 2247,
+      "text_tokens_cl100k": 697,
+      "full_result_tokens_cl100k": 1484,
+      "elapsed_ms": 86.98
+    },
+    {
+      "scenario": "overview",
+      "calls": 1,
+      "text_bytes": 1240,
+      "text_tokens_cl100k": 365,
+      "full_result_tokens_cl100k": 806,
+      "elapsed_ms": 3.54
+    },
+    {
+      "scenario": "projected_point",
+      "calls": 1,
+      "text_bytes": 1804,
+      "text_tokens_cl100k": 509,
+      "full_result_tokens_cl100k": 1108,
+      "elapsed_ms": 2.4
+    },
+    {
+      "scenario": "full_variant_table",
+      "calls": 1,
+      "text_bytes": 3183,
+      "text_tokens_cl100k": 1062,
+      "full_result_tokens_cl100k": 2255,
+      "elapsed_ms": 2.45
+    },
+    {
+      "scenario": "expanded_ceiling_projected_page",
+      "calls": 1,
+      "text_bytes": 5820,
+      "text_tokens_cl100k": 2015,
+      "full_result_tokens_cl100k": 4235,
+      "elapsed_ms": 3.38
+    },
+    {
+      "scenario": "expanded_ceiling_full_page",
+      "calls": 1,
+      "text_bytes": 8556,
+      "text_tokens_cl100k": 3129,
+      "full_result_tokens_cl100k": 6569,
+      "elapsed_ms": 7.5
+    },
+    {
+      "scenario": "damper_published_rating",
+      "calls": 1,
+      "text_bytes": 1894,
+      "text_tokens_cl100k": 506,
+      "full_result_tokens_cl100k": 1099,
+      "elapsed_ms": 2.73
+    }
+  ]
+}

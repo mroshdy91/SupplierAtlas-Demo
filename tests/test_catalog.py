@@ -48,8 +48,10 @@ def test_return_has_distinct_schema(catalog):
 def test_default_has_descriptors_not_rows(catalog):
     result = catalog.get(GetRequest(ids=["alsharqa.scd"]))["products"][0]
     assert result["data"] == []
-    assert [t["row_count"] for t in result["tables"]] == [21, 21]
-    assert len(result["variants"]) == 3
+    assert {t["id"]: t["row_count"] for t in result["tables"]} == {
+        "alsharqa.scd.supply":21, "alsharqa.scd.return":21,
+        "alsharqa.scd.supply_patterns":763, "alsharqa.scd.return_sizes":175}
+    assert len(result["variants"]) == 20 and result["variants_complete"] is False
 
 
 def test_same_row_and_same_variant(catalog):
@@ -110,7 +112,7 @@ def test_unknown_field_and_injection_rejected(catalog):
     with pytest.raises(QueryError, match="Unknown"):
         catalog.search(SearchRequest(category=CAT, table={"schema_id": SUPPLY,
             "filters": [{"field": "airflow'); DROP TABLE products; --", "value": 1}]}))
-    assert catalog.discover(DiscoverRequest())["categories"][0]["models"] == 1
+    assert next(c for c in catalog.discover(DiscoverRequest())["categories"] if c["id"] == CAT)["models"] == 2
 
 
 def test_read_only_and_response_budget(catalog):
@@ -124,9 +126,9 @@ def test_read_only_and_response_budget(catalog):
 def test_import_rebuild_no_duplicates(tmp_path):
     db = tmp_path / "catalog.sqlite"
     first, second = build(PACKAGE, db), build(PACKAGE, db)
-    assert first == second and first["rows"] == 42
+    assert first == second and first["rows"] == 3707
     with sqlite3.connect(db) as conn:
-        assert conn.execute("SELECT count(*) FROM products").fetchone()[0] == 4
+        assert conn.execute("SELECT count(*) FROM products").fetchone()[0] == 795
 
 
 @pytest.mark.parametrize("problem", ["duplicate", "variant", "unreviewed", "type", "extra"])
@@ -190,4 +192,3 @@ def test_heterogeneous_sparse_and_heavy_data(tmp_path):
     assert table["returned"] == 10 and table["next_cursor"]
     assert table["rows"][0]["values"][1] == {"status": "not_supplied"}
     assert len(json.dumps(result)) < 12000
-

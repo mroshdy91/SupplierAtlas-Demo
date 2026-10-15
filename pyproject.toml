@@ -22,4 +22,3 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 110
 
-

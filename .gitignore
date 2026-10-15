@@ -1,0 +1,17 @@
+# Private source verification material and temporary renders/downloads.
+data/sources/
+tmp/
+
+# Local credentials and runtime state.
+.env
+.env.*
+.runtime.env.yaml
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+data/*.sqlite
+datasets/alsharqa/catalog.json
+dist/

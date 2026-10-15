@@ -30,11 +30,24 @@ async def check(transport):
         detail = await client.call_tool("get_products", {"request": {"ids": ["alsharqa.scd.6x6"], "tables": [
             {"table_id": "alsharqa.scd.supply", "filters": [{"field": "airflow", "value": 100}]}]}})
         assert detail.structured_content["products"][0]["data"][0]["rows"][0]["values"] == [100, .046, 19, 25, 6, 11]
-        print("HTTP MCP: initialization, exact three tools, discovery, same-row search and reference retrieval passed.")
+        for model, table_id, filters, columns, expected in [
+            ("alsharqa.scd","alsharqa.scd.supply_patterns",
+             [{"field":"size_label","value":"21x24"},{"field":"ways","value":3},{"field":"neck_velocity","value":800}],
+             ["airflow","throw_b_50fpm"],["21x24",3,800,2800,40]),
+            ("alsharqa.sfsd-series","alsharqa.sfsd-series.leakage-ratings",
+             [{"field":"leakage_class","value":"II"}],None,["II",250]),
+            ("alsharqa.duct-hardware","alsharqa.duct-hardware.clamp",[],None,["SACL-30",33,19,30,3,8,25]),
+        ]:
+            request={"table_id":table_id,"filters":filters,"limit":1}
+            if columns:
+                request["columns"]=columns
+            result=await client.call_tool("get_products",{"request":{"ids":[model],"fields":[],"tables":[request]}})
+            assert not result.is_error, model
+            assert result.structured_content["products"][0]["data"][0]["rows"][0]["values"] == expected, model
+        print("HTTP MCP: exact three tools, discovery, same-row search, original reference and expanded ceiling/damper/duct rows passed.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("url")
     asyncio.run(main(parser.parse_args().url))
-

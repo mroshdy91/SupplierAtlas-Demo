@@ -29,6 +29,7 @@ jobs:
           .venv/bin/pip install -r requirements.txt pytest httpx
           .venv/bin/pip install --no-deps .
           .venv/bin/python datasets/alsharqa/prepare.py
+          .venv/bin/python datasets/alsharqa/audit.py
           .venv/bin/supplier-atlas-build datasets/alsharqa/catalog.json data/catalog.sqlite
           .venv/bin/pytest -q
       - name: Build and verify container
@@ -44,8 +45,7 @@ jobs:
           image=ghcr.io/mroshdy91/supplieratlas-demo
           printf '%s' "$GH_TOKEN" | docker login ghcr.io -u "$GH_USER" --password-stdin
           docker tag supplieratlas-demo:local "$image:$REVISION"
-          docker tag supplieratlas-demo:local "$image:demo-001"
+          docker tag supplieratlas-demo:local "$image:demo-latest"
           docker push "$image:$REVISION"
-          docker push "$image:demo-001"
+          docker push "$image:demo-latest"
           docker logout ghcr.io
-

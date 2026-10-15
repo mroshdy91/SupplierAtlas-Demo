@@ -99,9 +99,9 @@ def prepare():
                     "variant_id": f"{model}.{size}x{size}", "values": values,
                     "source_ref": ref, "review_status": "accepted"})
         data["tables"].append(table)
-    return data
+    from engineering import expand
+    return expand(data)
 
 
 if __name__ == "__main__":
     Path(__file__).with_name("catalog.json").write_text(json.dumps(prepare(), indent=2) + "\n", encoding="utf-8")
-

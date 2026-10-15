@@ -19,7 +19,8 @@ def test_three_tools_protocol_and_structured_output():
             assert {t.name for t in tools.tools} == {"discover_catalog", "search_products", "get_products"}
             result = await client.call_tool("discover_catalog", {"request": {}})
             assert not result.is_error
-            assert result.structured_content["categories"][0]["models"] == 1
+            assert next(c for c in result.structured_content["categories"]
+                        if c["id"] == "air_outlets.ceiling_diffusers")["models"] == 2
             assert json.loads(result.content[0].text) == result.structured_content
             error = await client.call_tool("search_products", {"request": {"category": "missing"}})
             assert error.is_error
@@ -48,4 +49,3 @@ def test_http_auth_and_health():
                   "capabilities": {}, "clientInfo": {"name": "test", "version": "1"}}})
         assert response.status_code == 200
         assert response.json()["result"]["serverInfo"]["name"] == "SupplierAtlas"
-

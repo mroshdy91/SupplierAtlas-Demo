@@ -11,4 +11,3 @@ COPY --chown=atlas:atlas data/catalog.sqlite ./data/catalog.sqlite
 USER atlas
 EXPOSE 8080
 CMD ["supplier-atlas", "--transport", "http", "--host", "0.0.0.0"]
-

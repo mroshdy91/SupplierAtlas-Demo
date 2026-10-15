@@ -50,4 +50,3 @@ class DiscoverRequest(StrictModel):
     schema_id: str | None = None
     limit: int = Field(default=20, ge=1, le=50)
     cursor: str | None = Field(default=None, max_length=4000)
-

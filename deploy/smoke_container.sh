@@ -49,4 +49,3 @@ else:
 PY
 docker exec "$container" python /tmp/smoke_http.py http://127.0.0.1:8080/mcp
 docker image inspect supplieratlas-demo:local --format='Container image size: {{.Size}} bytes'
-
